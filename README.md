@@ -2,6 +2,8 @@
 
 Det här repot innehåller den statiska webbplatsen för Einismen och konfiguration för att bygga, publicera och deploya den till Kubernetes med Helm.
 
+Webbplatsen ska fungera både på desktop och mobiltelefon.
+
 ## Innehåll
 
 - Webbplatsfiler finns i `web/`
@@ -170,3 +172,15 @@ curl -I https://einismen.k3s.k0.nu/
 - imagebygge: `Dockerfile`
 - deployment: `helm/einismen`
 - deploy-script: `scripts/deploy.sh`
+
+## Mobilstöd
+
+När du ändrar webbplatsen ska du behålla responsiv layout för mobil.
+
+Det gäller särskilt:
+
+- navigation
+- temaväljare
+- knappar
+- sektioner och kolumner
+- bilder och mellanrum

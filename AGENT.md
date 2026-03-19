@@ -18,6 +18,7 @@
 - Texterna ska vara korta, enkla och lätta att ta till sig.
 - Flera sidor får användas när det gör innehållet tydligare och mer lättöverskådligt.
 - Dokumentationen i repot ska användas brett som grund för innehållet.
+- Hela webbplatsen måste fungera bra på mobiltelefoner.
 
 ## Arbetsflöde
 
@@ -41,4 +42,5 @@
 - Filnamn och länkar: ASCII.
 - Design: asketisk.
 - Innehåll: kort, enkelt och dokumentationsbaserat.
+- Mobilstöd: obligatoriskt.
 - Deploy: Docker + Helm + Kubernetes.
