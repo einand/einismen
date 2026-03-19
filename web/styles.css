@@ -12,39 +12,39 @@
 }
 
 :root[data-theme="paper"] {
-  --bg: #f4f1ea;
-  --bg-soft: #fcfbf8;
-  --paper: rgba(255, 255, 255, 0.84);
-  --line: rgba(55, 52, 47, 0.14);
-  --line-strong: rgba(55, 52, 47, 0.24);
-  --text: #201d18;
-  --muted: #6a645a;
-  --accent: #2f2c27;
-  --accent-soft: rgba(47, 44, 39, 0.07);
+  --bg: #f7f4ed;
+  --bg-soft: #fffdfa;
+  --paper: rgba(255, 255, 255, 0.92);
+  --line: rgba(87, 79, 69, 0.1);
+  --line-strong: rgba(87, 79, 69, 0.22);
+  --text: #1f1c17;
+  --muted: #746c61;
+  --accent: #2d2924;
+  --accent-soft: rgba(45, 41, 36, 0.06);
 }
 
 :root[data-theme="stone"] {
-  --bg: #dfddd7;
-  --bg-soft: #efeee9;
-  --paper: rgba(247, 247, 243, 0.72);
-  --line: rgba(48, 50, 50, 0.18);
-  --line-strong: rgba(48, 50, 50, 0.3);
-  --text: #1f2222;
-  --muted: #5e6461;
-  --accent: #2f3432;
-  --accent-soft: rgba(47, 52, 50, 0.08);
+  --bg: #d8dbd7;
+  --bg-soft: #edf0ec;
+  --paper: rgba(243, 246, 243, 0.8);
+  --line: rgba(53, 60, 58, 0.18);
+  --line-strong: rgba(53, 60, 58, 0.3);
+  --text: #1d2422;
+  --muted: #5c6662;
+  --accent: #2a3330;
+  --accent-soft: rgba(42, 51, 48, 0.08);
 }
 
 :root[data-theme="night"] {
-  --bg: #191817;
-  --bg-soft: #23211f;
-  --paper: rgba(38, 35, 32, 0.82);
-  --line: rgba(225, 214, 194, 0.13);
-  --line-strong: rgba(225, 214, 194, 0.24);
-  --text: #ece2d0;
-  --muted: #b5a891;
-  --accent: #e3d5be;
-  --accent-soft: rgba(227, 213, 190, 0.1);
+  --bg: #131313;
+  --bg-soft: #1d1c1a;
+  --paper: rgba(33, 31, 28, 0.9);
+  --line: rgba(226, 215, 194, 0.11);
+  --line-strong: rgba(226, 215, 194, 0.22);
+  --text: #efe6d6;
+  --muted: #bcaf97;
+  --accent: #e7d8bf;
+  --accent-soft: rgba(231, 216, 191, 0.1);
 }
 
 * {
@@ -63,6 +63,7 @@ body {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0)) 0 0 / 100% 100%,
     var(--bg);
+  transition: background-color 180ms ease, color 180ms ease;
 }
 
 body::before {
@@ -99,6 +100,7 @@ img {
   background: rgba(236, 228, 214, 0.94);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line-strong);
+  transition: background-color 180ms ease, border-color 180ms ease;
 }
 
 .site-header .shell {
@@ -188,6 +190,7 @@ img {
     calc(100% - 0.7rem) calc(50% - 0.12rem);
   background-size: 0.36rem 0.36rem, 0.36rem 0.36rem;
   background-repeat: no-repeat;
+  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
 }
 
 main {
