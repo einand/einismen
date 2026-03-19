@@ -332,19 +332,13 @@ p {
 }
 
 .plain-list li,
-.steps li,
-.qa-list li,
-.link-list li,
-.subnav-list li {
+.steps li {
   padding: 0.85rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .plain-list li:first-child,
-.steps li:first-child,
-.qa-list li:first-child,
-.link-list li:first-child,
-.subnav-list li:first-child {
+.steps li:first-child {
   border-top: 0;
   padding-top: 0;
 }
@@ -391,11 +385,13 @@ p {
 .qa-list li {
   padding: var(--panel-padding);
   border-radius: var(--panel-radius);
+  border-top: 0;
 }
 
 .subnav-list li {
   padding: var(--panel-padding);
   border-radius: var(--panel-radius);
+  border-top: 0;
 }
 
 .link-list li:nth-child(even),
