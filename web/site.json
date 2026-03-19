@@ -11,7 +11,11 @@
     { "id": "ash", "label": "Aska" },
     { "id": "clay", "label": "Lera" },
     { "id": "mist", "label": "Dimma" },
-    { "id": "ember", "label": "Glöd" }
+    { "id": "ember", "label": "Glöd" },
+    { "id": "monolith", "label": "Monolit" },
+    { "id": "archive", "label": "Arkiv" },
+    { "id": "signal", "label": "Signal" },
+    { "id": "glyph", "label": "Glyf" }
   ],
   "menu": [
     { "href": "index.html", "label": "Hem" },

@@ -125,7 +125,7 @@
 
   inlineThemedImages();
 
-  fetch("site.json?v=20260319-4")
+  fetch("site.json?v=20260319-5")
       .then(function (response) {
         if (!response.ok) {
           throw new Error("site fetch failed");

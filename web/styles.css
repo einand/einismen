@@ -17,6 +17,12 @@
   --svg-stone-3: #9d907a;
   --svg-line-1: #bfb19a;
   --svg-line-2: #c6b9a2;
+  --card-radius: 0.75rem;
+  --button-radius: 999px;
+  --theme-radius: 999px;
+  --section-gap: 0.95rem;
+  --content-width: 1040px;
+  --image-aspect: 16 / 7;
   --max: 1040px;
 }
 
@@ -167,6 +173,110 @@ html[data-theme="ember"] {
   --svg-line-2: #a7775c;
 }
 
+html[data-theme="monolith"] {
+  --bg: #111111;
+  --bg-soft: #1a1a1a;
+  --paper: rgba(24, 24, 24, 0.96);
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.16);
+  --text: #f2f2ee;
+  --muted: #a8a8a1;
+  --accent: #f2f2ee;
+  --accent-soft: rgba(255, 255, 255, 0.08);
+  --image-filter: grayscale(1) contrast(1.12) brightness(0.8);
+  --svg-sky: var(--bg);
+  --svg-ground-1: #2a2a2a;
+  --svg-ground-2: #383838;
+  --svg-stone-1: #666666;
+  --svg-stone-2: #7b7b7b;
+  --svg-stone-3: #909090;
+  --svg-line-1: #4d4d4d;
+  --svg-line-2: #606060;
+  --card-radius: 0;
+  --button-radius: 0;
+  --theme-radius: 0;
+  --section-gap: 1.3rem;
+  --image-aspect: 21 / 8;
+}
+
+html[data-theme="archive"] {
+  --bg: #f3ecd9;
+  --bg-soft: #faf5e8;
+  --paper: rgba(255, 252, 245, 0.96);
+  --line: rgba(98, 79, 44, 0.18);
+  --line-strong: rgba(98, 79, 44, 0.3);
+  --text: #322717;
+  --muted: #7b6750;
+  --accent: #5c4020;
+  --accent-soft: rgba(92, 64, 32, 0.08);
+  --image-filter: sepia(0.3) saturate(0.65) contrast(0.92);
+  --svg-sky: var(--bg);
+  --svg-ground-1: #e0d2b5;
+  --svg-ground-2: #cdb88e;
+  --svg-stone-1: #9e7d52;
+  --svg-stone-2: #866742;
+  --svg-stone-3: #b18d5f;
+  --svg-line-1: #b29061;
+  --svg-line-2: #c0a172;
+  --card-radius: 0.2rem;
+  --button-radius: 0.2rem;
+  --theme-radius: 0.2rem;
+  --section-gap: 1.15rem;
+  --content-width: 980px;
+}
+
+html[data-theme="signal"] {
+  --bg: #f4f7f8;
+  --bg-soft: #ffffff;
+  --paper: rgba(255, 255, 255, 0.98);
+  --line: rgba(10, 38, 48, 0.12);
+  --line-strong: rgba(10, 38, 48, 0.22);
+  --text: #0f2229;
+  --muted: #4e6b75;
+  --accent: #0f6c86;
+  --accent-soft: rgba(15, 108, 134, 0.1);
+  --image-filter: saturate(0.8) contrast(1);
+  --svg-sky: var(--bg);
+  --svg-ground-1: #d5e4e8;
+  --svg-ground-2: #bed5db;
+  --svg-stone-1: #3f7d8d;
+  --svg-stone-2: #2f6270;
+  --svg-stone-3: #5b9aaa;
+  --svg-line-1: #89b7c1;
+  --svg-line-2: #9fc5ce;
+  --card-radius: 1rem;
+  --button-radius: 999px;
+  --theme-radius: 999px;
+  --section-gap: 1.4rem;
+  --content-width: 1120px;
+}
+
+html[data-theme="glyph"] {
+  --bg: #efe7df;
+  --bg-soft: #f7f1eb;
+  --paper: rgba(252, 248, 243, 0.9);
+  --line: rgba(74, 45, 39, 0.14);
+  --line-strong: rgba(74, 45, 39, 0.26);
+  --text: #2d1f1c;
+  --muted: #745955;
+  --accent: #7e2f2f;
+  --accent-soft: rgba(126, 47, 47, 0.1);
+  --image-filter: sepia(0.18) saturate(0.8) contrast(1);
+  --svg-sky: var(--bg);
+  --svg-ground-1: #dbc6bc;
+  --svg-ground-2: #c5a79a;
+  --svg-stone-1: #8d4c4c;
+  --svg-stone-2: #6f3131;
+  --svg-stone-3: #a96a63;
+  --svg-line-1: #b07d72;
+  --svg-line-2: #c29288;
+  --card-radius: 1.4rem 0.35rem 1.4rem 0.35rem;
+  --button-radius: 999px;
+  --theme-radius: 999px;
+  --section-gap: 1.1rem;
+  --image-aspect: 5 / 2;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -209,7 +319,7 @@ img {
 }
 
 .shell {
-  width: min(calc(100% - 2rem), var(--max));
+  width: min(calc(100% - 2rem), var(--content-width));
   margin: 0 auto;
 }
 
@@ -300,14 +410,14 @@ img {
   gap: 0.2rem;
   padding: 0.16rem;
   border: 1px solid color-mix(in srgb, var(--line-strong) 70%, transparent 30%);
-  border-radius: 999px;
+  border-radius: var(--theme-radius);
   background: color-mix(in srgb, var(--paper) 78%, transparent 22%);
 }
 
 .theme-button {
   padding: 0.34rem 0.55rem;
   border: 0;
-  border-radius: 999px;
+  border-radius: var(--theme-radius);
   background: transparent;
   color: var(--muted);
   font: 600 0.74rem/1 "Segoe UI", sans-serif;
@@ -412,7 +522,7 @@ p {
   min-height: 46px;
   padding: 0.75rem 1rem;
   border: 1px solid var(--line-strong);
-  border-radius: 999px;
+  border-radius: var(--button-radius);
   text-decoration: none;
   font: 700 0.92rem/1 "Segoe UI", sans-serif;
 }
@@ -521,14 +631,14 @@ p {
 
 .split {
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: 1.6rem 2rem;
+  gap: calc(var(--section-gap) * 1.7) 2rem;
 }
 
 .split > * {
   position: relative;
   padding: 1rem 1rem 0;
   background: transparent;
-  border-radius: 0.75rem;
+  border-radius: var(--card-radius);
 }
 
 .split > *::before {
@@ -551,12 +661,12 @@ p {
 .link-list li,
 .qa-list li {
   padding: 0.95rem 0.9rem;
-  border-radius: 0.75rem;
+  border-radius: var(--card-radius);
 }
 
 .subnav-list li {
   padding: 0.95rem 0.9rem;
-  border-radius: 0.75rem;
+  border-radius: var(--card-radius);
 }
 
 .link-list li:nth-child(even),
@@ -625,7 +735,7 @@ p {
 
 .image-break img {
   width: 100%;
-  aspect-ratio: 16 / 7;
+  aspect-ratio: var(--image-aspect);
   object-fit: cover;
   filter: var(--image-filter);
 }
@@ -634,6 +744,62 @@ p {
   width: 100%;
   height: auto;
   display: block;
+  aspect-ratio: var(--image-aspect);
+}
+
+html[data-theme="monolith"] .site-header {
+  position: static;
+  backdrop-filter: none;
+}
+
+html[data-theme="monolith"] .nav a,
+html[data-theme="monolith"] .theme-button,
+html[data-theme="monolith"] .button,
+html[data-theme="monolith"] .button-secondary {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+html[data-theme="archive"] body {
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+html[data-theme="archive"] .brand-title,
+html[data-theme="archive"] h1,
+html[data-theme="archive"] h2,
+html[data-theme="archive"] h3 {
+  letter-spacing: 0;
+}
+
+html[data-theme="archive"] .nav a,
+html[data-theme="archive"] .theme-button,
+html[data-theme="archive"] .button,
+html[data-theme="archive"] .button-secondary {
+  border: 1px solid var(--line-strong);
+}
+
+html[data-theme="signal"] body {
+  font-family: Georgia, "Iowan Old Style", serif;
+}
+
+html[data-theme="signal"] .nav {
+  gap: 0.35rem 0.45rem;
+}
+
+html[data-theme="signal"] .nav a,
+html[data-theme="signal"] .theme-button,
+html[data-theme="signal"] .button,
+html[data-theme="signal"] .button-secondary {
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 12%, transparent 88%);
+}
+
+html[data-theme="glyph"] .brand-mark::before {
+  content: "ᚱ";
+}
+
+html[data-theme="glyph"] .nav a.active,
+html[data-theme="glyph"] .theme-button[aria-pressed="true"] {
+  box-shadow: inset 0 -2px 0 0 color-mix(in srgb, var(--accent) 45%, transparent 55%);
 }
 
 .image-break svg .sky { fill: var(--svg-sky); }
