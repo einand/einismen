@@ -9,7 +9,7 @@
   --accent: #383229;
   --accent-soft: rgba(56, 50, 41, 0.08);
   --image-filter: saturate(0.58) sepia(0.1) hue-rotate(-8deg) contrast(0.95);
-  --svg-sky: #e9e1d3;
+  --svg-sky: var(--bg);
   --svg-ground-1: #d8cfbf;
   --svg-ground-2: #c6b9a2;
   --svg-stone-1: #a59782;
@@ -31,7 +31,7 @@ html[data-theme="paper"] {
   --accent: #2d2924;
   --accent-soft: rgba(45, 41, 36, 0.06);
   --image-filter: grayscale(0.1) brightness(1.03) contrast(0.92);
-  --svg-sky: #f4f0e8;
+  --svg-sky: var(--bg);
   --svg-ground-1: #ddd6ca;
   --svg-ground-2: #cbc2b2;
   --svg-stone-1: #aea496;
@@ -52,7 +52,7 @@ html[data-theme="stone"] {
   --accent: #2a3330;
   --accent-soft: rgba(42, 51, 48, 0.08);
   --image-filter: grayscale(0.2) hue-rotate(12deg) saturate(0.62) contrast(0.94);
-  --svg-sky: #dde1de;
+  --svg-sky: var(--bg);
   --svg-ground-1: #c8cdc9;
   --svg-ground-2: #b1b8b4;
   --svg-stone-1: #7f8b87;
@@ -73,7 +73,7 @@ html[data-theme="night"] {
   --accent: #e7d8bf;
   --accent-soft: rgba(231, 216, 191, 0.1);
   --image-filter: grayscale(0.38) brightness(0.68) contrast(1.08) sepia(0.18);
-  --svg-sky: #241f1b;
+  --svg-sky: var(--bg);
   --svg-ground-1: #342d27;
   --svg-ground-2: #453c33;
   --svg-stone-1: #8d7a65;
@@ -94,7 +94,7 @@ html[data-theme="ash"] {
   --accent: #36383d;
   --accent-soft: rgba(54, 56, 61, 0.08);
   --image-filter: grayscale(0.42) brightness(0.98) contrast(0.92);
-  --svg-sky: #e5e5e4;
+  --svg-sky: var(--bg);
   --svg-ground-1: #d0d0d0;
   --svg-ground-2: #bbbbbd;
   --svg-stone-1: #83858b;
@@ -115,7 +115,7 @@ html[data-theme="clay"] {
   --accent: #6c4a3e;
   --accent-soft: rgba(108, 74, 62, 0.08);
   --image-filter: sepia(0.28) saturate(0.74) hue-rotate(-10deg) contrast(0.95);
-  --svg-sky: #eadfd5;
+  --svg-sky: var(--bg);
   --svg-ground-1: #d7c2b2;
   --svg-ground-2: #c2a692;
   --svg-stone-1: #9f7667;
@@ -136,7 +136,7 @@ html[data-theme="mist"] {
   --accent: #345058;
   --accent-soft: rgba(52, 80, 88, 0.08);
   --image-filter: grayscale(0.18) hue-rotate(22deg) saturate(0.72) brightness(1.02);
-  --svg-sky: #dee8ea;
+  --svg-sky: var(--bg);
   --svg-ground-1: #c8d6d8;
   --svg-ground-2: #b1c2c5;
   --svg-stone-1: #6f8b90;
@@ -157,7 +157,7 @@ html[data-theme="ember"] {
   --accent: #d38a60;
   --accent-soft: rgba(211, 138, 96, 0.12);
   --image-filter: sepia(0.32) saturate(0.82) brightness(0.82) contrast(1.02);
-  --svg-sky: #2f221d;
+  --svg-sky: var(--bg);
   --svg-ground-1: #53382d;
   --svg-ground-2: #6d4a3a;
   --svg-stone-1: #b06f53;
