@@ -1,36 +1,19 @@
 <header class="site-header">
   <div class="shell">
-    <a class="brand" href="index.html?tema=<!--# echo var="theme" -->">
+    <a class="brand" href="index.html">
       <span class="brand-mark">Einismen</span>
       <span class="brand-title">Klarhet i en kaotisk värld</span>
     </a>
     <div class="header-tools">
-      <div class="theme-switcher">
-        <span>Visning</span>
-        <div class="theme-buttons" aria-label="Temaval">
-          <a class="theme-button <!--# if expr="$theme = /sand/" -->active<!--# endif -->" href="<!--# echo var="current_page" -->?tema=sand">Sand</a>
-          <a class="theme-button <!--# if expr="$theme = /paper/" -->active<!--# endif -->" href="<!--# echo var="current_page" -->?tema=paper">Papper</a>
-          <a class="theme-button <!--# if expr="$theme = /stone/" -->active<!--# endif -->" href="<!--# echo var="current_page" -->?tema=stone">Sten</a>
-          <a class="theme-button <!--# if expr="$theme = /night/" -->active<!--# endif -->" href="<!--# echo var="current_page" -->?tema=night">Natt</a>
-          <a class="theme-button <!--# if expr="$theme = /ash/" -->active<!--# endif -->" href="<!--# echo var="current_page" -->?tema=ash">Aska</a>
-          <a class="theme-button <!--# if expr="$theme = /clay/" -->active<!--# endif -->" href="<!--# echo var="current_page" -->?tema=clay">Lera</a>
-          <a class="theme-button <!--# if expr="$theme = /mist/" -->active<!--# endif -->" href="<!--# echo var="current_page" -->?tema=mist">Dimma</a>
-          <a class="theme-button <!--# if expr="$theme = /ember/" -->active<!--# endif -->" href="<!--# echo var="current_page" -->?tema=ember">Glöd</a>
-          <a class="theme-button <!--# if expr="$theme = /monolith/" -->active<!--# endif -->" href="<!--# echo var="current_page" -->?tema=monolith">Monolit</a>
-          <a class="theme-button <!--# if expr="$theme = /archive/" -->active<!--# endif -->" href="<!--# echo var="current_page" -->?tema=archive">Arkiv</a>
-          <a class="theme-button <!--# if expr="$theme = /signal/" -->active<!--# endif -->" href="<!--# echo var="current_page" -->?tema=signal">Signal</a>
-          <a class="theme-button <!--# if expr="$theme = /glyph/" -->active<!--# endif -->" href="<!--# echo var="current_page" -->?tema=glyph">Glyf</a>
-        </div>
-      </div>
       <nav class="nav" aria-label="Huvudnavigation">
-        <a class="<!--# if expr="$current_menu = 'index.html'" -->active<!--# endif -->" href="index.html?tema=<!--# echo var="theme" -->">Hem</a>
-        <a class="<!--# if expr="$current_menu = 'texter.html'" -->active<!--# endif -->" href="texter.html?tema=<!--# echo var="theme" -->">Texter</a>
-        <a class="<!--# if expr="$current_menu = 'vad-ar-einismen.html'" -->active<!--# endif -->" href="vad-ar-einismen.html?tema=<!--# echo var="theme" -->">Vad är det?</a>
-        <a class="<!--# if expr="$current_menu = 'pelare.html'" -->active<!--# endif -->" href="pelare.html?tema=<!--# echo var="theme" -->">Pelare</a>
-        <a class="<!--# if expr="$current_menu = 'vardagen.html'" -->active<!--# endif -->" href="vardagen.html?tema=<!--# echo var="theme" -->">Vardagen</a>
-        <a class="<!--# if expr="$current_menu = 'arbete-ledarskap.html'" -->active<!--# endif -->" href="arbete-ledarskap.html?tema=<!--# echo var="theme" -->">Arbete</a>
-        <a class="<!--# if expr="$current_menu = 'etik-konflikter.html'" -->active<!--# endif -->" href="etik-konflikter.html?tema=<!--# echo var="theme" -->">Etik</a>
-        <a class="<!--# if expr="$current_menu = 'fragor-svar.html'" -->active<!--# endif -->" href="fragor-svar.html?tema=<!--# echo var="theme" -->">Frågor</a>
+        <a class="<!--# if expr="$current_menu = /index\.html/" -->active<!--# endif -->" href="index.html">Hem</a>
+        <a class="<!--# if expr="$current_menu = /texter\.html/" -->active<!--# endif -->" href="texter.html">Texter</a>
+        <a class="<!--# if expr="$current_menu = /vad-ar-einismen\.html/" -->active<!--# endif -->" href="vad-ar-einismen.html">Vad är det?</a>
+        <a class="<!--# if expr="$current_menu = /pelare\.html/" -->active<!--# endif -->" href="pelare.html">Pelare</a>
+        <a class="<!--# if expr="$current_menu = /vardagen\.html/" -->active<!--# endif -->" href="vardagen.html">Vardagen</a>
+        <a class="<!--# if expr="$current_menu = /arbete-ledarskap\.html/" -->active<!--# endif -->" href="arbete-ledarskap.html">Arbete</a>
+        <a class="<!--# if expr="$current_menu = /etik-konflikter\.html/" -->active<!--# endif -->" href="etik-konflikter.html">Etik</a>
+        <a class="<!--# if expr="$current_menu = /fragor-svar\.html/" -->active<!--# endif -->" href="fragor-svar.html">Frågor</a>
       </nav>
     </div>
   </div>
