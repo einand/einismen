@@ -8,6 +8,7 @@ Det här repot innehåller den statiska webbplatsen för Einismen och konfigurat
 - Nginx-konfiguration finns i `nginx/default.conf`
 - Container byggs från `Dockerfile`
 - Helm-chart finns i `helm/einismen`
+- Deploy-script finns i `scripts/deploy.sh`
 
 ## Krav
 
@@ -21,7 +22,23 @@ För att deploya själv behöver du ha:
 - cert-manager installerat i klustret
 - `ClusterIssuer` `letsencrypt-prod` installerad om du vill ha HTTPS
 
-## Bygg container
+## Automatisk taggning
+
+Deploy-scriptet skapar automatiskt en image-tagg i formatet:
+
+```text
+YYYYMMDD-HHMMSS-gitsha
+```
+
+Exempel:
+
+```text
+20260319-145500-abc1234
+```
+
+Du kan också sätta en egen tagg via miljövariabeln `IMAGE_TAG`.
+
+## Bygg container manuellt
 
 Bygg imagen lokalt:
 
@@ -47,7 +64,34 @@ Pusha imagen:
 docker push harbor.k3s.k0.nu/lek/einismen-web:<tagg>
 ```
 
-## Deploya med Helm
+## Deploya med script
+
+Production:
+
+```bash
+./scripts/deploy.sh
+```
+
+Staging:
+
+```bash
+./scripts/deploy.sh staging
+```
+
+Med egen image-tagg:
+
+```bash
+IMAGE_TAG=manual-test ./scripts/deploy.sh
+```
+
+Scriptet gör detta:
+
+- bygger imagen
+- pushar imagen till Harbor
+- deployar med Helm
+- väntar på rollout
+
+## Deploya med Helm manuellt
 
 Skapa eller uppdatera releasen i namespace `einsimen`:
 
@@ -119,6 +163,8 @@ einismen.k3s.k0.nu
 
 Om du byter domän behöver du även uppdatera hostnamnet i `helm/einismen/values.yaml`.
 
+För staging används `helm/einismen/values-staging.yaml`.
+
 ## Verifiera sidan
 
 Testa HTTP/HTTPS:
@@ -133,3 +179,5 @@ curl -I https://einismen.k3s.k0.nu/
 - webbserver: `nginx/default.conf`
 - imagebygge: `Dockerfile`
 - deployment: `helm/einismen`
+- staging-värden: `helm/einismen/values-staging.yaml`
+- deploy-script: `scripts/deploy.sh`

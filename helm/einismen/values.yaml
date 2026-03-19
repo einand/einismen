@@ -1,8 +1,8 @@
 replicaCount: 1
 
 image:
-  repository: einismen-web
-  tag: latest
+  repository: harbor.k3s.k0.nu/lek/einismen-web
+  tag: dev
   pullPolicy: IfNotPresent
 
 service:
