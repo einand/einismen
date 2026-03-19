@@ -421,6 +421,13 @@ p {
   padding: 0;
 }
 
+.qa-list,
+.link-list,
+.subnav-list {
+  display: grid;
+  gap: 0.95rem;
+}
+
 .plain-list li,
 .steps li,
 .qa-list li,
@@ -479,12 +486,12 @@ p {
 
 .link-list li,
 .qa-list li {
-  padding-inline: 0.75rem;
+  padding: 0.95rem 0.9rem;
   border-radius: 0.75rem;
 }
 
 .subnav-list li {
-  padding-inline: 0.75rem;
+  padding: 0.95rem 0.9rem;
   border-radius: 0.75rem;
 }
 
