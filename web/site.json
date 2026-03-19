@@ -1,5 +1,19 @@
 {
-  "items": [
+  "brand": {
+    "mark": "Einismen",
+    "title": "Klarhet i en kaotisk värld"
+  },
+  "themes": [
+    { "id": "sand", "label": "Sand" },
+    { "id": "paper", "label": "Papper" },
+    { "id": "stone", "label": "Sten" },
+    { "id": "night", "label": "Natt" },
+    { "id": "ash", "label": "Aska" },
+    { "id": "clay", "label": "Lera" },
+    { "id": "mist", "label": "Dimma" },
+    { "id": "ember", "label": "Glöd" }
+  ],
+  "menu": [
     { "href": "index.html", "label": "Hem" },
     { "href": "texter.html", "label": "Texter" },
     { "href": "vad-ar-einismen.html", "label": "Vad är det?" },
