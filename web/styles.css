@@ -24,6 +24,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -120,6 +126,7 @@ img {
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 0.15rem 0.25rem;
+  max-width: 100%;
 }
 
 .nav a {
@@ -127,6 +134,7 @@ img {
   text-decoration: none;
   color: var(--muted);
   font: 600 0.9rem/1.1 "Segoe UI", sans-serif;
+  min-width: 0;
 }
 
 .nav a.active,
@@ -350,6 +358,7 @@ p {
   position: relative;
   padding: 1rem 1rem 0.15rem;
   border-radius: 0.75rem;
+  min-width: 0;
 }
 
 .split > *::before {
@@ -518,19 +527,13 @@ p {
 
   .nav {
     justify-content: flex-start;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    padding-bottom: 0.2rem;
-    scrollbar-width: none;
-  }
-
-  .nav::-webkit-scrollbar {
-    display: none;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.4rem;
+    padding-bottom: 0;
   }
 
   .nav a {
-    flex: 0 0 auto;
-    white-space: nowrap;
+    white-space: normal;
   }
 }
 
@@ -539,13 +542,46 @@ p {
     width: min(calc(100% - 1rem), var(--max));
   }
 
+  .site-header .shell {
+    gap: 0.75rem;
+    padding: 0.85rem 0;
+  }
+
+  .brand-title {
+    font-size: 0.96rem;
+  }
+
   h1 {
     font-size: clamp(2rem, 12vw, 3.2rem);
+  }
+
+  h2 {
+    font-size: clamp(1.45rem, 8vw, 2rem);
+  }
+
+  h3 {
+    font-size: 1.15rem;
   }
 
   .button,
   .button-secondary {
     width: 100%;
+  }
+
+  .actions {
+    gap: 0.6rem;
+  }
+
+  .hero {
+    gap: 1rem;
+    padding: 1rem 0 1.8rem;
+  }
+
+  .hero-copy,
+  .hero-side,
+  .section,
+  .footer-box {
+    padding-top: 0.9rem;
   }
 
   .split {
@@ -557,7 +593,17 @@ p {
   }
 
   .link-list li,
-  .qa-list li {
+  .qa-list li,
+  .subnav-list li {
     padding: 0.8rem 0.75rem;
+  }
+
+  .image-break {
+    margin-bottom: 1.5rem;
+  }
+
+  .image-break img,
+  .image-break svg {
+    aspect-ratio: 4 / 3;
   }
 }

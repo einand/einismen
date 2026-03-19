@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none" role="img" aria-labelledby="horizon-lines-title horizon-lines-desc">
+  <title id="horizon-lines-title">Öppet landskap med horisontlinjer</title>
+  <desc id="horizon-lines-desc">En avskalad illustration med flera horisontlinjer och en cirkel som antyder sol eller måne.</desc>
   <rect class="sky" width="1600" height="700"/>
   <path class="stone-2" d="M0 377C178 360 316 344 483 353C692 364 885 431 1042 427C1202 422 1380 347 1600 331" stroke-width="3"/>
   <path class="stone-3" d="M0 439C149 438 271 420 410 430C614 445 741 516 916 514C1121 511 1320 423 1600 407" stroke-width="2"/>
