@@ -71,7 +71,7 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  opacity: 0.22;
+  opacity: 0;
   background-image:
     linear-gradient(var(--line) 1px, transparent 1px),
     linear-gradient(90deg, var(--line) 1px, transparent 1px);
@@ -164,33 +164,37 @@ img {
 }
 
 .theme-switcher {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
+  display: grid;
+  justify-items: end;
+  gap: 0.45rem;
   color: var(--muted);
   font: 600 0.8rem/1 "Segoe UI", sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.theme-select {
-  min-width: 10rem;
-  padding: 0.55rem 2.1rem 0.55rem 0.75rem;
-  border: 1px solid var(--line-strong);
+.theme-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.4rem;
+}
+
+.theme-button {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 999px;
   background: var(--bg-soft);
   color: var(--text);
   font: 600 0.88rem/1 "Segoe UI", sans-serif;
-  appearance: none;
-  background-image:
-    linear-gradient(45deg, transparent 50%, var(--muted) 50%),
-    linear-gradient(135deg, var(--muted) 50%, transparent 50%);
-  background-position:
-    calc(100% - 1rem) calc(50% - 0.12rem),
-    calc(100% - 0.7rem) calc(50% - 0.12rem);
-  background-size: 0.36rem 0.36rem, 0.36rem 0.36rem;
-  background-repeat: no-repeat;
+  cursor: pointer;
   transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.theme-button[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--bg-soft);
+  border-color: var(--accent);
 }
 
 main {
@@ -304,7 +308,7 @@ p {
   left: 0;
   right: 0;
   top: 0;
-  border-top: 1px solid var(--line-strong);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .hero-copy,
@@ -343,7 +347,7 @@ p {
 .qa-list li,
 .link-list li {
   padding: 0.85rem 0;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .plain-list li:first-child,
@@ -369,7 +373,9 @@ p {
 
 .split > * {
   position: relative;
-  padding-top: 0.95rem;
+  padding: 1rem 1rem 0;
+  background: transparent;
+  border-radius: 0.75rem;
 }
 
 .split > *::before {
@@ -378,7 +384,31 @@ p {
   top: 0;
   left: 0;
   right: 0;
-  border-top: 1px solid var(--line);
+  border-top: 0;
+}
+
+.split > *:nth-child(even) {
+  background: color-mix(in srgb, var(--bg-soft) 70%, white 30%);
+}
+
+.split > *:nth-child(odd) {
+  background: color-mix(in srgb, var(--paper) 75%, transparent 25%);
+}
+
+.link-list li,
+.qa-list li {
+  padding-inline: 0.75rem;
+  border-radius: 0.75rem;
+}
+
+.link-list li:nth-child(even),
+.qa-list li:nth-child(even) {
+  background: color-mix(in srgb, var(--bg-soft) 72%, white 28%);
+}
+
+.link-list li:nth-child(odd),
+.qa-list li:nth-child(odd) {
+  background: color-mix(in srgb, var(--paper) 78%, transparent 22%);
 }
 
 .span-4 { grid-column: span 4; }
@@ -465,7 +495,6 @@ p {
 
   .button,
   .button-secondary,
-  .theme-select,
   .nav a {
     width: 100%;
   }
@@ -473,5 +502,14 @@ p {
   .theme-switcher {
     display: grid;
     gap: 0.45rem;
+    justify-items: stretch;
+  }
+
+  .theme-buttons {
+    justify-content: stretch;
+  }
+
+  .theme-button {
+    width: 100%;
   }
 }
