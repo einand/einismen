@@ -62,7 +62,7 @@ img {
 }
 
 .shell {
-  width: min(calc(100% - 2rem), var(--content-width));
+  width: min(calc(100% - 2rem), var(--max));
   margin: 0 auto;
 }
 
@@ -217,7 +217,7 @@ p {
   min-height: 46px;
   padding: 0.75rem 1rem;
   border: 1px solid var(--line-strong);
-  border-radius: var(--button-radius);
+  border-radius: 999px;
   text-decoration: none;
   font: 700 0.92rem/1 "Segoe UI", sans-serif;
 }
@@ -255,6 +255,23 @@ p {
 .section,
 .footer-box {
   padding-top: 1.1rem;
+}
+
+.hero-copy,
+.hero-side {
+  padding-bottom: 0.35rem;
+}
+
+.hero-side,
+.image-break,
+.split > *,
+.link-list li,
+.qa-list li,
+.subnav-list li,
+.prose blockquote {
+  background: color-mix(in srgb, var(--paper) 86%, white 14%);
+  border: 1px solid rgba(64, 58, 46, 0.08);
+  box-shadow: 0 10px 24px rgba(80, 64, 39, 0.04);
 }
 
 .hero-side,
@@ -331,8 +348,7 @@ p {
 
 .split > * {
   position: relative;
-  padding: 1rem 1rem 0;
-  background: transparent;
+  padding: 1rem 1rem 0.15rem;
   border-radius: 0.75rem;
 }
 
@@ -346,11 +362,11 @@ p {
 }
 
 .split > *:nth-child(even) {
-  background: color-mix(in srgb, var(--bg-soft) 70%, white 30%);
+  background: color-mix(in srgb, var(--bg-soft) 82%, white 18%);
 }
 
 .split > *:nth-child(odd) {
-  background: color-mix(in srgb, var(--paper) 75%, transparent 25%);
+  background: color-mix(in srgb, var(--paper) 88%, white 12%);
 }
 
 .link-list li,
@@ -366,20 +382,20 @@ p {
 
 .link-list li:nth-child(even),
 .qa-list li:nth-child(even) {
-  background: color-mix(in srgb, var(--bg-soft) 72%, white 28%);
+  background: color-mix(in srgb, var(--bg-soft) 84%, white 16%);
 }
 
 .link-list li:nth-child(odd),
 .qa-list li:nth-child(odd) {
-  background: color-mix(in srgb, var(--paper) 78%, transparent 22%);
+  background: color-mix(in srgb, var(--paper) 90%, white 10%);
 }
 
 .subnav-list li:nth-child(even) {
-  background: color-mix(in srgb, var(--bg-soft) 72%, white 28%);
+  background: color-mix(in srgb, var(--bg-soft) 84%, white 16%);
 }
 
 .subnav-list li:nth-child(odd) {
-  background: color-mix(in srgb, var(--paper) 78%, transparent 22%);
+  background: color-mix(in srgb, var(--paper) 90%, white 10%);
 }
 
 .prose {
@@ -424,8 +440,8 @@ p {
 
 .image-break {
   margin: 0 0 2rem;
-  background: var(--paper);
-  border: 1px solid rgba(64, 58, 46, 0.1);
+  border-radius: 0.9rem;
+  overflow: hidden;
 }
 
 .image-break img {
@@ -452,7 +468,7 @@ p {
 .image-break svg .line-2 { stroke: var(--svg-line-2); }
 
 .image-break figcaption {
-  padding: 0.65rem 0.8rem 0;
+  padding: 0.75rem 0.9rem 0.2rem;
   color: var(--muted);
   font-size: 0.9rem;
 }
