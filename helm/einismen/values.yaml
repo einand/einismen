@@ -24,7 +24,13 @@ ingress:
       hosts:
         - einismen.k3s.k0.nu
 
-resources: {}
+resources:
+  requests:
+    cpu: 25m
+    memory: 32Mi
+  limits:
+    cpu: 100m
+    memory: 128Mi
 
 podSecurityContext:
   runAsNonRoot: true
@@ -40,6 +46,15 @@ containerSecurityContext:
   capabilities:
     drop:
       - ALL
+
+networkPolicy:
+  enabled: true
+  ingressNamespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: ingress-nginx
+  ingressPodSelector:
+    matchLabels:
+      app.kubernetes.io/component: controller
 
 nodeSelector: {}
 tolerations: []
