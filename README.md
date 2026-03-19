@@ -12,6 +12,8 @@ Webbplatsen ska fungera både på desktop och mobiltelefon.
 - Helm-chart finns i `helm/einismen`
 - Deploy-script finns i `scripts/deploy.sh`
 
+Webbplatsen använder rena URL:er utan `.html`, till exempel `/texter` och `/fragor-svar`.
+
 ## Krav
 
 För att deploya själv behöver du ha:
@@ -147,6 +149,45 @@ Vänta tills certifikatet är klart:
 kubectl -n einsimen wait --for=condition=Ready certificate/einismen-tls --timeout=180s
 ```
 
+## Säkerhetshärdning
+
+Deploymenten är härdad för att köra en liten statisk webbplats med så liten attackyta som möjligt.
+
+Detta gäller nu:
+
+- containern kör `nginxinc/nginx-unprivileged`
+- podden kör som icke-root
+- root-filsystemet är read-only
+- alla Linux capabilities droppas
+- privilege escalation är avstängd
+- service account-token mountas inte in i podden
+- `seccompProfile` är satt till `RuntimeDefault`
+- endast ett skrivbart `emptyDir` på `/tmp` används
+- Nginx accepterar bara `GET`
+- andra metoder, som `POST`, returnerar `405`
+- security headers skickas för alla svar
+- `NetworkPolicy` begränsar ingress till ingress-nginx
+- `NetworkPolicy` blockerar egress
+- CPU- och minnesgränser finns i Helm-värdena
+
+Kontrollera poddens säkerhetsinställningar:
+
+```bash
+kubectl -n einsimen get pod -o jsonpath='{range .items[*]}{.metadata.name}{" "}{.spec.automountServiceAccountToken}{" "}{.spec.containers[0].securityContext.readOnlyRootFilesystem}{"\n"}{end}'
+```
+
+Kontrollera att `POST` blockeras:
+
+```bash
+curl -s -o /dev/null -X POST -w "%{http_code}\n" https://einismen.k3s.k0.nu/
+```
+
+Kontrollera headers:
+
+```bash
+curl -s -D - -o /dev/null https://einismen.k3s.k0.nu/
+```
+
 ## Domän
 
 Nuvarande host är:
@@ -156,6 +197,20 @@ einismen.k3s.k0.nu
 ```
 
 Om du byter domän behöver du även uppdatera hostnamnet i `helm/einismen/values.yaml`.
+
+## Rena URL:er
+
+Nginx är konfigurerat för att servera HTML-filer utan att `.html` syns i länkarna.
+
+Exempel:
+
+```text
+/
+/texter
+/vad-ar-einismen
+/pelare
+/fragor-svar
+```
 
 ## Verifiera sidan
 
@@ -180,7 +235,6 @@ När du ändrar webbplatsen ska du behålla responsiv layout för mobil.
 Det gäller särskilt:
 
 - navigation
-- temaväljare
 - knappar
 - sektioner och kolumner
 - bilder och mellanrum

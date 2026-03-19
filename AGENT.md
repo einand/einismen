@@ -31,10 +31,15 @@
 - Helm-chart finns i `helm/einismen`.
 - Webbplatsen deployas till namespace `einsimen`.
 - Ingress-host är `einismen.k3s.k0.nu`.
+- Webbplatsen använder rena URL:er utan `.html` i länkarna.
 - HTTPS är aktiverat via cert-manager och `ClusterIssuer` `letsencrypt-prod`.
 - TLS-certifikatet skapas automatiskt av cert-manager via ingress-shim när ingressen har rätt annotation och `tls.secretName`.
 - Container-imagen pushas till `harbor.k3s.k0.nu/lek/einismen-web`.
 - Deploy-script finns i `scripts/deploy.sh` och bygger, pushar och deployar med automatiska image-taggar.
+- Runtime är härdad med unprivileged Nginx, read-only root filesystem, droppade capabilities, avstängd privilege escalation och ingen monterad service account-token.
+- Nginx accepterar bara `GET` och returnerar `405` för andra metoder.
+- `NetworkPolicy` används för att begränsa ingress till ingress-nginx och blockera egress.
+- Resource requests och limits finns definierade i Helm-värdena.
 
 ## Praktisk sammanfattning
 
