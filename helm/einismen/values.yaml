@@ -12,13 +12,17 @@ service:
 ingress:
   enabled: true
   className: nginx
-  annotations: {}
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
   hosts:
     - host: einismen.k3s.k0.nu
       paths:
         - path: /
           pathType: Prefix
-  tls: []
+  tls:
+    - secretName: einismen-tls
+      hosts:
+        - einismen.k3s.k0.nu
 
 resources: {}
 

@@ -24,9 +24,20 @@
 - Efter användarens revisioner ska ändringar committas och pushas automatiskt.
 - Commit-meddelanden ska vara passande för ändringarna.
 
+## Deploymentstatus
+
+- Webbplatsen är containeriserad med `nginx` via `Dockerfile` och `nginx/default.conf`.
+- Helm-chart finns i `helm/einismen`.
+- Webbplatsen deployas till namespace `einsimen`.
+- Ingress-host är `einismen.k3s.k0.nu`.
+- HTTPS är aktiverat via cert-manager och `ClusterIssuer` `letsencrypt-prod`.
+- TLS-certifikatet skapas automatiskt av cert-manager via ingress-shim när ingressen har rätt annotation och `tls.secretName`.
+- Container-imagen pushas till `harbor.k3s.k0.nu/lek/einismen-web`.
+
 ## Praktisk sammanfattning
 
 - Svenska texter: Unicode.
 - Filnamn och länkar: ASCII.
 - Design: asketisk.
 - Innehåll: kort, enkelt och dokumentationsbaserat.
+- Deploy: Docker + Helm + Kubernetes.
