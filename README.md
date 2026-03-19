@@ -14,6 +14,26 @@ Webbplatsen ska fungera både på desktop och mobiltelefon.
 
 Webbplatsen använder rena URL:er utan `.html`, till exempel `/texter` och `/fragor-svar`.
 
+## Arkitektur
+
+Webbplatsen är byggd som en liten statisk sajt med server-side includes och körs i Kubernetes.
+
+Flödet ser ut så här:
+
+- HTML, CSS, SVG och SSI-partials finns i `web/`
+- Nginx serverar innehållet och hanterar SSI, rena URL:er och säkerhetsheaders
+- containern byggs från `Dockerfile`
+- Helm deployar `Deployment`, `Service`, `Ingress` och `NetworkPolicy`
+- Kubernetes kör webbservern i namespace `einsimen`
+- ingress-nginx publicerar sajten på `einismen.k3s.k0.nu`
+- cert-manager skapar TLS-certifikatet via Let's Encrypt
+
+Kort sagt:
+
+```text
+web/ -> nginx -> container -> Helm -> Kubernetes -> ingress-nginx -> internet
+```
+
 ## Krav
 
 För att deploya själv behöver du ha:

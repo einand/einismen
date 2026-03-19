@@ -41,6 +41,16 @@
 - `NetworkPolicy` används för att begränsa ingress till ingress-nginx och blockera egress.
 - Resource requests och limits finns definierade i Helm-värdena.
 
+## Arkitekturöversikt
+
+- Webbplatsens filer ligger i `web/`.
+- Gemensamma delar återanvänds via Nginx SSI-partials.
+- Nginx serverar rena URL:er, SSI och security headers.
+- Containern byggs från `Dockerfile`.
+- Helm deployar till Kubernetes i namespace `einsimen`.
+- ingress-nginx exponerar sajten externt.
+- cert-manager hanterar HTTPS-certifikatet.
+
 ## Praktisk sammanfattning
 
 - Svenska texter: Unicode.
