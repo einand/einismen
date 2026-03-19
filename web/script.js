@@ -6,6 +6,7 @@
   var themeContainers = Array.prototype.slice.call(document.querySelectorAll("[data-theme-buttons]"));
   var brandMarks = Array.prototype.slice.call(document.querySelectorAll("[data-brand-mark]"));
   var brandTitles = Array.prototype.slice.call(document.querySelectorAll("[data-brand-title]"));
+  var themedImages = Array.prototype.slice.call(document.querySelectorAll(".image-break img[src$='.svg']"));
   var buttons = [];
   var allowed = [];
   var storage = null;
@@ -94,7 +95,37 @@
     });
   }
 
-  fetch("site.json?v=20260319-3")
+  function inlineThemedImages() {
+    themedImages.forEach(function (image) {
+      var src = image.getAttribute("src");
+      if (!src) {
+        return;
+      }
+      fetch(src)
+        .then(function (response) {
+          if (!response.ok) {
+            throw new Error("svg fetch failed");
+          }
+          return response.text();
+        })
+        .then(function (svgText) {
+          var wrapper = document.createElement("div");
+          wrapper.innerHTML = svgText.trim();
+          var svg = wrapper.querySelector("svg");
+          if (!svg) {
+            return;
+          }
+          svg.setAttribute("role", "img");
+          svg.setAttribute("aria-label", image.getAttribute("alt") || "");
+          image.replaceWith(svg);
+        })
+        .catch(function () {});
+    });
+  }
+
+  inlineThemedImages();
+
+  fetch("site.json?v=20260319-4")
       .then(function (response) {
         if (!response.ok) {
           throw new Error("site fetch failed");
