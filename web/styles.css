@@ -97,7 +97,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(236, 228, 214, 0.94);
+  background: color-mix(in srgb, var(--bg) 92%, white 8%);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line-strong);
   transition: background-color 180ms ease, border-color 180ms ease;
@@ -114,7 +114,7 @@ img {
 .header-tools {
   display: grid;
   justify-items: end;
-  gap: 0.7rem;
+  gap: 0.45rem;
 }
 
 .brand {
@@ -166,10 +166,10 @@ img {
 .theme-switcher {
   display: grid;
   justify-items: end;
-  gap: 0.35rem;
+  gap: 0.2rem;
   color: var(--muted);
-  font: 600 0.72rem/1 "Segoe UI", sans-serif;
-  letter-spacing: 0.12em;
+  font: 600 0.65rem/1 "Segoe UI", sans-serif;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
@@ -178,19 +178,19 @@ img {
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 0.2rem;
-  padding: 0.2rem;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 0.16rem;
+  border: 1px solid color-mix(in srgb, var(--line-strong) 70%, transparent 30%);
   border-radius: 999px;
-  background: color-mix(in srgb, var(--bg-soft) 76%, white 24%);
+  background: color-mix(in srgb, var(--paper) 78%, transparent 22%);
 }
 
 .theme-button {
-  padding: 0.42rem 0.68rem;
+  padding: 0.34rem 0.55rem;
   border: 0;
   border-radius: 999px;
   background: transparent;
   color: var(--muted);
-  font: 600 0.8rem/1 "Segoe UI", sans-serif;
+  font: 600 0.74rem/1 "Segoe UI", sans-serif;
   cursor: pointer;
   transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
 }
@@ -204,6 +204,11 @@ img {
 .theme-button:focus-visible {
   background: var(--accent-soft);
   color: var(--text);
+}
+
+.theme-button:focus-visible {
+  outline: 1px solid color-mix(in srgb, var(--accent) 45%, transparent 55%);
+  outline-offset: 1px;
 }
 
 main {
@@ -325,6 +330,14 @@ p {
 .section,
 .footer-box {
   padding-top: 1.1rem;
+}
+
+.hero-side,
+.image-break,
+.split > *,
+.link-list li,
+.qa-list li {
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
 }
 
 .section {
@@ -477,6 +490,7 @@ p {
 
   .header-tools {
     justify-items: stretch;
+    gap: 0.6rem;
   }
 
   .span-4,
@@ -490,6 +504,19 @@ p {
 
   .nav {
     justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.2rem;
+    scrollbar-width: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
   }
 }
 
@@ -503,22 +530,47 @@ p {
   }
 
   .button,
-  .button-secondary,
-  .nav a {
+  .button-secondary {
     width: 100%;
   }
 
   .theme-switcher {
     display: grid;
-    gap: 0.45rem;
-    justify-items: stretch;
+    gap: 0.35rem;
+    justify-items: start;
+  }
+
+  .theme-switcher span {
+    font-size: 0.62rem;
   }
 
   .theme-buttons {
-    justify-content: stretch;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+  }
+
+  .theme-buttons::-webkit-scrollbar {
+    display: none;
   }
 
   .theme-button {
-    width: 100%;
+    width: auto;
+    flex: 0 0 auto;
+  }
+
+  .split {
+    gap: 0.85rem;
+  }
+
+  .split > * {
+    padding: 0.9rem 0.85rem 0.1rem;
+  }
+
+  .link-list li,
+  .qa-list li {
+    padding: 0.8rem 0.75rem;
   }
 }
