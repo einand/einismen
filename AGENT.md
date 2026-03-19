@@ -28,11 +28,8 @@
 
 - Webbplatsen är containeriserad med `nginx` via `Dockerfile` och `nginx/default.conf`.
 - Helm-chart finns i `helm/einismen`.
-- Staging-värden finns i `helm/einismen/values-staging.yaml`.
 - Webbplatsen deployas till namespace `einsimen`.
-- Staging deployas till namespace `einsimen-staging`.
 - Ingress-host är `einismen.k3s.k0.nu`.
-- Staging-host är `staging-einismen.k3s.k0.nu`.
 - HTTPS är aktiverat via cert-manager och `ClusterIssuer` `letsencrypt-prod`.
 - TLS-certifikatet skapas automatiskt av cert-manager via ingress-shim när ingressen har rätt annotation och `tls.secretName`.
 - Container-imagen pushas till `harbor.k3s.k0.nu/lek/einismen-web`.

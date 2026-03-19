@@ -3,7 +3,6 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
-ENVIRONMENT="${1:-production}"
 KUBECONFIG_PATH="${KUBECONFIG:-${HOME}/.kube/config}"
 REGISTRY_REPO="${REGISTRY_REPO:-harbor.k3s.k0.nu/lek/einismen-web}"
 
@@ -14,12 +13,6 @@ image_tag="${IMAGE_TAG:-${timestamp}-${git_sha}}"
 release_name="einismen"
 namespace="einsimen"
 values_file="$ROOT_DIR/helm/einismen/values.yaml"
-
-if [[ "$ENVIRONMENT" == "staging" ]]; then
-  release_name="einismen-staging"
-  namespace="einsimen-staging"
-  values_file="$ROOT_DIR/helm/einismen/values-staging.yaml"
-fi
 
 image_ref="${REGISTRY_REPO}:${image_tag}"
 
@@ -42,7 +35,6 @@ echo "Väntar på rollout"
 kubectl --kubeconfig "$KUBECONFIG_PATH" -n "$namespace" rollout status deployment/$release_name --timeout=180s
 
 echo "Klart"
-echo "Miljö: $ENVIRONMENT"
 echo "Release: $release_name"
 echo "Namespace: $namespace"
 echo "Image: $image_ref"

@@ -66,16 +66,8 @@ docker push harbor.k3s.k0.nu/lek/einismen-web:<tagg>
 
 ## Deploya med script
 
-Production:
-
 ```bash
 ./scripts/deploy.sh
-```
-
-Staging:
-
-```bash
-./scripts/deploy.sh staging
 ```
 
 Med egen image-tagg:
@@ -163,8 +155,6 @@ einismen.k3s.k0.nu
 
 Om du byter domän behöver du även uppdatera hostnamnet i `helm/einismen/values.yaml`.
 
-För staging används `helm/einismen/values-staging.yaml`.
-
 ## Verifiera sidan
 
 Testa HTTP/HTTPS:
@@ -179,5 +169,4 @@ curl -I https://einismen.k3s.k0.nu/
 - webbserver: `nginx/default.conf`
 - imagebygge: `Dockerfile`
 - deployment: `helm/einismen`
-- staging-värden: `helm/einismen/values-staging.yaml`
 - deploy-script: `scripts/deploy.sh`
