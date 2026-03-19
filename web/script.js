@@ -1,5 +1,6 @@
 (function () {
   var root = document.documentElement;
+  var body = document.body;
   var key = "einismen-theme";
   var buttons = Array.prototype.slice.call(document.querySelectorAll("[data-theme-button]"));
   var allowed = ["sand", "paper", "stone", "night"];
@@ -14,6 +15,9 @@
   function applyTheme(theme) {
     var next = allowed.indexOf(theme) >= 0 ? theme : "sand";
     root.setAttribute("data-theme", next);
+    if (body) {
+      body.setAttribute("data-theme", next);
+    }
     buttons.forEach(function (button) {
       var active = button.getAttribute("data-theme-button") === next;
       button.setAttribute("aria-pressed", active ? "true" : "false");
