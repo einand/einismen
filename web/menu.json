@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "href": "index.html", "label": "Hem" },
+    { "href": "texter.html", "label": "Texter" },
+    { "href": "vad-ar-einismen.html", "label": "Vad är det?" },
+    { "href": "pelare.html", "label": "Pelare" },
+    { "href": "vardagen.html", "label": "Vardagen" },
+    { "href": "arbete-ledarskap.html", "label": "Arbete" },
+    { "href": "etik-konflikter.html", "label": "Etik" },
+    { "href": "fragor-svar.html", "label": "Frågor" }
+  ]
+}

@@ -8,6 +8,7 @@
   --muted: #625b4f;
   --accent: #383229;
   --accent-soft: rgba(56, 50, 41, 0.08);
+  --image-filter: saturate(0.58) sepia(0.1) hue-rotate(-8deg) contrast(0.95);
   --max: 1040px;
 }
 
@@ -21,6 +22,7 @@ html[data-theme="paper"] {
   --muted: #746c61;
   --accent: #2d2924;
   --accent-soft: rgba(45, 41, 36, 0.06);
+  --image-filter: grayscale(0.1) brightness(1.03) contrast(0.92);
 }
 
 html[data-theme="stone"] {
@@ -33,6 +35,7 @@ html[data-theme="stone"] {
   --muted: #5c6662;
   --accent: #2a3330;
   --accent-soft: rgba(42, 51, 48, 0.08);
+  --image-filter: grayscale(0.2) hue-rotate(12deg) saturate(0.62) contrast(0.94);
 }
 
 html[data-theme="night"] {
@@ -45,6 +48,59 @@ html[data-theme="night"] {
   --muted: #bcaf97;
   --accent: #e7d8bf;
   --accent-soft: rgba(231, 216, 191, 0.1);
+  --image-filter: grayscale(0.38) brightness(0.68) contrast(1.08) sepia(0.18);
+}
+
+html[data-theme="ash"] {
+  --bg: #e6e5e2;
+  --bg-soft: #f3f2ef;
+  --paper: rgba(249, 249, 247, 0.82);
+  --line: rgba(68, 67, 70, 0.14);
+  --line-strong: rgba(68, 67, 70, 0.25);
+  --text: #232427;
+  --muted: #676a70;
+  --accent: #36383d;
+  --accent-soft: rgba(54, 56, 61, 0.08);
+  --image-filter: grayscale(0.42) brightness(0.98) contrast(0.92);
+}
+
+html[data-theme="clay"] {
+  --bg: #e8ddd4;
+  --bg-soft: #f4ece6;
+  --paper: rgba(249, 242, 236, 0.84);
+  --line: rgba(92, 62, 49, 0.13);
+  --line-strong: rgba(92, 62, 49, 0.24);
+  --text: #2e201a;
+  --muted: #7a6258;
+  --accent: #6c4a3e;
+  --accent-soft: rgba(108, 74, 62, 0.08);
+  --image-filter: sepia(0.28) saturate(0.74) hue-rotate(-10deg) contrast(0.95);
+}
+
+html[data-theme="mist"] {
+  --bg: #dde5e8;
+  --bg-soft: #eef3f4;
+  --paper: rgba(247, 250, 250, 0.82);
+  --line: rgba(58, 74, 79, 0.12);
+  --line-strong: rgba(58, 74, 79, 0.22);
+  --text: #203035;
+  --muted: #607277;
+  --accent: #345058;
+  --accent-soft: rgba(52, 80, 88, 0.08);
+  --image-filter: grayscale(0.18) hue-rotate(22deg) saturate(0.72) brightness(1.02);
+}
+
+html[data-theme="ember"] {
+  --bg: #221a18;
+  --bg-soft: #302320;
+  --paper: rgba(46, 35, 31, 0.88);
+  --line: rgba(229, 197, 168, 0.12);
+  --line-strong: rgba(229, 197, 168, 0.22);
+  --text: #f1dfcf;
+  --muted: #c4a893;
+  --accent: #d38a60;
+  --accent-soft: rgba(211, 138, 96, 0.12);
+  --image-filter: sepia(0.32) saturate(0.82) brightness(0.82) contrast(1.02);
 }
 
 * {
@@ -358,7 +414,8 @@ p {
 .plain-list,
 .steps,
 .qa-list,
-.link-list {
+.link-list,
+.subnav-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -367,7 +424,8 @@ p {
 .plain-list li,
 .steps li,
 .qa-list li,
-.link-list li {
+.link-list li,
+.subnav-list li {
   padding: 0.85rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -375,14 +433,16 @@ p {
 .plain-list li:first-child,
 .steps li:first-child,
 .qa-list li:first-child,
-.link-list li:first-child {
+.link-list li:first-child,
+.subnav-list li:first-child {
   border-top: 0;
   padding-top: 0;
 }
 
 .steps strong,
 .qa-list strong,
-.link-list strong {
+.link-list strong,
+.subnav-list strong {
   display: block;
   margin-bottom: 0.28rem;
   font-size: 1.02rem;
@@ -423,6 +483,11 @@ p {
   border-radius: 0.75rem;
 }
 
+.subnav-list li {
+  padding-inline: 0.75rem;
+  border-radius: 0.75rem;
+}
+
 .link-list li:nth-child(even),
 .qa-list li:nth-child(even) {
   background: color-mix(in srgb, var(--bg-soft) 72%, white 28%);
@@ -431,6 +496,47 @@ p {
 .link-list li:nth-child(odd),
 .qa-list li:nth-child(odd) {
   background: color-mix(in srgb, var(--paper) 78%, transparent 22%);
+}
+
+.subnav-list li:nth-child(even) {
+  background: color-mix(in srgb, var(--bg-soft) 72%, white 28%);
+}
+
+.subnav-list li:nth-child(odd) {
+  background: color-mix(in srgb, var(--paper) 78%, transparent 22%);
+}
+
+.prose {
+  max-width: 52rem;
+}
+
+.prose h2,
+.prose h3 {
+  max-width: none;
+  margin-top: 1.8rem;
+}
+
+.prose p,
+.prose ul,
+.prose ol,
+.prose blockquote {
+  max-width: 44rem;
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.2rem;
+}
+
+.prose li {
+  margin-bottom: 0.45rem;
+}
+
+.prose blockquote {
+  margin: 1.4rem 0;
+  padding: 0.9rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: color-mix(in srgb, var(--paper) 82%, transparent 18%);
 }
 
 .span-4 { grid-column: span 4; }
@@ -450,7 +556,7 @@ p {
   width: 100%;
   aspect-ratio: 16 / 7;
   object-fit: cover;
-  filter: saturate(0.5) contrast(0.92);
+  filter: var(--image-filter);
 }
 
 .image-break figcaption {
