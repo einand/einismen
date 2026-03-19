@@ -7,7 +7,44 @@
   --text: #232019;
   --muted: #625b4f;
   --accent: #383229;
+  --accent-soft: rgba(56, 50, 41, 0.08);
   --max: 1040px;
+}
+
+:root[data-theme="paper"] {
+  --bg: #f4f1ea;
+  --bg-soft: #fcfbf8;
+  --paper: rgba(255, 255, 255, 0.84);
+  --line: rgba(55, 52, 47, 0.14);
+  --line-strong: rgba(55, 52, 47, 0.24);
+  --text: #201d18;
+  --muted: #6a645a;
+  --accent: #2f2c27;
+  --accent-soft: rgba(47, 44, 39, 0.07);
+}
+
+:root[data-theme="stone"] {
+  --bg: #dfddd7;
+  --bg-soft: #efeee9;
+  --paper: rgba(247, 247, 243, 0.72);
+  --line: rgba(48, 50, 50, 0.18);
+  --line-strong: rgba(48, 50, 50, 0.3);
+  --text: #1f2222;
+  --muted: #5e6461;
+  --accent: #2f3432;
+  --accent-soft: rgba(47, 52, 50, 0.08);
+}
+
+:root[data-theme="night"] {
+  --bg: #191817;
+  --bg-soft: #23211f;
+  --paper: rgba(38, 35, 32, 0.82);
+  --line: rgba(225, 214, 194, 0.13);
+  --line-strong: rgba(225, 214, 194, 0.24);
+  --text: #ece2d0;
+  --muted: #b5a891;
+  --accent: #e3d5be;
+  --accent-soft: rgba(227, 213, 190, 0.1);
 }
 
 * {
@@ -66,10 +103,16 @@ img {
 
 .site-header .shell {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr minmax(0, 2fr);
   gap: 1rem;
   align-items: center;
   padding: 1rem 0;
+}
+
+.header-tools {
+  display: grid;
+  justify-items: end;
+  gap: 0.7rem;
 }
 
 .brand {
@@ -101,11 +144,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 0.25rem;
+  gap: 0.15rem 0.25rem;
 }
 
 .nav a {
-  padding: 0.55rem 0.7rem;
+  padding: 0.45rem 0.55rem;
   text-decoration: none;
   color: var(--muted);
   font: 600 0.9rem/1.1 "Segoe UI", sans-serif;
@@ -115,6 +158,36 @@ img {
 .nav a:hover,
 .nav a:focus-visible {
   color: var(--text);
+  background: var(--accent-soft);
+}
+
+.theme-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--muted);
+  font: 600 0.8rem/1 "Segoe UI", sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.theme-select {
+  min-width: 10rem;
+  padding: 0.55rem 2.1rem 0.55rem 0.75rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--bg-soft);
+  color: var(--text);
+  font: 600 0.88rem/1 "Segoe UI", sans-serif;
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+    linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position:
+    calc(100% - 1rem) calc(50% - 0.12rem),
+    calc(100% - 0.7rem) calc(50% - 0.12rem);
+  background-size: 0.36rem 0.36rem, 0.36rem 0.36rem;
+  background-repeat: no-repeat;
 }
 
 main {
@@ -150,19 +223,23 @@ h3 {
   margin: 0 0 0.75rem;
   line-height: 1.08;
   font-weight: 400;
+  text-wrap: balance;
 }
 
 h1 {
   max-width: 10ch;
   font-size: clamp(2.5rem, 5.4vw, 4.8rem);
+  letter-spacing: -0.035em;
 }
 
 h2 {
   font-size: clamp(1.7rem, 3vw, 2.4rem);
+  letter-spacing: -0.025em;
 }
 
 h3 {
-  font-size: 1.12rem;
+  font-size: 1.28rem;
+  letter-spacing: -0.02em;
 }
 
 p {
@@ -171,7 +248,8 @@ p {
 }
 
 .lead {
-  font-size: 1.12rem;
+  max-width: 42rem;
+  font-size: 1.16rem;
 }
 
 .muted {
@@ -242,6 +320,12 @@ p {
   margin-bottom: 1rem;
 }
 
+.section-head h2,
+.section > h1,
+.section > h2 {
+  max-width: 18ch;
+}
+
 .plain-list,
 .steps,
 .qa-list,
@@ -271,11 +355,27 @@ p {
 .qa-list strong,
 .link-list strong {
   display: block;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.28rem;
+  font-size: 1.02rem;
 }
 
 .split {
   grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1.6rem 2rem;
+}
+
+.split > * {
+  position: relative;
+  padding-top: 0.95rem;
+}
+
+.split > *::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid var(--line);
 }
 
 .span-4 { grid-column: span 4; }
@@ -333,6 +433,10 @@ p {
     grid-template-columns: 1fr;
   }
 
+  .header-tools {
+    justify-items: stretch;
+  }
+
   .span-4,
   .span-5,
   .span-6,
@@ -358,7 +462,13 @@ p {
 
   .button,
   .button-secondary,
+  .theme-select,
   .nav a {
     width: 100%;
+  }
+
+  .theme-switcher {
+    display: grid;
+    gap: 0.45rem;
   }
 }

@@ -6,6 +6,7 @@
     <title>Einismens pelare</title>
     <meta name="description" content="De viktigaste pelarna i Einismen.">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -14,15 +15,26 @@
           <span class="brand-mark">Einismen</span>
           <span class="brand-title">Klarhet i en kaotisk värld</span>
         </a>
-        <nav class="nav" aria-label="Huvudnavigation">
-          <a href="index.html">Hem</a>
-          <a href="vad-ar-einismen.html">Vad är det?</a>
-          <a class="active" href="pelare.html">Pelare</a>
-          <a href="vardagen.html">Vardagen</a>
-          <a href="arbete-ledarskap.html">Arbete</a>
-          <a href="etik-konflikter.html">Etik</a>
-          <a href="fragor-svar.html">Frågor</a>
-        </nav>
+        <div class="header-tools">
+          <label class="theme-switcher" for="theme-select">
+            <span>Tema</span>
+            <select id="theme-select" class="theme-select" data-theme-select>
+              <option value="sand">Sand</option>
+              <option value="paper">Papper</option>
+              <option value="stone">Sten</option>
+              <option value="night">Natt</option>
+            </select>
+          </label>
+          <nav class="nav" aria-label="Huvudnavigation">
+            <a href="index.html">Hem</a>
+            <a href="vad-ar-einismen.html">Vad är det?</a>
+            <a class="active" href="pelare.html">Pelare</a>
+            <a href="vardagen.html">Vardagen</a>
+            <a href="arbete-ledarskap.html">Arbete</a>
+            <a href="etik-konflikter.html">Etik</a>
+            <a href="fragor-svar.html">Frågor</a>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
