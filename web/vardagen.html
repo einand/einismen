@@ -1,29 +1,17 @@
+<!--# set var="current_page" value="vardagen.html" -->
+<!--# set var="current_menu" value="vardagen.html" -->
+<!--# include virtual="partials/theme-vars.html" -->
 <!doctype html>
-<html lang="sv">
+<html lang="sv" data-theme="<!--# echo var="theme" -->">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Einismen i vardagen</title>
     <meta name="description" content="Hur Einismen syns i vardagen.">
-    <link rel="stylesheet" href="styles.css?v=20260319-5">
-    <script src="script.js?v=20260319-5" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260319-ssi1">
   </head>
   <body>
-    <header class="site-header">
-      <div class="shell">
-        <a class="brand" href="index.html">
-          <span class="brand-mark" data-brand-mark></span>
-          <span class="brand-title" data-brand-title></span>
-        </a>
-        <div class="header-tools">
-          <div class="theme-switcher">
-            <span>Visning</span>
-            <div class="theme-buttons" aria-label="Temaval" data-theme-buttons></div>
-          </div>
-          <nav class="nav" aria-label="Huvudnavigation" data-menu data-current="vardagen.html"></nav>
-        </div>
-      </div>
-    </header>
+    <!--# include virtual="partials/header.html" -->
     <main>
       <div class="shell">
         <section class="section">
@@ -33,7 +21,7 @@
         </section>
 
         <figure class="image-break">
-          <img src="media/stone-field.svg" alt="Stenigt fält i ett öppet landskap">
+          <!--# include virtual="media/stone-field.svg" -->
           <figcaption>Yta, tålamod, små steg.</figcaption>
         </figure>
 

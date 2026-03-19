@@ -415,6 +415,9 @@ img {
 }
 
 .theme-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.34rem 0.55rem;
   border: 0;
   border-radius: var(--theme-radius);
@@ -422,10 +425,12 @@ img {
   color: var(--muted);
   font: 600 0.74rem/1 "Segoe UI", sans-serif;
   cursor: pointer;
+  text-decoration: none;
   transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
 }
 
-.theme-button[aria-pressed="true"] {
+.theme-button[aria-pressed="true"],
+.theme-button.active {
   background: var(--accent);
   color: var(--bg-soft);
 }
