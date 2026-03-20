@@ -133,6 +133,7 @@ Flödet ser ut så här:
 - HTML, CSS, SVG och SSI-partials finns i `web/`
 - katalogstrukturen i `web/` följer menystrukturen för webbplatsen
 - den engelska speglingen ligger i `web/en/` med översatta URL-segment och en egen SSI-header
+- varje engelsk sida ska spegla sin svenska motsvarighet i struktur, ordning och innehåll, med endast språk och slugskillnader som avviker
 - Nginx serverar innehållet och hanterar SSI, rena URL:er och säkerhetsheaders
 - toppmenyn är en ren CSS-lösning med dropdown för undersidor
 - `Texter` används för längre primärtexter medan `I detalj` fungerar som en mer systematisk uppslagsstruktur
@@ -384,6 +385,7 @@ curl -I https://einismen.k3s.k0.nu/
 - `web/sitemap.xml`, `web/sitemap-sv.xml` och `web/sitemap-en.xml` används för indexering av båda språkversionerna
 - alla svenska och engelska sidor har canonical- och hreflang-taggar för bättre SEO och språkmatchning
 - `LANGUAGE_MAP.md` dokumenterar vilka svenska och engelska URL:er som hör ihop
+- vid ändringar i innehåll ska motsvarande språkpar hållas synkade utifrån `LANGUAGE_MAP.md`
 
 ## Mobilstöd
 
