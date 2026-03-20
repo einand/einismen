@@ -140,6 +140,7 @@ Flödet ser ut så här:
 - `Praktik` samlar vardag, arbete och etik under en gemensam tillämpningsnivå
 - `web/sitemap.xml`, `web/sitemap-sv.xml` och `web/sitemap-en.xml` innehåller `lastmod` baserat på sidfilernas ändringstid
 - publika svenska och engelska sidor innehåller JSON-LD för `WebPage`, och startsidorna innehåller även `Organization` och `WebSite`
+- sidtitlar är standardiserade med tydligt ämne följt av `| Einismen`
 - containern byggs från `Dockerfile`
 - Helm deployar `Deployment`, `Service`, `Ingress` och `NetworkPolicy`
 - Kubernetes kör webbservern i namespace `einsimen`
