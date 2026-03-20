@@ -114,6 +114,7 @@ git checkout main && git pull --ff-only origin main
 
 - Webbplatsfiler finns i `web/`
 - Engelska versionen finns under `web/en/`
+- Språkkartläggning finns i `LANGUAGE_MAP.md`
 - Nginx-konfiguration finns i `nginx/default.conf`
 - Container byggs från `Dockerfile`
 - Helm-chart finns i `helm/einismen`
@@ -382,6 +383,7 @@ curl -I https://einismen.k3s.k0.nu/
 - `nginx/default.conf` omdirigerar `/en` till `/en/` och låter rena URL:er fungera för båda språken
 - `web/sitemap.xml`, `web/sitemap-sv.xml` och `web/sitemap-en.xml` används för indexering av båda språkversionerna
 - alla svenska och engelska sidor har canonical- och hreflang-taggar för bättre SEO och språkmatchning
+- `LANGUAGE_MAP.md` dokumenterar vilka svenska och engelska URL:er som hör ihop
 
 ## Mobilstöd
 
