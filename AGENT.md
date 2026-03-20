@@ -38,6 +38,7 @@
 - Efter merge ska arbetsbranchen tas bort både lokalt och på remote när det är lämpligt.
 - När en arbetsbranch skapas ska branchnamnet också skrivas i den relevanta issuen i Gitea.
 - Gitea-issues får gärna använda HTML när det gör strukturen tydligare, snyggare och lättare att följa.
+- Issuekommentaren när arbetet är klart ska i sak motsvara samma klarsammanfattning som ges till användaren.
 
 ## Standardkommandon
 
