@@ -36,6 +36,20 @@
 - Svenska tickets och issues ska använda riktig Unicode, inklusive `å`, `ä` och `ö`.
 - Flödet är: skapa issue om den inte finns, skapa branch från `main`, gör ändringar, uppdatera issue, skapa pull request till `main`, verifiera, mergea pull request, deploya `main`, kommentera resultat och stäng issue.
 
+## Standardkommandon
+
+- Skapa issue: `tea-cli issues create --repo lek/einismen --title "..." --description "..." --labels opencode`
+- Kommentera issue: `tea-cli comment --repo lek/einismen <issue-index> "..."`
+- Stäng issue: `tea-cli issues close --repo lek/einismen <issue-index>`
+- Skapa branch: `git checkout -b "opencode/issue-<nummer>-<kort-namn>"`
+- Visa status: `git status --short --branch`
+- Commit: `git add <filer> && GIT_AUTHOR_NAME="Ein Andersson" GIT_AUTHOR_EMAIL="einand@k0.nu" GIT_COMMITTER_NAME="Ein Andersson" GIT_COMMITTER_EMAIL="einand@k0.nu" git commit -m "..."`
+- Pusha branch: `git push -u origin "opencode/issue-<nummer>-<kort-namn>"`
+- Skapa PR: `tea-cli pulls create --repo lek/einismen --head <branch> --base main --title "..." --description "..."`
+- Mergea PR: `tea-cli pr merge --repo lek/einismen --style merge --message "..." <pr-index>`
+- Uppdatera lokal main: `git checkout main && git pull --ff-only origin main`
+- Deploya main: `./scripts/deploy.sh`
+
 ## Deploymentstatus
 
 - Webbplatsen är containeriserad med `nginx` via `Dockerfile` och `nginx/default.conf`.

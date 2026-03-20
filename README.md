@@ -34,6 +34,63 @@ Projektet använder ett branch- och PR-baserat flöde:
 - deploya därefter `main`
 - kommentera resultatet och stäng issue
 
+### Standardkommandon
+
+Skapa issue:
+
+```bash
+tea-cli issues create --repo lek/einismen --title "..." --description "..." --labels opencode
+```
+
+Kommentera och stäng issue:
+
+```bash
+tea-cli comment --repo lek/einismen <issue-index> "..."
+tea-cli issues close --repo lek/einismen <issue-index>
+```
+
+Skapa branch från `main`:
+
+```bash
+git checkout -b "opencode/issue-<nummer>-<kort-namn>"
+```
+
+Commit med etablerad identitet:
+
+```bash
+git add <filer>
+GIT_AUTHOR_NAME="Ein Andersson" \
+GIT_AUTHOR_EMAIL="einand@k0.nu" \
+GIT_COMMITTER_NAME="Ein Andersson" \
+GIT_COMMITTER_EMAIL="einand@k0.nu" \
+git commit -m "..."
+```
+
+Pusha branch:
+
+```bash
+git push -u origin "opencode/issue-<nummer>-<kort-namn>"
+```
+
+Skapa pull request:
+
+```bash
+tea-cli pulls create --repo lek/einismen --head <branch> --base main --title "..." --description "..."
+```
+
+Mergea pull request:
+
+```bash
+tea-cli pr merge --repo lek/einismen --style merge --message "..." <pr-index>
+```
+
+Uppdatera lokal `main` och deploya:
+
+```bash
+git checkout main && git pull --ff-only origin main
+./scripts/deploy.sh
+```
+
 ## Innehåll
 
 - Webbplatsfiler finns i `web/`
