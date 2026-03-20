@@ -29,6 +29,7 @@
 - När användaren ber om att kontrollera issues i Gitea ska issues i `lek/einismen` granskas.
 - **VIKTIGT: Arbeta bara på issues som har labeln `opencode`. Issues utan denna label ska inte prioriteras, genomföras eller ens påbörjas förrän användaren explicit sätter labeln.**
 - Om en issue har labeln `opencode` ska den prioriteras, genomföras och därefter kommenteras och stängas när arbetet är klart.
+- Arbeta med en issue i taget. Varje issue ska ha en egen arbetsbranch, egen pull request och eget avslut innan nästa issue påbörjas.
 - Även när användaren ger en uppgift direkt i chatten ska en issue skapas i `lek/einismen` med labeln `opencode` innan eller i samband med att arbetet utförs.
 - Issues ska skrivas som user stories eller så nära användarens egen formulering som möjligt.
 - Allt arbete som utförs i projektet ska ha en motsvarande issue i `lek/einismen`.
@@ -36,6 +37,7 @@
 - Undvik formuleringar som "användaren vill" i issues. Skriv i stället som en beställning eller arbetsbeskrivning.
 - Svenska tickets och issues ska använda riktig Unicode, inklusive `å`, `ä` och `ö`.
 - När en sida ändras på ett språk ska motsvarande sida på alla andra språk som finns också uppdateras, om en sådan motsvarighet finns.
+- Språkväxling, hreflang, canonical och övrig språkmetadata ska hållas konsekvent mellan språkversionerna när en sida ändras.
 - Flödet är: skapa issue om den inte finns, skapa branch från `main`, gör ändringar, uppdatera issue, skapa pull request till `main`, verifiera, mergea pull request, deploya `main`, kommentera resultat och stäng issue.
 - Efter merge ska arbetsbranchen tas bort både lokalt och på remote när det är lämpligt.
 - När en arbetsbranch skapas ska branchnamnet också skrivas i den relevanta issuen i Gitea.
