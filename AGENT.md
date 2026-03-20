@@ -35,6 +35,7 @@
 - Issues får gärna skrivas om för att bli tydligare och lättare att följa, men de ska formuleras som user stories eller rena tickets.
 - Undvik formuleringar som "användaren vill" i issues. Skriv i stället som en beställning eller arbetsbeskrivning.
 - Svenska tickets och issues ska använda riktig Unicode, inklusive `å`, `ä` och `ö`.
+- När en sida ändras på ett språk ska motsvarande sida på alla andra språk som finns också uppdateras, om en sådan motsvarighet finns.
 - Flödet är: skapa issue om den inte finns, skapa branch från `main`, gör ändringar, uppdatera issue, skapa pull request till `main`, verifiera, mergea pull request, deploya `main`, kommentera resultat och stäng issue.
 - Efter merge ska arbetsbranchen tas bort både lokalt och på remote när det är lämpligt.
 - När en arbetsbranch skapas ska branchnamnet också skrivas i den relevanta issuen i Gitea.
