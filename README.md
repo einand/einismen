@@ -139,6 +139,7 @@ Flödet ser ut så här:
 - `Texter` används för längre primärtexter medan `I detalj` fungerar som en mer systematisk uppslagsstruktur
 - `Praktik` samlar vardag, arbete och etik under en gemensam tillämpningsnivå
 - `web/sitemap.xml`, `web/sitemap-sv.xml` och `web/sitemap-en.xml` innehåller `lastmod` baserat på sidfilernas ändringstid
+- publika svenska och engelska sidor innehåller JSON-LD för `WebPage`, och startsidorna innehåller även `Organization` och `WebSite`
 - containern byggs från `Dockerfile`
 - Helm deployar `Deployment`, `Service`, `Ingress` och `NetworkPolicy`
 - Kubernetes kör webbservern i namespace `einsimen`
