@@ -36,6 +36,7 @@
 - Svenska tickets och issues ska använda riktig Unicode, inklusive `å`, `ä` och `ö`.
 - Flödet är: skapa issue om den inte finns, skapa branch från `main`, gör ändringar, uppdatera issue, skapa pull request till `main`, verifiera, mergea pull request, deploya `main`, kommentera resultat och stäng issue.
 - När en arbetsbranch skapas ska branchnamnet också skrivas i den relevanta issuen i Gitea.
+- Gitea-issues får gärna använda HTML när det gör strukturen tydligare, snyggare och lättare att följa.
 
 ## Standardkommandon
 
