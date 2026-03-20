@@ -6,15 +6,55 @@
     </a>
     <div class="header-tools">
       <nav class="nav" aria-label="Huvudnavigation">
-        <a class="<!--# if expr="$current_menu = /index\.html/" -->active<!--# endif -->" href="/">Hem</a>
-        <a class="<!--# if expr="$current_menu = /texter\.html/" -->active<!--# endif -->" href="/texter">Texter</a>
-        <a class="<!--# if expr="$current_menu = /i-detalj\.html/" -->active<!--# endif -->" href="/i-detalj">I detalj</a>
-        <a class="<!--# if expr="$current_menu = /vad-ar-einismen\.html/" -->active<!--# endif -->" href="/vad-ar-einismen">Vad är det?</a>
-        <a class="<!--# if expr="$current_menu = /pelare\.html/" -->active<!--# endif -->" href="/pelare">Pelare</a>
-        <a class="<!--# if expr="$current_menu = /vardagen\.html/" -->active<!--# endif -->" href="/vardagen">Vardagen</a>
-        <a class="<!--# if expr="$current_menu = /arbete-ledarskap\.html/" -->active<!--# endif -->" href="/arbete-ledarskap">Arbete</a>
-        <a class="<!--# if expr="$current_menu = /etik-konflikter\.html/" -->active<!--# endif -->" href="/etik-konflikter">Etik</a>
-        <a class="<!--# if expr="$current_menu = /fragor-svar\.html/" -->active<!--# endif -->" href="/fragor-svar">Frågor</a>
+        <a class="nav-link <!--# if expr="$current_menu = /index\.html/" -->active<!--# endif -->" href="/">Hem</a>
+
+        <div class="nav-item has-dropdown">
+          <a class="nav-link <!--# if expr="$current_menu = /texter\.html/" -->active<!--# endif -->" href="/texter">Texter</a>
+          <div class="nav-dropdown">
+            <a href="/texter">Översikt</a>
+            <a href="/texter/grunder">Grunder</a>
+            <a href="/texter/metod">Metod</a>
+            <a href="/texter/livshallning">Livshållning</a>
+            <a href="/texter/manifest">Manifest</a>
+            <a href="/texter/grunddokument">Grunddokument</a>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a class="nav-link <!--# if expr="$current_menu = /i-detalj\.html/" -->active<!--# endif -->" href="/i-detalj">I detalj</a>
+          <div class="nav-dropdown">
+            <a href="/i-detalj">Översikt</a>
+            <a href="/i-detalj/om-filosofin">Om filosofin</a>
+            <a href="/i-detalj/karnideer">Kärnidéer</a>
+            <a href="/i-detalj/varderingar">Värderingar</a>
+            <a href="/i-detalj/mal-och-ideal">Mål och ideal</a>
+            <a href="/i-detalj/etik-och-principer">Etik och principer</a>
+            <a href="/i-detalj/praktisk-tillampning">Praktisk tillämpning</a>
+            <a href="/i-detalj/resonemang-och-logik">Resonemang och logik</a>
+            <a href="/i-detalj/exempel">Exempel</a>
+            <a href="/i-detalj/kritik-och-invandningar">Kritik och invändningar</a>
+            <a href="/i-detalj/sammanfattning">Sammanfattning</a>
+          </div>
+        </div>
+
+        <a class="nav-link <!--# if expr="$current_menu = /vad-ar-einismen\.html/" -->active<!--# endif -->" href="/vad-ar-einismen">Vad är det?</a>
+
+        <div class="nav-item has-dropdown">
+          <a class="nav-link <!--# if expr="$current_menu = /pelare\.html/" -->active<!--# endif -->" href="/pelare">Pelare</a>
+          <div class="nav-dropdown">
+            <a href="/pelare">Översikt</a>
+            <a href="/pelare/kaos">Acceptera kaoset</a>
+            <a href="/pelare/inre-styrka">Inre styrka</a>
+            <a href="/pelare/frihet">Frihet</a>
+            <a href="/pelare/ordens-varde">Ordens värde</a>
+            <a href="/pelare/forandring">Förändring</a>
+          </div>
+        </div>
+
+        <a class="nav-link <!--# if expr="$current_menu = /vardagen\.html/" -->active<!--# endif -->" href="/vardagen">Vardagen</a>
+        <a class="nav-link <!--# if expr="$current_menu = /arbete-ledarskap\.html/" -->active<!--# endif -->" href="/arbete-ledarskap">Arbete</a>
+        <a class="nav-link <!--# if expr="$current_menu = /etik-konflikter\.html/" -->active<!--# endif -->" href="/etik-konflikter">Etik</a>
+        <a class="nav-link <!--# if expr="$current_menu = /fragor-svar\.html/" -->active<!--# endif -->" href="/fragor-svar">Frågor</a>
       </nav>
     </div>
   </div>
