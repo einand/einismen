@@ -26,6 +26,7 @@ Projektet använder ett branch- och PR-baserat flöde:
 
 - skapa issue om den inte redan finns
 - skapa en branch från `main`
+- skriv branchnamnet i issuen
 - genomför ändringar
 - uppdatera issue med vad som gjorts
 - skapa pull request till `main`
@@ -53,6 +54,12 @@ Skapa branch från `main`:
 
 ```bash
 git checkout -b "opencode/issue-<nummer>-<kort-namn>"
+```
+
+Skriv branchnamnet i issuen:
+
+```bash
+tea-cli comment --repo lek/einismen <issue-index> "Arbetar i branch: opencode/issue-<nummer>-<kort-namn>"
 ```
 
 Commit med etablerad identitet:
