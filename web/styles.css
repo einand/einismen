@@ -176,6 +176,19 @@ img {
   min-width: 0;
 }
 
+.nav-link-parent {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+}
+
+.nav-link-parent::after {
+  content: "▾";
+  color: color-mix(in srgb, var(--muted) 82%, var(--text) 18%);
+  font-size: 0.68rem;
+  transform: translateY(-0.02rem);
+}
+
 .nav-link.active,
 .nav-link:hover,
 .nav-link:focus-visible,
@@ -216,6 +229,14 @@ img {
   background: color-mix(in srgb, var(--paper) 94%, white 6%);
   box-shadow: var(--panel-shadow);
   z-index: 30;
+}
+
+.nav-dropdown-label {
+  padding: 0.25rem 0.55rem 0.45rem;
+  color: var(--muted);
+  font: 700 0.68rem/1 "Segoe UI", sans-serif;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .nav-dropdown a {
