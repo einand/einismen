@@ -208,11 +208,10 @@ h3 {
 
 p {
   margin: 0 0 1rem;
-  max-width: 65ch;
+  max-width: none;
 }
 
 .lead {
-  max-width: 42rem;
   font-size: 1.16rem;
 }
 
@@ -426,7 +425,7 @@ p {
 .prose ul,
 .prose ol,
 .prose blockquote {
-  max-width: 44rem;
+  max-width: none;
 }
 
 .prose ul,
