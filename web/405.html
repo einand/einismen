@@ -4,7 +4,7 @@
 <html lang="sv">
   <head>
     <meta charset="utf-8">
-    <link rel="preload" href="/styles.css?v=e678cf8" as="style">
+    <link rel="preload" href="/styles.css?v=7e286dc" as="style">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#383229">
@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <link rel="stylesheet" href="/styles.css?v=e678cf8">
+    <link rel="stylesheet" href="/styles.css?v=7e286dc">
   </head>
   <body>
     <nav class="error-nav">
@@ -31,6 +31,7 @@
           <div class="error-code">405</div>
           <h1>Begäran kunde inte behandlas</h1>
           <p class="lead">Den här webbplatsen accepterar bara vanliga sidvisningar för publikt innehåll.</p>
+          <p class="error-url">Begärd url: <!--# echo var="request_uri" --></p>
         </section>
 
         <section class="error-grid">
