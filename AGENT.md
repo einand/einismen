@@ -35,6 +35,7 @@
 - Undvik formuleringar som "användaren vill" i issues. Skriv i stället som en beställning eller arbetsbeskrivning.
 - Svenska tickets och issues ska använda riktig Unicode, inklusive `å`, `ä` och `ö`.
 - Flödet är: skapa issue om den inte finns, skapa branch från `main`, gör ändringar, uppdatera issue, skapa pull request till `main`, verifiera, mergea pull request, deploya `main`, kommentera resultat och stäng issue.
+- Efter merge ska arbetsbranchen tas bort både lokalt och på remote när det är lämpligt.
 - När en arbetsbranch skapas ska branchnamnet också skrivas i den relevanta issuen i Gitea.
 - Gitea-issues får gärna använda HTML när det gör strukturen tydligare, snyggare och lättare att följa.
 
@@ -51,6 +52,8 @@
 - Skapa PR: `tea-cli pulls create --repo lek/einismen --head <branch> --base main --title "..." --description "..."`
 - Mergea PR: `tea-cli pr merge --repo lek/einismen --style merge --message "..." <pr-index>`
 - Uppdatera lokal main: `git checkout main && git pull --ff-only origin main`
+- Ta bort branch lokalt: `git branch -d "opencode/issue-<nummer>-<kort-namn>"`
+- Ta bort branch på remote: `git push origin --delete "opencode/issue-<nummer>-<kort-namn>"`
 - Deploya main: `./scripts/deploy.sh`
 
 ## Deploymentstatus

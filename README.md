@@ -34,6 +34,7 @@ Projektet använder ett branch- och PR-baserat flöde:
 - skapa pull request till `main`
 - verifiera att ändringarna ser bra ut
 - mergea pull requesten till `main`
+- ta bort arbetsbranchen lokalt och på remote
 - deploya därefter `main`
 - kommentera resultatet och stäng issue
 
@@ -91,6 +92,13 @@ Mergea pull request:
 
 ```bash
 tea-cli pr merge --repo lek/einismen --style merge --message "..." <pr-index>
+```
+
+Ta bort arbetsbranch efter merge:
+
+```bash
+git branch -d "opencode/issue-<nummer>-<kort-namn>"
+git push origin --delete "opencode/issue-<nummer>-<kort-namn>"
 ```
 
 Uppdatera lokal `main` och deploya:
