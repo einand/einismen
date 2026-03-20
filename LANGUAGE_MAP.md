@@ -46,17 +46,17 @@ Keep it updated whenever:
 
 | Svenska | Engelska | Finska |
 | --- | --- | --- |
-| `/sv/i-detalj` | `/en/in-detail` | `/fi/i-detalj` |
-| `/sv/i-detalj/om-filosofin` | `/en/in-detail/about-the-philosophy` | `/fi/i-detalj/om-filosofin` |
-| `/sv/i-detalj/karnideer` | `/en/in-detail/core-ideas` | `/fi/i-detalj/karnideer` |
-| `/sv/i-detalj/varderingar` | `/en/in-detail/values` | `/fi/i-detalj/varderingar` |
-| `/sv/i-detalj/mal-och-ideal` | `/en/in-detail/goals-and-ideals` | `/fi/i-detalj/mal-och-ideal` |
-| `/sv/i-detalj/etik-och-principer` | `/en/in-detail/ethics-and-principles` | `/fi/i-detalj/etik-och-principer` |
-| `/sv/i-detalj/praktisk-tillampning` | `/en/in-detail/practical-application` | `/fi/i-detalj/praktisk-tillampning` |
-| `/sv/i-detalj/resonemang-och-logik` | `/en/in-detail/reasoning-and-logic` | `/fi/i-detalj/resonemang-och-logik` |
-| `/sv/i-detalj/exempel` | `/en/in-detail/examples` | `/fi/i-detalj/exempel` |
-| `/sv/i-detalj/kritik-och-invandningar` | `/en/in-detail/criticism-and-objections` | `/fi/i-detalj/kritik-och-invandningar` |
-| `/sv/i-detalj/sammanfattning` | `/en/in-detail/summary` | `/fi/i-detalj/sammanfattning` |
+| `/sv/i-detalj` | `/en/in-detail` | `/fi/yksityiskohtaisesti` |
+| `/sv/i-detalj/om-filosofin` | `/en/in-detail/about-the-philosophy` | `/fi/yksityiskohtaisesti/om-filosofin` |
+| `/sv/i-detalj/karnideer` | `/en/in-detail/core-ideas` | `/fi/yksityiskohtaisesti/karnideer` |
+| `/sv/i-detalj/varderingar` | `/en/in-detail/values` | `/fi/yksityiskohtaisesti/varderingar` |
+| `/sv/i-detalj/mal-och-ideal` | `/en/in-detail/goals-and-ideals` | `/fi/yksityiskohtaisesti/mal-och-ideal` |
+| `/sv/i-detalj/etik-och-principer` | `/en/in-detail/ethics-and-principles` | `/fi/yksityiskohtaisesti/etik-och-principer` |
+| `/sv/i-detalj/praktisk-tillampning` | `/en/in-detail/practical-application` | `/fi/yksityiskohtaisesti/praktisk-tillampning` |
+| `/sv/i-detalj/resonemang-och-logik` | `/en/in-detail/reasoning-and-logic` | `/fi/yksityiskohtaisesti/resonemang-och-logik` |
+| `/sv/i-detalj/exempel` | `/en/in-detail/examples` | `/fi/yksityiskohtaisesti/exempel` |
+| `/sv/i-detalj/kritik-och-invandningar` | `/en/in-detail/criticism-and-objections` | `/fi/yksityiskohtaisesti/kritik-och-invandningar` |
+| `/sv/i-detalj/sammanfattning` | `/en/in-detail/summary` | `/fi/yksityiskohtaisesti/sammanfattning` |
 
 ## Notes
 
@@ -92,14 +92,14 @@ This section mirrors the URL map with the actual page files used in the repo.
 | `web/sv/texter/livshallning/index.html` | `web/en/texts/life-stance/index.html` | `web/fi/texter/elamankatsomus/index.html` |
 | `web/sv/texter/manifest/index.html` | `web/en/texts/manifesto/index.html` | `web/fi/texter/manifesti/index.html` |
 | `web/sv/texter/grunddokument/index.html` | `web/en/texts/foundation-document/index.html` | `web/fi/texter/perusasiakirja/index.html` |
-| `web/sv/i-detalj/index.html` | `web/en/in-detail/index.html` | `web/fi/i-detalj/index.html` |
-| `web/sv/i-detalj/om-filosofin/index.html` | `web/en/in-detail/about-the-philosophy/index.html` | `web/fi/i-detalj/om-filosofin/index.html` |
-| `web/sv/i-detalj/karnideer/index.html` | `web/en/in-detail/core-ideas/index.html` | `web/fi/i-detalj/karnideer/index.html` |
-| `web/sv/i-detalj/varderingar/index.html` | `web/en/in-detail/values/index.html` | `web/fi/i-detalj/varderingar/index.html` |
-| `web/sv/i-detalj/mal-och-ideal/index.html` | `web/en/in-detail/goals-and-ideals/index.html` | `web/fi/i-detalj/mal-och-ideal/index.html` |
-| `web/sv/i-detalj/etik-och-principer/index.html` | `web/en/in-detail/ethics-and-principles/index.html` | `web/fi/i-detalj/etik-och-principer/index.html` |
-| `web/sv/i-detalj/praktisk-tillampning/index.html` | `web/en/in-detail/practical-application/index.html` | `web/fi/i-detalj/praktisk-tillampning/index.html` |
-| `web/sv/i-detalj/resonemang-och-logik/index.html` | `web/en/in-detail/reasoning-and-logic/index.html` | `web/fi/i-detalj/resonemang-och-logik/index.html` |
-| `web/sv/i-detalj/exempel/index.html` | `web/en/in-detail/examples/index.html` | `web/fi/i-detalj/exempel/index.html` |
-| `web/sv/i-detalj/kritik-och-invandningar/index.html` | `web/en/in-detail/criticism-and-objections/index.html` | `web/fi/i-detalj/kritik-och-invandningar/index.html` |
-| `web/sv/i-detalj/sammanfattning/index.html` | `web/en/in-detail/summary/index.html` | `web/fi/i-detalj/sammanfattning/index.html` |
+| `web/sv/i-detalj/index.html` | `web/en/in-detail/index.html` | `web/fi/yksityiskohtaisesti/index.html` |
+| `web/sv/i-detalj/om-filosofin/index.html` | `web/en/in-detail/about-the-philosophy/index.html` | `web/fi/yksityiskohtaisesti/om-filosofin/index.html` |
+| `web/sv/i-detalj/karnideer/index.html` | `web/en/in-detail/core-ideas/index.html` | `web/fi/yksityiskohtaisesti/karnideer/index.html` |
+| `web/sv/i-detalj/varderingar/index.html` | `web/en/in-detail/values/index.html` | `web/fi/yksityiskohtaisesti/varderingar/index.html` |
+| `web/sv/i-detalj/mal-och-ideal/index.html` | `web/en/in-detail/goals-and-ideals/index.html` | `web/fi/yksityiskohtaisesti/mal-och-ideal/index.html` |
+| `web/sv/i-detalj/etik-och-principer/index.html` | `web/en/in-detail/ethics-and-principles/index.html` | `web/fi/yksityiskohtaisesti/etik-och-principer/index.html` |
+| `web/sv/i-detalj/praktisk-tillampning/index.html` | `web/en/in-detail/practical-application/index.html` | `web/fi/yksityiskohtaisesti/praktisk-tillampning/index.html` |
+| `web/sv/i-detalj/resonemang-och-logik/index.html` | `web/en/in-detail/reasoning-and-logic/index.html` | `web/fi/yksityiskohtaisesti/resonemang-och-logik/index.html` |
+| `web/sv/i-detalj/exempel/index.html` | `web/en/in-detail/examples/index.html` | `web/fi/yksityiskohtaisesti/exempel/index.html` |
+| `web/sv/i-detalj/kritik-och-invandningar/index.html` | `web/en/in-detail/criticism-and-objections/index.html` | `web/fi/yksityiskohtaisesti/kritik-och-invandningar/index.html` |
+| `web/sv/i-detalj/sammanfattning/index.html` | `web/en/in-detail/summary/index.html` | `web/fi/yksityiskohtaisesti/sammanfattning/index.html` |
