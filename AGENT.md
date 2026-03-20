@@ -31,6 +31,9 @@
 - Även när användaren ger en uppgift direkt i chatten ska en issue skapas i `lek/einismen` med labeln `opencode` innan eller i samband med att arbetet utförs.
 - Issues ska skrivas som user stories eller så nära användarens egen formulering som möjligt.
 - Allt arbete som utförs i projektet ska ha en motsvarande issue i `lek/einismen`.
+- Issues får gärna skrivas om för att bli tydligare och lättare att följa, men de ska formuleras som user stories eller rena tickets.
+- Undvik formuleringar som "användaren vill" i issues. Skriv i stället som en beställning eller arbetsbeskrivning.
+- Svenska tickets och issues ska använda riktig Unicode, inklusive `å`, `ä` och `ö`.
 
 ## Deploymentstatus
 

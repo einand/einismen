@@ -16,6 +16,10 @@ Issues ska skrivas som user stories eller med formuleringar som ligger mycket n�
 
 Allt arbete som utförs i projektet ska ha en motsvarande issue i `lek/einismen`.
 
+Issues får gärna skrivas om för att bli tydligare och lättare att följa, men de ska skrivas som user stories eller rena tickets. Undvik formuleringar som "användaren vill" och skriv i stället som en konkret beställning eller arbetsuppgift.
+
+Tickets och issues på svenska ska använda riktig Unicode, inklusive `å`, `ä` och `ö`.
+
 ## Innehåll
 
 - Webbplatsfiler finns i `web/`
