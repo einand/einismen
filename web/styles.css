@@ -446,6 +446,25 @@ p {
   padding-bottom: var(--space-4);
 }
 
+.error-nav {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.error-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font: 700 0.75rem/1 "Segoe UI", sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.error-nav a:hover {
+  color: var(--text);
+}
+
 .error-shell {
   min-height: 100vh;
   display: grid;
