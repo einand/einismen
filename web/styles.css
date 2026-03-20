@@ -989,3 +989,9 @@ p {
     aspect-ratio: 4 / 3;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
