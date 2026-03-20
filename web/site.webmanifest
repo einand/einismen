@@ -2,7 +2,7 @@
   "name": "Einismen",
   "short_name": "Einismen",
   "description": "En filosofi om klarhet, ansvar och förbättring i en kaotisk värld.",
-  "start_url": "/",
+  "start_url": "/sv/",
   "display": "standalone",
   "background_color": "#ece4d6",
   "theme_color": "#383229",
