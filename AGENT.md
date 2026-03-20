@@ -98,6 +98,16 @@
 - ingress-nginx exponerar sajten externt.
 - cert-manager hanterar HTTPS-certifikatet.
 
+## Översättningar
+
+- Översättningar görs via `scripts/translate.sh <lang-code>` (t.ex. `fi`, `de`, `fr`).
+- Översättningar använder Gemini AI via `GEMINI_API_KEY` i `.env`.
+- Se `GEMINI-HOWTO.md` för hur du skapar en API-nyckel.
+- Testa API-nyckeln med `scripts/test-gemini-key.sh` innan översättning.
+- Översättningsscriptet skapar en branch per språk och översätter alla 30 svenska sidor.
+- Språkstruktur: `/<lang>/` (t.ex. `/fi/`, `/de/`, `/fr/`).
+- Supported languages: da, fi, de, fr, el, hu, ga, it, lv, lt, mt, nl, pl, pt, ro, sk, sl, es, cs, hr, bg, et.
+
 ## Praktisk sammanfattning
 
 - Svenska texter: Unicode.
@@ -105,6 +115,6 @@
 - Design: asketisk.
 - Innehåll: kort, enkelt och dokumentationsbaserat.
 - Mobilstöd: obligatoriskt.
-- Språkstruktur: `/sv/` för svenska, `/en/` för engelska.
+- Språkstruktur: `/sv/` för svenska, `/en/` för engelska, `/<lang>/` för nya språk.
 - Deploy: Docker + Helm + Kubernetes.
 - Dokumentation: ska uppdateras före varje commit.
