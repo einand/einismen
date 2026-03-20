@@ -10,6 +10,8 @@ När nya förbättringar, uppföljningar eller arbetsuppgifter identifieras ska 
 
 Om användaren ber om att kontrollera issues i Gitea ska issues i `lek/einismen` granskas. Om en issue har labeln `opencode` ska den arbetas på, och när arbetet är klart ska en kommentar lämnas på issuen innan den stängs.
 
+Även uppgifter som användaren ger direkt i chatten ska vid behov registreras som en issue i `lek/einismen` med labeln `opencode`.
+
 ## Innehåll
 
 - Webbplatsfiler finns i `web/`
