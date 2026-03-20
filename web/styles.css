@@ -493,6 +493,13 @@ p {
   text-transform: uppercase;
 }
 
+.error-url {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  word-break: break-all;
+}
+
 .error-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
