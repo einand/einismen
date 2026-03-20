@@ -14,6 +14,8 @@ Om användaren ber om att kontrollera issues i Gitea ska issues i `lek/einismen`
 
 Issues ska skrivas som user stories eller med formuleringar som ligger mycket nära hur användaren själv beskrev uppgiften.
 
+Allt arbete som utförs i projektet ska ha en motsvarande issue i `lek/einismen`.
+
 ## Innehåll
 
 - Webbplatsfiler finns i `web/`
