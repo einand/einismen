@@ -4,6 +4,9 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 KUBECONFIG_PATH="${KUBECONFIG:-${HOME}/.kube/config}"
+
+echo "Uppdaterar cache-bust version..."
+"$ROOT_DIR/scripts/update-cache-bust.sh"
 REGISTRY_REPO="${REGISTRY_REPO:-harbor.k3s.k0.nu/lek/einismen-web}"
 
 timestamp="$(date +%Y%m%d-%H%M%S)"
