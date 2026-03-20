@@ -90,9 +90,9 @@ This section mirrors the URL map with the actual page files used in the repo.
 | `web/sv/texter/index.html` | `web/en/texts/index.html` | `web/fi/tekstit/index.html` |
 | `web/sv/texter/grunder/index.html` | `web/en/texts/basics/index.html` | `web/fi/tekstit/perusteet/index.html` |
 | `web/sv/texter/metod/index.html` | `web/en/texts/method/index.html` | `web/fi/tekstit/metodi/index.html` |
-| `web/sv/texter/livshallning/index.html` | `web/en/texts/life-stance/index.html` | `web/fi/texter/elamankatsomus/index.html` |
-| `web/sv/texter/manifest/index.html` | `web/en/texts/manifesto/index.html` | `web/fi/texter/manifesti/index.html` |
-| `web/sv/texter/grunddokument/index.html` | `web/en/texts/foundation-document/index.html` | `web/fi/texter/perusasiakirja/index.html` |
+| `web/sv/texter/livshallning/index.html` | `web/en/texts/life-stance/index.html` | `web/fi/tekstit/elamankatsomus/index.html` |
+| `web/sv/texter/manifest/index.html` | `web/en/texts/manifesto/index.html` | `web/fi/tekstit/manifesti/index.html` |
+| `web/sv/texter/grunddokument/index.html` | `web/en/texts/foundation-document/index.html` | `web/fi/tekstit/perusasiakirja/index.html` |
 | `web/sv/i-detalj/index.html` | `web/en/in-detail/index.html` | `web/fi/yksityiskohtaisesti/index.html` |
 | `web/sv/i-detalj/om-filosofin/index.html` | `web/en/in-detail/about-the-philosophy/index.html` | `web/fi/yksityiskohtaisesti/filosofiasta/index.html` |
 | `web/sv/i-detalj/karnideer/index.html` | `web/en/in-detail/core-ideas/index.html` | `web/fi/yksityiskohtaisesti/paidea/index.html` |
