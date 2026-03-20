@@ -316,7 +316,6 @@ main {
   padding: 0 0 var(--space-4);
 }
 
-.eyebrow,
 .mini-label {
   display: inline-block;
   margin-bottom: 0.8rem;
