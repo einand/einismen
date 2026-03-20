@@ -22,6 +22,8 @@ Tickets och issues på svenska ska använda riktig Unicode, inklusive `å`, `ä`
 
 Gitea-issues får gärna använda HTML när det gör strukturen tydligare, snyggare och lättare att följa.
 
+När arbetet är klart ska issuekommentaren i sak motsvara samma klarsammanfattning som ges till användaren.
+
 ## Arbetsflöde
 
 Projektet använder ett branch- och PR-baserat flöde:
