@@ -8,6 +8,8 @@ Dokumentationen ska hållas aktuell. Uppdatera därför `README.md` och annan re
 
 När nya förbättringar, uppföljningar eller arbetsuppgifter identifieras ska de vid behov skrivas som issues i repot `lek/einismen`.
 
+Om användaren ber om att kontrollera issues i Gitea ska issues i `lek/einismen` granskas. Om en issue har labeln `opencode` ska den arbetas på, och när arbetet är klart ska en kommentar lämnas på issuen innan den stängs.
+
 ## Innehåll
 
 - Webbplatsfiler finns i `web/`

@@ -26,6 +26,8 @@
 - Commit-meddelanden ska vara passande för ändringarna.
 - Innan varje commit ska dokumentationen uppdateras så att den beskriver aktuell struktur, drift och arbetssätt.
 - Nya arbetsuppgifter, förbättringar och uppföljningar ska skrivas som issues i `lek/einismen` när det är relevant.
+- När användaren ber om att kontrollera issues i Gitea ska issues i `lek/einismen` granskas.
+- Om en issue har labeln `opencode` ska den prioriteras, genomföras och därefter kommenteras och stängas när arbetet är klart.
 
 ## Deploymentstatus
 
