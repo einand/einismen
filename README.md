@@ -141,6 +141,7 @@ Flödet ser ut så här:
 - `web/sitemap.xml`, `web/sitemap-sv.xml` och `web/sitemap-en.xml` innehåller `lastmod` baserat på sidfilernas ändringstid
 - publika svenska och engelska sidor innehåller JSON-LD för `WebPage`, och startsidorna innehåller även `Organization` och `WebSite`
 - sidtitlar är standardiserade med tydligt ämne följt av `| Einismen`
+- publika sidor deklarerar `theme-color`, `color-scheme` och grundläggande metadata för mobil web app-visning
 - containern byggs från `Dockerfile`
 - Helm deployar `Deployment`, `Service`, `Ingress` och `NetworkPolicy`
 - Kubernetes kör webbservern i namespace `einsimen`
