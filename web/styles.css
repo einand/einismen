@@ -431,9 +431,8 @@ p {
 }
 
 .subnav-list li {
-  padding: var(--panel-padding);
-  border-radius: var(--panel-radius);
-  border-top: 0;
+  padding: 0.95rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .link-list li:nth-child(even),
@@ -446,12 +445,9 @@ p {
   background: var(--panel-fill-a);
 }
 
-.subnav-list li:nth-child(even) {
-  background: var(--panel-fill-b);
-}
-
-.subnav-list li:nth-child(odd) {
-  background: var(--panel-fill-a);
+.subnav-list li:first-child {
+  border-top: 0;
+  padding-top: 0;
 }
 
 .prose {
@@ -650,9 +646,12 @@ p {
   }
 
   .link-list li,
-  .qa-list li,
-  .subnav-list li {
+  .qa-list li {
     padding: 0.85rem 0.8rem;
+  }
+
+  .subnav-list li {
+    padding: 0.8rem 0;
   }
 
   .image-break {
