@@ -6,9 +6,71 @@
       <span class="brand-title">Klarhet i en kaotisk värld</span>
     </a>
     <div class="header-tools">
+      <!--# set var="lang_target" value="/en/" -->
+      <!--# if expr='$current_page = /index\.html/' -->
+        <!--# set var="lang_target" value="/en/" -->
+      <!--# elif expr='$current_page = /vad-ar-einismen\.html/' -->
+        <!--# set var="lang_target" value="/en/what-is-einismen" -->
+      <!--# elif expr='$current_page = /fragor-svar\.html/' -->
+        <!--# set var="lang_target" value="/en/qa" -->
+      <!--# elif expr='$current_page = /praktik\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/practice" -->
+      <!--# elif expr='$current_page = /vardagen\.html/' -->
+        <!--# set var="lang_target" value="/en/everyday-life" -->
+      <!--# elif expr='$current_page = /arbete-ledarskap\.html/' -->
+        <!--# set var="lang_target" value="/en/work-and-leadership" -->
+      <!--# elif expr='$current_page = /etik-konflikter\.html/' -->
+        <!--# set var="lang_target" value="/en/ethics-and-conflicts" -->
+      <!--# elif expr='$current_page = /pelare\.html/' -->
+        <!--# set var="lang_target" value="/en/pillars" -->
+      <!--# elif expr='$current_page = /pelare\/kaos\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/pillars/chaos" -->
+      <!--# elif expr='$current_page = /pelare\/inre-styrka\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/pillars/inner-strength" -->
+      <!--# elif expr='$current_page = /pelare\/frihet\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/pillars/freedom" -->
+      <!--# elif expr='$current_page = /pelare\/ordens-varde\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/pillars/weight-of-words" -->
+      <!--# elif expr='$current_page = /pelare\/forandring\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/pillars/change" -->
+      <!--# elif expr='$current_page = /texter\.html/' -->
+        <!--# set var="lang_target" value="/en/texts" -->
+      <!--# elif expr='$current_page = /texter\/grunder\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/texts/basics" -->
+      <!--# elif expr='$current_page = /texter\/metod\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/texts/method" -->
+      <!--# elif expr='$current_page = /texter\/livshallning\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/texts/life-stance" -->
+      <!--# elif expr='$current_page = /texter\/manifest\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/texts/manifesto" -->
+      <!--# elif expr='$current_page = /texter\/grunddokument\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/texts/foundation-document" -->
+      <!--# elif expr='$current_page = /i-detalj\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/in-detail" -->
+      <!--# elif expr='$current_page = /i-detalj\/om-filosofin\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/in-detail/about-the-philosophy" -->
+      <!--# elif expr='$current_page = /i-detalj\/karnideer\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/in-detail/core-ideas" -->
+      <!--# elif expr='$current_page = /i-detalj\/varderingar\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/in-detail/values" -->
+      <!--# elif expr='$current_page = /i-detalj\/mal-och-ideal\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/in-detail/goals-and-ideals" -->
+      <!--# elif expr='$current_page = /i-detalj\/etik-och-principer\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/in-detail/ethics-and-principles" -->
+      <!--# elif expr='$current_page = /i-detalj\/praktisk-tillampning\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/in-detail/practical-application" -->
+      <!--# elif expr='$current_page = /i-detalj\/resonemang-och-logik\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/in-detail/reasoning-and-logic" -->
+      <!--# elif expr='$current_page = /i-detalj\/exempel\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/in-detail/examples" -->
+      <!--# elif expr='$current_page = /i-detalj\/kritik-och-invandningar\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/in-detail/criticism-and-objections" -->
+      <!--# elif expr='$current_page = /i-detalj\/sammanfattning\/index\.html/' -->
+        <!--# set var="lang_target" value="/en/in-detail/summary" -->
+      <!--# endif -->
       <div class="lang-switch" aria-label="Språkval">
         <a class="active" href="/">SV</a>
-        <a href="<!--# if expr="$current_page = /index\.html/" -->/en/<!--# elif expr="$current_page = /vad-ar-einismen\.html/" -->/en/what-is-einismen<!--# elif expr="$current_page = /fragor-svar\.html/" -->/en/qa<!--# elif expr="$current_page = /praktik\/index\.html/" -->/en/practice<!--# elif expr="$current_page = /vardagen\.html/" -->/en/everyday-life<!--# elif expr="$current_page = /arbete-ledarskap\.html/" -->/en/work-and-leadership<!--# elif expr="$current_page = /etik-konflikter\.html/" -->/en/ethics-and-conflicts<!--# elif expr="$current_page = /pelare\.html/" -->/en/pillars<!--# elif expr="$current_page = /pelare\/kaos\/index\.html/" -->/en/pillars/chaos<!--# elif expr="$current_page = /pelare\/inre-styrka\/index\.html/" -->/en/pillars/inner-strength<!--# elif expr="$current_page = /pelare\/frihet\/index\.html/" -->/en/pillars/freedom<!--# elif expr="$current_page = /pelare\/ordens-varde\/index\.html/" -->/en/pillars/weight-of-words<!--# elif expr="$current_page = /pelare\/forandring\/index\.html/" -->/en/pillars/change<!--# elif expr="$current_page = /texter\.html/" -->/en/texts<!--# elif expr="$current_page = /texter\/grunder\/index\.html/" -->/en/texts/basics<!--# elif expr="$current_page = /texter\/metod\/index\.html/" -->/en/texts/method<!--# elif expr="$current_page = /texter\/livshallning\/index\.html/" -->/en/texts/life-stance<!--# elif expr="$current_page = /texter\/manifest\/index\.html/" -->/en/texts/manifesto<!--# elif expr="$current_page = /texter\/grunddokument\/index\.html/" -->/en/texts/foundation-document<!--# elif expr="$current_page = /i-detalj\/index\.html/" -->/en/in-detail<!--# elif expr="$current_page = /i-detalj\/om-filosofin\/index\.html/" -->/en/in-detail/about-the-philosophy<!--# elif expr="$current_page = /i-detalj\/karnideer\/index\.html/" -->/en/in-detail/core-ideas<!--# elif expr="$current_page = /i-detalj\/varderingar\/index\.html/" -->/en/in-detail/values<!--# elif expr="$current_page = /i-detalj\/mal-och-ideal\/index\.html/" -->/en/in-detail/goals-and-ideals<!--# elif expr="$current_page = /i-detalj\/etik-och-principer\/index\.html/" -->/en/in-detail/ethics-and-principles<!--# elif expr="$current_page = /i-detalj\/praktisk-tillampning\/index\.html/" -->/en/in-detail/practical-application<!--# elif expr="$current_page = /i-detalj\/resonemang-och-logik\/index\.html/" -->/en/in-detail/reasoning-and-logic<!--# elif expr="$current_page = /i-detalj\/exempel\/index\.html/" -->/en/in-detail/examples<!--# elif expr="$current_page = /i-detalj\/kritik-och-invandningar\/index\.html/" -->/en/in-detail/criticism-and-objections<!--# elif expr="$current_page = /i-detalj\/sammanfattning\/index\.html/" -->/en/in-detail/summary<!--# else -->/en/<!--# endif -->">EN</a>
+        <a href="$lang_target">EN</a>
       </div>
       <div class="nav-panel">
         <input class="nav-toggle-input" id="nav-toggle-sv" type="checkbox">
