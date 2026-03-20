@@ -29,6 +29,7 @@
 - När användaren ber om att kontrollera issues i Gitea ska issues i `lek/einismen` granskas.
 - Om en issue har labeln `opencode` ska den prioriteras, genomföras och därefter kommenteras och stängas när arbetet är klart.
 - Även när användaren ger en uppgift direkt i chatten ska en issue skapas i `lek/einismen` med labeln `opencode` innan eller i samband med att arbetet utförs.
+- Issues ska skrivas som user stories eller så nära användarens egen formulering som möjligt.
 
 ## Deploymentstatus
 

@@ -12,6 +12,8 @@ Om användaren ber om att kontrollera issues i Gitea ska issues i `lek/einismen`
 
 Även uppgifter som användaren ger direkt i chatten ska vid behov registreras som en issue i `lek/einismen` med labeln `opencode`.
 
+Issues ska skrivas som user stories eller med formuleringar som ligger mycket nära hur användaren själv beskrev uppgiften.
+
 ## Innehåll
 
 - Webbplatsfiler finns i `web/`
