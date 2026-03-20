@@ -509,6 +509,29 @@ p {
   margin-bottom: var(--space-2);
 }
 
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.55rem;
+  margin-bottom: var(--space-2);
+  color: var(--muted);
+  font: 700 0.76rem/1.2 "Segoe UI", sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+}
+
+.breadcrumbs span[aria-current="page"] {
+  color: var(--text);
+}
+
+.breadcrumbs .sep {
+  color: color-mix(in srgb, var(--muted) 70%, transparent 30%);
+}
+
 .section-head h2,
 .section > h1,
 .section > h2 {
