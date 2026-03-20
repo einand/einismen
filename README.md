@@ -113,12 +113,15 @@ git checkout main && git pull --ff-only origin main
 ## Innehåll
 
 - Webbplatsfiler finns i `web/`
+- Engelska versionen finns under `web/en/`
 - Nginx-konfiguration finns i `nginx/default.conf`
 - Container byggs från `Dockerfile`
 - Helm-chart finns i `helm/einismen`
 - Deploy-script finns i `scripts/deploy.sh`
 
 Webbplatsen använder rena URL:er utan `.html`, till exempel `/texter` och `/fragor-svar`.
+
+Den svenska versionen ligger kvar på roten `/` medan den engelska versionen ligger under `/en/`.
 
 ## Arkitektur
 
@@ -128,6 +131,7 @@ Flödet ser ut så här:
 
 - HTML, CSS, SVG och SSI-partials finns i `web/`
 - katalogstrukturen i `web/` följer menystrukturen för webbplatsen
+- den engelska speglingen ligger i `web/en/` med översatta URL-segment och en egen SSI-header
 - Nginx serverar innehållet och hanterar SSI, rena URL:er och säkerhetsheaders
 - toppmenyn är en ren CSS-lösning med dropdown för undersidor
 - `Texter` används för längre primärtexter medan `I detalj` fungerar som en mer systematisk uppslagsstruktur
@@ -366,6 +370,15 @@ curl -I https://einismen.k3s.k0.nu/
 - `I detalj` bryter ned filosofin i tematiska undersidor
 - `Praktik` samlar tillämpningssidorna `Vardagen`, `Arbete` och `Etik`
 - `Frågor` är grupperad i ämnesblock för snabbare översikt
+- den engelska strukturen speglar samma innehåll under `/en/` med `Texts`, `In detail`, `Pillars`, `Practice` och `Questions`
+
+## Tvåspråkig struktur
+
+- svenska ligger på roten, till exempel `/`, `/pelare` och `/i-detalj`
+- engelska ligger under `/en/`, till exempel `/en/`, `/en/pillars` och `/en/in-detail`
+- språkväljaren finns i både `web/partials/header.html` och `web/en/partials/header.html`
+- `web/styles.css` och `web/media/` delas mellan båda språken
+- `nginx/default.conf` omdirigerar `/en` till `/en/` och låter rena URL:er fungera för båda språken
 
 ## Mobilstöd
 

@@ -5,10 +5,14 @@
       <span class="brand-title">Klarhet i en kaotisk värld</span>
     </a>
     <div class="header-tools">
+      <div class="lang-switch" aria-label="Språkval">
+        <a class="active" href="/">SV</a>
+        <a href="/en/">EN</a>
+      </div>
       <nav class="nav" aria-label="Huvudnavigation">
         <a class="nav-link <!--# if expr="$current_menu = /index\.html/" -->active<!--# endif -->" href="/">Hem</a>
 
-        <div class="nav-item has-dropdown">
+        <div class="nav-item has-dropdown <!--# if expr="$current_menu = /texter\.html/" -->active<!--# endif -->">
           <a class="nav-link <!--# if expr="$current_menu = /texter\.html/" -->active<!--# endif -->" href="/texter">Texter</a>
           <div class="nav-dropdown">
             <a href="/texter/grunder">Grunder</a>
@@ -19,7 +23,7 @@
           </div>
         </div>
 
-        <div class="nav-item has-dropdown">
+        <div class="nav-item has-dropdown <!--# if expr="$current_menu = /i-detalj\.html/" -->active<!--# endif -->">
           <a class="nav-link <!--# if expr="$current_menu = /i-detalj\.html/" -->active<!--# endif -->" href="/i-detalj">I detalj</a>
           <div class="nav-dropdown">
             <a href="/i-detalj/om-filosofin">Om filosofin</a>
@@ -37,7 +41,7 @@
 
         <a class="nav-link <!--# if expr="$current_menu = /vad-ar-einismen\.html/" -->active<!--# endif -->" href="/vad-ar-einismen">Vad är det?</a>
 
-        <div class="nav-item has-dropdown">
+        <div class="nav-item has-dropdown <!--# if expr="$current_menu = /pelare\.html/" -->active<!--# endif -->">
           <a class="nav-link <!--# if expr="$current_menu = /pelare\.html/" -->active<!--# endif -->" href="/pelare">Pelare</a>
           <div class="nav-dropdown">
             <a href="/pelare/kaos">Acceptera kaoset</a>
@@ -48,7 +52,7 @@
           </div>
         </div>
 
-        <div class="nav-item has-dropdown">
+        <div class="nav-item has-dropdown <!--# if expr="$current_menu = /praktik\.html/" -->active<!--# endif -->">
           <a class="nav-link <!--# if expr="$current_menu = /praktik\.html/" -->active<!--# endif -->" href="/praktik">Praktik</a>
           <div class="nav-dropdown">
             <a href="/vardagen">Vardagen</a>
