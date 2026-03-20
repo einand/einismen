@@ -529,6 +529,45 @@ p {
   color: var(--muted);
 }
 
+.site-footer {
+  margin-top: auto;
+  padding: var(--space-3) 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-1);
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-links a,
+.footer-lang a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-lang a:hover {
+  color: var(--text);
+}
+
+.footer-lang {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer-copy {
+  color: var(--muted);
+}
+
 .section-head {
   max-width: 42rem;
   margin-bottom: var(--space-2);
