@@ -7,6 +7,9 @@ KUBECONFIG_PATH="${KUBECONFIG:-${HOME}/.kube/config}"
 
 echo "Uppdaterar cache-bust version..."
 "$ROOT_DIR/scripts/update-cache-bust.sh"
+
+echo "Uppdaterar sitemap lastmod..."
+"$ROOT_DIR/scripts/update-sitemap.sh"
 REGISTRY_REPO="${REGISTRY_REPO:-harbor.k3s.k0.nu/lek/einismen-web}"
 
 timestamp="$(date +%Y%m%d-%H%M%S)"
