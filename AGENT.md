@@ -25,6 +25,7 @@
 - Efter användarens revisioner ska ändringar committas och pushas automatiskt.
 - Commit-meddelanden ska vara passande för ändringarna.
 - Innan varje commit ska dokumentationen uppdateras så att den beskriver aktuell struktur, drift och arbetssätt.
+- Nya arbetsuppgifter, förbättringar och uppföljningar ska skrivas som issues i `lek/einismen` när det är relevant.
 
 ## Deploymentstatus
 

@@ -6,6 +6,8 @@ Webbplatsen ska fungera både på desktop och mobiltelefon.
 
 Dokumentationen ska hållas aktuell. Uppdatera därför `README.md` och annan relevant dokumentation innan varje commit när struktur, drift eller arbetssätt förändras.
 
+När nya förbättringar, uppföljningar eller arbetsuppgifter identifieras ska de vid behov skrivas som issues i repot `lek/einismen`.
+
 ## Innehåll
 
 - Webbplatsfiler finns i `web/`
