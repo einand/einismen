@@ -48,9 +48,15 @@
           </div>
         </div>
 
-        <a class="nav-link <!--# if expr="$current_menu = /vardagen\.html/" -->active<!--# endif -->" href="/vardagen">Vardagen</a>
-        <a class="nav-link <!--# if expr="$current_menu = /arbete-ledarskap\.html/" -->active<!--# endif -->" href="/arbete-ledarskap">Arbete</a>
-        <a class="nav-link <!--# if expr="$current_menu = /etik-konflikter\.html/" -->active<!--# endif -->" href="/etik-konflikter">Etik</a>
+        <div class="nav-item has-dropdown">
+          <a class="nav-link <!--# if expr="$current_menu = /praktik\.html/" -->active<!--# endif -->" href="/praktik">Praktik</a>
+          <div class="nav-dropdown">
+            <a href="/vardagen">Vardagen</a>
+            <a href="/arbete-ledarskap">Arbete</a>
+            <a href="/etik-konflikter">Etik</a>
+          </div>
+        </div>
+
         <a class="nav-link <!--# if expr="$current_menu = /fragor-svar\.html/" -->active<!--# endif -->" href="/fragor-svar">Frågor</a>
       </nav>
     </div>

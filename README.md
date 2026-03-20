@@ -33,6 +33,7 @@ Flödet ser ut så här:
 - Nginx serverar innehållet och hanterar SSI, rena URL:er och säkerhetsheaders
 - toppmenyn är en ren CSS-lösning med dropdown för undersidor
 - `Texter` används för längre primärtexter medan `I detalj` fungerar som en mer systematisk uppslagsstruktur
+- `Praktik` samlar vardag, arbete och etik under en gemensam tillämpningsnivå
 - containern byggs från `Dockerfile`
 - Helm deployar `Deployment`, `Service`, `Ingress` och `NetworkPolicy`
 - Kubernetes kör webbservern i namespace `einsimen`
@@ -265,6 +266,7 @@ curl -I https://einismen.k3s.k0.nu/
 - startsidan fungerar som kort ingång med länkar vidare till huvuddelarna
 - `Texter` samlar längre primärtexter
 - `I detalj` bryter ned filosofin i tematiska undersidor
+- `Praktik` samlar tillämpningssidorna `Vardagen`, `Arbete` och `Etik`
 - `Frågor` är grupperad i ämnesblock för snabbare översikt
 
 ## Mobilstöd

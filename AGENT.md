@@ -54,6 +54,7 @@
 - Gemensamma delar återanvänds via Nginx SSI-partials.
 - Menyn är helt CSS-baserad med dropdown för undersidor och utan JavaScript.
 - `Texter` används för primärtexter medan `I detalj` används för systematisk genomgång ämne för ämne.
+- `Praktik` används som samlingssida för vardag, arbete och etik.
 - Nginx serverar rena URL:er, SSI och security headers.
 - Containern byggs från `Dockerfile`.
 - Helm deployar till Kubernetes i namespace `einsimen`.
