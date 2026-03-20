@@ -20,6 +20,8 @@ Issues får gärna skrivas om för att bli tydligare och lättare att följa, me
 
 Tickets och issues på svenska ska använda riktig Unicode, inklusive `å`, `ä` och `ö`.
 
+Gitea-issues får gärna använda HTML när det gör strukturen tydligare, snyggare och lättare att följa.
+
 ## Arbetsflöde
 
 Projektet använder ett branch- och PR-baserat flöde:
