@@ -158,6 +158,10 @@ img {
   background: var(--accent-soft);
 }
 
+.has-dropdown.active > .nav-link {
+  color: var(--text);
+}
+
 .nav-item {
   position: relative;
   padding-bottom: 0.45rem;
