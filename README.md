@@ -20,6 +20,20 @@ Issues får gärna skrivas om för att bli tydligare och lättare att följa, me
 
 Tickets och issues på svenska ska använda riktig Unicode, inklusive `å`, `ä` och `ö`.
 
+## Arbetsflöde
+
+Projektet använder ett branch- och PR-baserat flöde:
+
+- skapa issue om den inte redan finns
+- skapa en branch från `main`
+- genomför ändringar
+- uppdatera issue med vad som gjorts
+- skapa pull request till `main`
+- verifiera att ändringarna ser bra ut
+- mergea pull requesten till `main`
+- deploya därefter `main`
+- kommentera resultatet och stäng issue
+
 ## Innehåll
 
 - Webbplatsfiler finns i `web/`

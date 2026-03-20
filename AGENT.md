@@ -22,7 +22,7 @@
 
 ## Arbetsflöde
 
-- Efter användarens revisioner ska ändringar committas och pushas automatiskt.
+- Efter användarens revisioner ska ändringar hanteras via branch och pull request innan de hamnar i `main`.
 - Commit-meddelanden ska vara passande för ändringarna.
 - Innan varje commit ska dokumentationen uppdateras så att den beskriver aktuell struktur, drift och arbetssätt.
 - Nya arbetsuppgifter, förbättringar och uppföljningar ska skrivas som issues i `lek/einismen` när det är relevant.
@@ -34,6 +34,7 @@
 - Issues får gärna skrivas om för att bli tydligare och lättare att följa, men de ska formuleras som user stories eller rena tickets.
 - Undvik formuleringar som "användaren vill" i issues. Skriv i stället som en beställning eller arbetsbeskrivning.
 - Svenska tickets och issues ska använda riktig Unicode, inklusive `å`, `ä` och `ö`.
+- Flödet är: skapa issue om den inte finns, skapa branch från `main`, gör ändringar, uppdatera issue, skapa pull request till `main`, verifiera, mergea pull request, deploya `main`, kommentera resultat och stäng issue.
 
 ## Deploymentstatus
 
