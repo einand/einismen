@@ -1013,3 +1013,65 @@ p {
     scroll-behavior: auto;
   }
 }
+
+@media print {
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+  }
+
+  .site-header,
+  .error-nav,
+  .skip-link,
+  nav,
+  .nav-panel,
+  .lang-switch,
+  .breadcrumbs,
+  .subnav,
+  .image-break,
+  footer,
+  .error-actions,
+  .error-grid {
+    display: none !important;
+  }
+
+  .shell {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 24pt;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 18pt;
+    margin-top: 1.5rem;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    color: #666;
+  }
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  @page {
+    margin: 2cm;
+  }
+}
