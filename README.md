@@ -4,6 +4,8 @@ Det här repot innehåller den statiska webbplatsen för Einismen och konfigurat
 
 Webbplatsen ska fungera både på desktop och mobiltelefon.
 
+Dokumentationen ska hållas aktuell. Uppdatera därför `README.md` och annan relevant dokumentation innan varje commit när struktur, drift eller arbetssätt förändras.
+
 ## Innehåll
 
 - Webbplatsfiler finns i `web/`
@@ -21,7 +23,9 @@ Webbplatsen är byggd som en liten statisk sajt med server-side includes och kö
 Flödet ser ut så här:
 
 - HTML, CSS, SVG och SSI-partials finns i `web/`
+- katalogstrukturen i `web/` följer menystrukturen för webbplatsen
 - Nginx serverar innehållet och hanterar SSI, rena URL:er och säkerhetsheaders
+- toppmenyn är en ren CSS-lösning med dropdown för undersidor
 - containern byggs från `Dockerfile`
 - Helm deployar `Deployment`, `Service`, `Ingress` och `NetworkPolicy`
 - Kubernetes kör webbservern i namespace `einsimen`
@@ -243,6 +247,7 @@ curl -I https://einismen.k3s.k0.nu/
 ## Vanliga filer att ändra
 
 - webbplatsens innehåll: `web/`
+- meny och gemensam header: `web/partials/header.html`
 - webbserver: `nginx/default.conf`
 - imagebygge: `Dockerfile`
 - deployment: `helm/einismen`
