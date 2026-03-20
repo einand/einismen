@@ -10,7 +10,10 @@
         <a class="active" href="/">SV</a>
         <a href="<!--# if expr="$current_page = /index\.html/" -->/en/<!--# elif expr="$current_page = /vad-ar-einismen\.html/" -->/en/what-is-einismen<!--# elif expr="$current_page = /fragor-svar\.html/" -->/en/qa<!--# elif expr="$current_page = /praktik\/index\.html/" -->/en/practice<!--# elif expr="$current_page = /vardagen\.html/" -->/en/everyday-life<!--# elif expr="$current_page = /arbete-ledarskap\.html/" -->/en/work-and-leadership<!--# elif expr="$current_page = /etik-konflikter\.html/" -->/en/ethics-and-conflicts<!--# elif expr="$current_page = /pelare\.html/" -->/en/pillars<!--# elif expr="$current_page = /pelare\/kaos\/index\.html/" -->/en/pillars/chaos<!--# elif expr="$current_page = /pelare\/inre-styrka\/index\.html/" -->/en/pillars/inner-strength<!--# elif expr="$current_page = /pelare\/frihet\/index\.html/" -->/en/pillars/freedom<!--# elif expr="$current_page = /pelare\/ordens-varde\/index\.html/" -->/en/pillars/weight-of-words<!--# elif expr="$current_page = /pelare\/forandring\/index\.html/" -->/en/pillars/change<!--# elif expr="$current_page = /texter\.html/" -->/en/texts<!--# elif expr="$current_page = /texter\/grunder\/index\.html/" -->/en/texts/basics<!--# elif expr="$current_page = /texter\/metod\/index\.html/" -->/en/texts/method<!--# elif expr="$current_page = /texter\/livshallning\/index\.html/" -->/en/texts/life-stance<!--# elif expr="$current_page = /texter\/manifest\/index\.html/" -->/en/texts/manifesto<!--# elif expr="$current_page = /texter\/grunddokument\/index\.html/" -->/en/texts/foundation-document<!--# elif expr="$current_page = /i-detalj\/index\.html/" -->/en/in-detail<!--# elif expr="$current_page = /i-detalj\/om-filosofin\/index\.html/" -->/en/in-detail/about-the-philosophy<!--# elif expr="$current_page = /i-detalj\/karnideer\/index\.html/" -->/en/in-detail/core-ideas<!--# elif expr="$current_page = /i-detalj\/varderingar\/index\.html/" -->/en/in-detail/values<!--# elif expr="$current_page = /i-detalj\/mal-och-ideal\/index\.html/" -->/en/in-detail/goals-and-ideals<!--# elif expr="$current_page = /i-detalj\/etik-och-principer\/index\.html/" -->/en/in-detail/ethics-and-principles<!--# elif expr="$current_page = /i-detalj\/praktisk-tillampning\/index\.html/" -->/en/in-detail/practical-application<!--# elif expr="$current_page = /i-detalj\/resonemang-och-logik\/index\.html/" -->/en/in-detail/reasoning-and-logic<!--# elif expr="$current_page = /i-detalj\/exempel\/index\.html/" -->/en/in-detail/examples<!--# elif expr="$current_page = /i-detalj\/kritik-och-invandningar\/index\.html/" -->/en/in-detail/criticism-and-objections<!--# elif expr="$current_page = /i-detalj\/sammanfattning\/index\.html/" -->/en/in-detail/summary<!--# else -->/en/<!--# endif -->">EN</a>
       </div>
-      <nav class="nav" aria-label="Huvudnavigation">
+      <div class="nav-panel">
+        <input class="nav-toggle-input" id="nav-toggle-sv" type="checkbox">
+        <label class="menu-toggle" for="nav-toggle-sv">Meny</label>
+        <nav class="nav" aria-label="Huvudnavigation">
         <a class="nav-link <!--# if expr="$current_menu = /index\.html/" -->active<!--# endif -->" href="/">Hem</a>
 
         <div class="nav-item has-dropdown <!--# if expr="$current_menu = /texter\.html/" -->active<!--# endif -->">
@@ -67,7 +70,8 @@
         </div>
 
         <a class="nav-link <!--# if expr="$current_menu = /fragor-svar\.html/" -->active<!--# endif -->" href="/fragor-svar">Frågor</a>
-      </nav>
+        </nav>
+      </div>
     </div>
   </div>
 </header>

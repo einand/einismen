@@ -131,6 +131,18 @@ img {
   gap: 0.45rem;
 }
 
+.nav-panel {
+  margin: 0;
+}
+
+.nav-toggle-input {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
 .lang-switch {
   display: inline-flex;
   align-items: center;
@@ -751,16 +763,57 @@ p {
     grid-column: auto;
   }
 
+  .nav-panel {
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    border: var(--panel-border);
+    border-radius: 0.85rem;
+    background: color-mix(in srgb, var(--paper) 92%, white 8%);
+    color: var(--text);
+    font: 700 0.86rem/1 "Segoe UI", sans-serif;
+    letter-spacing: 0.08em;
+    list-style: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .menu-toggle::after {
+    content: "▾";
+    font-size: 0.85rem;
+  }
+
+  .nav-toggle-input:checked + .menu-toggle::after {
+    content: "▴";
+  }
+
   .nav {
+    display: none;
     justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 0.35rem 0.4rem;
-    padding-bottom: 0;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-top: 0.45rem;
+    padding: 0.35rem;
+    border: var(--panel-border);
+    border-radius: var(--panel-radius);
+    background: color-mix(in srgb, var(--paper) 94%, white 6%);
+    box-shadow: var(--panel-shadow);
+  }
+
+  .nav-toggle-input:checked + .menu-toggle + .nav {
+    display: flex;
   }
 
   .nav-link,
   .nav-dropdown a {
     white-space: normal;
+    width: 100%;
   }
 
   .nav-dropdown {
@@ -768,7 +821,8 @@ p {
     display: none;
     min-width: 0;
     width: 100%;
-    margin-top: 0.3rem;
+    margin-top: 0.25rem;
+    box-shadow: none;
   }
 }
 
