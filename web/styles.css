@@ -72,6 +72,13 @@ a {
   color: inherit;
 }
 
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid color-mix(in srgb, #8d6a1f 74%, white 26%);
+  outline-offset: 3px;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -90,6 +97,24 @@ img {
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line-strong);
   transition: background-color 180ms ease, border-color 180ms ease;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 100;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.7rem;
+  background: var(--accent);
+  color: var(--bg-soft);
+  font: 700 0.88rem/1 "Segoe UI", sans-serif;
+  text-decoration: none;
+  transition: top 140ms ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
 }
 
 .site-header .shell {
@@ -196,6 +221,19 @@ img {
 .nav-dropdown a:focus-visible {
   color: var(--text);
   background: var(--accent-soft);
+}
+
+.nav-link:focus-visible,
+.nav-dropdown a:focus-visible,
+.lang-switch a:focus-visible,
+.button:focus-visible,
+.button-secondary:focus-visible,
+.link-list a:focus-visible,
+.subnav-list a:focus-visible,
+.split a:focus-visible,
+.qa-list a:focus-visible {
+  outline-offset: 4px;
+  background: color-mix(in srgb, var(--accent-soft) 78%, white 22%);
 }
 
 .has-dropdown.active > .nav-link {
