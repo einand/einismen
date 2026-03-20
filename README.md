@@ -122,7 +122,7 @@ git checkout main && git pull --ff-only origin main
 
 Webbplatsen använder rena URL:er utan `.html`, till exempel `/texter` och `/fragor-svar`.
 
-Den svenska versionen ligger kvar på roten `/` medan den engelska versionen ligger under `/en/`.
+Den svenska versionen ligger under `/sv/` medan den engelska versionen ligger under `/en/`. Root `/` omdirigerar till `/sv/`.
 
 ## Arkitektur
 
@@ -131,21 +131,24 @@ Webbplatsen är byggd som en liten statisk sajt med server-side includes och kö
 Flödet ser ut så här:
 
 - HTML, CSS, SVG och SSI-partials finns i `web/`
+- gemensamma delar som header och footer ligger i `web/partials/` och inkluderas via SSI
+- den svenska versionen ligger i `web/sv/` med översatta URL-segment och en egen SSI-header
 - katalogstrukturen i `web/` följer menystrukturen för webbplatsen
 - den engelska speglingen ligger i `web/en/` med översatta URL-segment och en egen SSI-header
 - varje engelsk sida ska spegla sin svenska motsvarighet i struktur, ordning och innehåll, med endast språk och slugskillnader som avviker
 - Nginx serverar innehållet och hanterar SSI, rena URL:er och säkerhetsheaders
-- toppmenyn är en ren CSS-lösning med dropdown för undersidor
+- toppmenyn är en ren CSS-lösning med dropdown för undersidor och ARIA-roller för tillgänglighet
+- footer med länkar inkluderas på alla sidor via SSI
 - `Texter` används för längre primärtexter medan `I detalj` fungerar som en mer systematisk uppslagsstruktur
 - `Praktik` samlar vardag, arbete och etik under en gemensam tillämpningsnivå
-- `web/sitemap.xml`, `web/sitemap-sv.xml` och `web/sitemap-en.xml` innehåller `lastmod` baserat på sidfilernas ändringstid
+- `web/sitemap.xml`, `web/sitemap-sv.xml` och `web/sitemap-en.xml` innehåller `lastmod` som uppdateras automatiskt av `scripts/update-sitemap.sh`
 - publika svenska och engelska sidor innehåller JSON-LD för `WebPage`, och startsidorna innehåller även `Organization` och `WebSite`
 - sidtitlar är standardiserade med tydligt ämne följt av `| Einismen`
 - publika sidor deklarerar `theme-color`, `color-scheme` och grundläggande metadata för mobil web app-visning
 - containern byggs från `Dockerfile`
-- Helm deployar `Deployment`, `Service`, `Ingress` och `NetworkPolicy`
+- Helm deployar `Deployment`, `Service`, `Ingress` och `NetworkPolicy` med DNS-egress undantag
 - Kubernetes kör webbservern i namespace `einsimen`
-- ingress-nginx publicerar sajten på `einismen.k3s.k0.nu`
+- ingress-nginx publicerar sajten på `einismen.k0.nu`
 - cert-manager skapar TLS-certifikatet via Let's Encrypt
 
 Kort sagt:
@@ -224,6 +227,7 @@ Scriptet gör detta:
 
 - bygger imagen
 - pushar imagen till Harbor
+- uppdaterar `lastmod` i sitemaps
 - deployar med Helm
 - väntar på rollout
 
@@ -306,8 +310,9 @@ Detta gäller nu:
 - Nginx accepterar bara `GET`
 - andra metoder, som `POST`, returnerar `405`
 - security headers skickas för alla svar
+- HSTS-header skickas för HTTPS-svar
 - `NetworkPolicy` begränsar ingress till ingress-nginx
-- `NetworkPolicy` blockerar egress
+- `NetworkPolicy` blockerar egress men tillåter DNS för Kubernetes-namnmatchning
 - CPU- och minnesgränser finns i Helm-värdena
 
 Kontrollera poddens säkerhetsinställningar:
@@ -319,13 +324,13 @@ kubectl -n einsimen get pod -o jsonpath='{range .items[*]}{.metadata.name}{" "}{
 Kontrollera att `POST` blockeras:
 
 ```bash
-curl -s -o /dev/null -X POST -w "%{http_code}\n" https://einismen.k3s.k0.nu/
+curl -s -o /dev/null -X POST -w "%{http_code}\n" https://einismen.k0.nu/
 ```
 
 Kontrollera headers:
 
 ```bash
-curl -s -D - -o /dev/null https://einismen.k3s.k0.nu/
+curl -s -D - -o /dev/null https://einismen.k0.nu/
 ```
 
 ## Domän
@@ -333,7 +338,7 @@ curl -s -D - -o /dev/null https://einismen.k3s.k0.nu/
 Nuvarande host är:
 
 ```text
-einismen.k3s.k0.nu
+einismen.k0.nu
 ```
 
 Om du byter domän behöver du även uppdatera hostnamnet i `helm/einismen/values.yaml`.
@@ -357,21 +362,24 @@ Exempel:
 Testa HTTP/HTTPS:
 
 ```bash
-curl -I https://einismen.k3s.k0.nu/
+curl -I https://einismen.k0.nu/
 ```
 
 ## Vanliga filer att ändra
 
-- webbplatsens innehåll: `web/`
-- meny och gemensam header: `web/partials/header.html`
+- webbplatsens svenska innehåll: `web/sv/`
+- webbplatsens engelska innehåll: `web/en/`
+- gemensamma partials: `web/partials/header.html` och `web/partials/footer.html`
 - webbserver: `nginx/default.conf`
+- CSS inklusive print stylesheet: `web/styles.css`
 - imagebygge: `Dockerfile`
 - deployment: `helm/einismen`
 - deploy-script: `scripts/deploy.sh`
+- sitemap-uppdatering: `scripts/update-sitemap.sh`
 
 ## Innehållsstruktur
 
-- startsidan fungerar som kort ingång med länkar vidare till huvuddelarna
+- startsidan `/sv/` fungerar som kort ingång med länkar vidare till huvuddelarna
 - `Texter` samlar längre primärtexter
 - `I detalj` bryter ned filosofin i tematiska undersidor
 - `Praktik` samlar tillämpningssidorna `Vardagen`, `Arbete` och `Etik`
@@ -380,16 +388,21 @@ curl -I https://einismen.k3s.k0.nu/
 
 ## Tvåspråkig struktur
 
-- svenska ligger på roten, till exempel `/`, `/pelare` och `/i-detalj`
+- svenska ligger under `/sv/`, till exempel `/sv/`, `/sv/pelare` och `/sv/i-detalj`
 - engelska ligger under `/en/`, till exempel `/en/`, `/en/pillars` och `/en/in-detail`
-- språkväljaren finns i både `web/partials/header.html` och `web/en/partials/header.html`
+- root `/` omdirigerar till `/sv/`
+- språkväljaren finns i både `web/sv/partials/header.html` och `web/en/partials/header.html`
 - `web/styles.css` och `web/media/` delas mellan båda språken
 - engelska SVG-varianter med översatta tillgänglighetstexter ligger i `web/media/en/`
-- `nginx/default.conf` omdirigerar `/en` till `/en/` och låter rena URL:er fungera för båda språken
+- `nginx/default.conf` omdirigerar `/en` till `/en/`, `/sv` till `/sv/` och låter rena URL:er fungera för båda språken
 - `web/sitemap.xml`, `web/sitemap-sv.xml` och `web/sitemap-en.xml` används för indexering av båda språkversionerna
 - alla svenska och engelska sidor har canonical- och hreflang-taggar för bättre SEO och språkmatchning
 - `LANGUAGE_MAP.md` dokumenterar vilka svenska och engelska URL:er som hör ihop
 - vid ändringar i innehåll ska motsvarande språkpar hållas synkade utifrån `LANGUAGE_MAP.md`
+
+## Print stylesheet
+
+Webbplatsen har ett print stylesheet definierat i `web/styles.css` med `@media print`. Det döljer navigering och onödiga element vid utskrift.
 
 ## Mobilstöd
 
