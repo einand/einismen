@@ -19,6 +19,7 @@
 - Flera sidor får användas när det gör innehållet tydligare och mer lättöverskådligt.
 - Dokumentationen i repot ska användas brett som grund för innehållet.
 - Hela webbplatsen måste fungera bra på mobiltelefoner.
+- Svenska versioner ligger i `/sv/`, engelska i `/en/`.
 
 ## Arbetsflöde
 
@@ -67,7 +68,7 @@
 - Webbplatsen är containeriserad med `nginx` via `Dockerfile` och `nginx/default.conf`.
 - Helm-chart finns i `helm/einismen`.
 - Webbplatsen deployas till namespace `einsimen`.
-- Ingress-host är `einismen.k3s.k0.nu`.
+- Ingress-host är `einismen.k0.nu`.
 - Webbplatsen använder rena URL:er utan `.html` i länkarna.
 - Webbplatsen är organiserad i undermappar som följer menystrukturen.
 - HTTPS är aktiverat via cert-manager och `ClusterIssuer` `letsencrypt-prod`.
@@ -76,13 +77,17 @@
 - Deploy-script finns i `scripts/deploy.sh` och bygger, pushar och deployar med automatiska image-taggar.
 - Runtime är härdad med unprivileged Nginx, read-only root filesystem, droppade capabilities, avstängd privilege escalation och ingen monterad service account-token.
 - Nginx accepterar bara `GET` och returnerar `405` för andra metoder.
-- `NetworkPolicy` används för att begränsa ingress till ingress-nginx och blockera egress.
+- HSTS-header skickas för alla HTTPS-svar.
+- `NetworkPolicy` används för att begränsa ingress till ingress-nginx och blockera egress, med undantag för DNS.
 - Resource requests och limits finns definierade i Helm-värdena.
+- Gemensamma delar som header och footer återanvänds via SSI-partials i `web/partials/`.
+- `scripts/update-sitemap.sh` uppdaterar `lastmod` i sitemaps baserat på filändringstider.
+- Print stylesheet finns i `web/styles.css` med `@media print`.
 
 ## Arkitekturöversikt
 
-- Webbplatsens filer ligger i `web/`.
-- Menystrukturen speglas i katalogstrukturen under `web/`.
+- Webbplatsens svenska filer ligger i `web/sv/`.
+- Webbplatsens engelska filer ligger i `web/en/`.
 - Gemensamma delar återanvänds via Nginx SSI-partials.
 - Menyn är helt CSS-baserad med dropdown för undersidor och utan JavaScript.
 - `Texter` används för primärtexter medan `I detalj` används för systematisk genomgång ämne för ämne.
@@ -100,5 +105,6 @@
 - Design: asketisk.
 - Innehåll: kort, enkelt och dokumentationsbaserat.
 - Mobilstöd: obligatoriskt.
+- Språkstruktur: `/sv/` för svenska, `/en/` för engelska.
 - Deploy: Docker + Helm + Kubernetes.
 - Dokumentation: ska uppdateras före varje commit.
