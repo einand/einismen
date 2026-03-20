@@ -378,7 +378,10 @@ curl -I https://einismen.k3s.k0.nu/
 - engelska ligger under `/en/`, till exempel `/en/`, `/en/pillars` och `/en/in-detail`
 - språkväljaren finns i både `web/partials/header.html` och `web/en/partials/header.html`
 - `web/styles.css` och `web/media/` delas mellan båda språken
+- engelska SVG-varianter med översatta tillgänglighetstexter ligger i `web/media/en/`
 - `nginx/default.conf` omdirigerar `/en` till `/en/` och låter rena URL:er fungera för båda språken
+- `web/sitemap.xml`, `web/sitemap-sv.xml` och `web/sitemap-en.xml` används för indexering av båda språkversionerna
+- alla svenska och engelska sidor har canonical- och hreflang-taggar för bättre SEO och språkmatchning
 
 ## Mobilstöd
 
