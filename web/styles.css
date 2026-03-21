@@ -653,7 +653,7 @@ p {
 }
 
 .section-head {
-  max-width: 42rem;
+  max-width: none;
   margin-bottom: var(--space-2);
 }
 
@@ -680,10 +680,13 @@ p {
   color: color-mix(in srgb, var(--muted) 70%, transparent 30%);
 }
 
-.section-head h2,
+.section-head h2 {
+  max-width: none;
+}
+
 .section > h1,
 .section > h2 {
-  max-width: 18ch;
+  max-width: none;
 }
 
 .plain-list,
@@ -869,7 +872,7 @@ p {
 }
 
 .prose {
-  max-width: 52rem;
+  max-width: none;
 }
 
 .prose h2,
