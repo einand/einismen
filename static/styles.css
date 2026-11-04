@@ -1215,3 +1215,7 @@ p {
 .section.hero::before {
   display: none;
 }
+
+.hero-copy::before {
+  display: none;
+}
