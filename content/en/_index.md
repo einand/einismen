@@ -3,6 +3,13 @@ title: "Einismen"
 layout: landing
 language: en
 hero_asset: "media/generated/en-hero.svg"
+actions:
+  - title: "Read the introduction"
+    url: "what-is-einismen"
+    class: "button"
+  - title: "See the pillars"
+    url: "pillars"
+    class: "button-secondary"
 hero_caption: "Stone, distance and open ground."
 ---
 
@@ -12,13 +19,8 @@ hero_caption: "Stone, distance and open ground."
 
 # Einismen
 
-A philosophy of thinking clearly, living responsibly and improving what can be improved.
+{{< lead >}}A philosophy of thinking clearly, living responsibly and improving what can be improved.{{< /lead >}}
 
-{{< actions >}}
-
-<a href="what-is-einismen" class="button">Read the introduction</a> <a href="pillars" class="button-secondary">See the pillars</a>
-
-{{< /actions >}}
 
 {{< /hero-copy >}}
 
@@ -95,6 +97,6 @@ Integrity matters.
 
 Perfection is not the goal.
 
-{{< /box >}}
+{{< lead >}}{{< /box >}}{{< /lead >}}
 
 {{< /section >}}

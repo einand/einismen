@@ -3,6 +3,13 @@ title: "Einismen"
 layout: landing
 language: fi
 hero_asset: "media/generated/fi-hero.svg"
+actions:
+  - title: "Lue johdanto"
+    url: "mita-einismen-on"
+    class: "button"
+  - title: "Katso pilarit"
+    url: "pelare"
+    class: "button-secondary"
 hero_caption: "Kivi, pinta ja etäisyys."
 ---
 
@@ -12,13 +19,8 @@ hero_caption: "Kivi, pinta ja etäisyys."
 
 # Einismen
 
-Filosofia selkeästi ajattelusta, vastuullisesti elämisestä ja parantamisesta.
+{{< lead >}}Filosofia selkeästi ajattelusta, vastuullisesti elämisestä ja parantamisesta.{{< /lead >}}
 
-{{< actions >}}
-
-<a href="mita-einismen-on" class="button">Lue johdanto</a> <a href="pelare" class="button-secondary">Katso pilarit</a>
-
-{{< /actions >}}
 
 {{< /hero-copy >}}
 
@@ -95,6 +97,6 @@ Rehellisyys tekee eron.
 
 Täydellisyys ei ole tavoite.
 
-{{< /box >}}
+{{< lead >}}{{< /box >}}{{< /lead >}}
 
 {{< /section >}}

@@ -3,6 +3,13 @@ title: "Einismen"
 layout: landing
 language: sv
 hero_asset: "media/generated/sv-hero.svg"
+actions:
+  - title: "Läs introduktionen"
+    url: "vad-ar-einismen"
+    class: "button"
+  - title: "Se pelarna"
+    url: "pelare"
+    class: "button-secondary"
 hero_caption: "Sten, yta och avstånd."
 ---
 
@@ -12,13 +19,8 @@ hero_caption: "Sten, yta och avstånd."
 
 # Einismen
 
-En filosofi om att tänka klart, leva med ansvar och förbättra det som går att förbättra.
+{{< lead >}}En filosofi om att tänka klart, leva med ansvar och förbättra det som går att förbättra.{{< /lead >}}
 
-{{< actions >}}
-
-<a href="vad-ar-einismen" class="button">Läs introduktionen</a> <a href="pelare" class="button-secondary">Se pelarna</a>
-
-{{< /actions >}}
 
 {{< /hero-copy >}}
 
@@ -95,6 +97,6 @@ Integritet gör skillnad.
 
 Perfektion är inte målet.
 
-{{< /box >}}
+{{< lead >}}{{< /box >}}{{< /lead >}}
 
 {{< /section >}}
