@@ -188,6 +188,58 @@ Rakenne on rakennettu siten, että voit siirtyä yleiskuvasta tarkkuuteen. Jos t
 
 {{< /section >}}
 
+
+{{< section class="split" >}}
+{{< box class="span-4" >}}
+
+### [Vapaus, vastuu ja rajoitteet](vapaus-vastuu-rajat)
+
+Valinnat ja vastuu rajoittavissa oloissa.
+
+{{< /box >}}
+
+{{< box class="span-4" >}}
+
+### [Huolenpito ja ihmissuhteet](huolenpito-ihmissuhteet)
+
+Huolenpito, rajat ja vastavuoroisuus.
+
+{{< /box >}}
+
+{{< box class="span-4" >}}
+
+### [Valta ja johtajuus](valta-johtajuus)
+
+Päätösvalta ja vastuu seurauksista.
+
+{{< /box >}}
+
+{{< box class="span-4" >}}
+
+### [Parantamisen rajat](parantamisen-rajat)
+
+Kun parantaminen ei tarkoita jatkuvaa optimointia.
+
+{{< /box >}}
+
+{{< box class="span-4" >}}
+
+### [Einismeniin kohdistuvaa kritiikkiä](vastavitteita)
+
+Filosofian heikkouksien asiallinen tarkastelu.
+
+{{< /box >}}
+
+{{< box class="span-4" >}}
+
+### [Tieto ja totuus](tieto-ja-totuus)
+
+Havainnot, näyttö ja uudelleenarviointi.
+
+{{< /box >}}
+
+{{< /section >}}
+
 {{< section class="prose" >}}
 
 Rakenne on rakennettu siten, että voit siirtyä yleiskuvasta tarkkuuteen. Jos tiedät jo, mikä osa kiinnostaa sinua, voit mennä suoraan alisivulle. Jos haluat ymmärtää kokonaisuuden ensin, \`Yhteenveto\` ja \`Pääideat\` ovat usein parhaat aloituskohdat.

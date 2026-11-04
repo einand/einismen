@@ -136,6 +136,58 @@ A concentrated overview of the whole.
 
 {{< /section >}}
 
+
+{{< section class="split" >}}
+{{< box class="span-4" >}}
+
+### [Freedom, responsibility and limits](freedom-responsibility-limits)
+
+Choice and responsibility under constraint.
+
+{{< /box >}}
+
+{{< box class="span-4" >}}
+
+### [Care and relationships](care-and-relationships)
+
+Care, boundaries and reciprocity.
+
+{{< /box >}}
+
+{{< box class="span-4" >}}
+
+### [Power and leadership](power-and-leadership)
+
+Decision-making power and consequences.
+
+{{< /box >}}
+
+{{< box class="span-4" >}}
+
+### [The limits of improvement](limits-of-improvement)
+
+When improvement does not mean constant optimization.
+
+{{< /box >}}
+
+{{< box class="span-4" >}}
+
+### [Objections to Einismen](objections)
+
+Examine the philosophy’s weak points.
+
+{{< /box >}}
+
+{{< box class="span-4" >}}
+
+### [Knowledge and truth](knowledge-and-truth)
+
+Observation, evidence and reconsideration.
+
+{{< /box >}}
+
+{{< /section >}}
+
 {{< section class="prose" >}}
 
 The structure is built so that you can move from overview to precision. If you already know what interests you, go straight to the subpage. If you want the whole first, \`Summary\` and \`Core ideas\` are often the best starting points.

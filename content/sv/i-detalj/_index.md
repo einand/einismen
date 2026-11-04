@@ -118,13 +118,7 @@ Hur skiljer vi observation från tolkning och söker bättre skäl?
 
 {{< /box >}}
 
-{{< box class="span-4" >}}
 
-### [Kunskap och sanning](kunskap-och-sanning)
-
-Hur skiljer vi observation från tolkning och söker bättre skäl?
-
-{{< /box >}}
 
 {{< box class="span-4" >}}
 
@@ -147,6 +141,58 @@ Vanlig kritik, möjliga svagheter och filosofins svar.
 ### [Sammanfattning](sammanfattning)
 
 En koncentrerad överblick över helheten.
+
+{{< /box >}}
+
+{{< /section >}}
+
+
+{{< section class="split" >}}
+{{< box class="span-4" >}}
+
+### [Frihet, ansvar och begränsningar](frihet-ansvar-begransningar)
+
+Val och ansvar när omständigheterna begränsar.
+
+{{< /box >}}
+
+{{< box class="span-4" >}}
+
+### [Omsorg och relationer](omsorg-relationer)
+
+Omsorg, gränser och ömsesidighet.
+
+{{< /box >}}
+
+{{< box class="span-4" >}}
+
+### [Makt och ledarskap](makt-ledarskap)
+
+Beslutsmakt och ansvar för följder.
+
+{{< /box >}}
+
+{{< box class="span-4" >}}
+
+### [Förbättringens gränser](forbattringens-granser)
+
+När förbättring inte betyder ständig optimering.
+
+{{< /box >}}
+
+{{< box class="span-4" >}}
+
+### [Invändningar mot Einismen](invandningar)
+
+Pröva filosofins svaga punkter sakligt.
+
+{{< /box >}}
+
+{{< box class="span-4" >}}
+
+### [Kunskap och sanning](kunskap-och-sanning)
+
+Observation, belägg och omprövning.
 
 {{< /box >}}
 
