@@ -1,3 +1,7 @@
 {{ define "main" }}
-{{ .RawContent | safeHTML }}
+<div class="shell">
+  {{ partial "breadcrumbs.html" . }}
+  {{ .Content }}
+  {{ partial "related.html" . }}
+</div>
 {{ end }}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none" role="img" aria-labelledby="detail-practice-title detail-practice-desc">
+  <title id="detail-practice-title">Practical application</title>
+  <desc id="detail-practice-desc">An illustration with multiple paths and blocks suggesting everyday life, work, relationships and society as connected fields.</desc>
+  <rect class="sky" width="1600" height="700"/>
+  <path class="ground-1" d="M0 479C176 450 330 444 494 460C659 476 801 537 973 541C1145 545 1280 499 1439 495C1503 494 1557 497 1600 502V700H0V479Z"/>
+  <path class="ground-2" d="M0 564C188 562 341 565 505 581C674 598 812 627 977 628C1144 629 1281 607 1442 603C1507 602 1558 604 1600 609V700H0V564Z"/>
+  <path class="line-1" d="M184 298H1415" stroke-width="8" stroke-linecap="round"/>
+  <path class="line-2" d="M184 358H1415" stroke-width="8" stroke-linecap="round"/>
+  <path class="stone-1" d="M300 462L438 312L577 462H300Z"/>
+  <path class="stone-2" d="M686 462L800 250L918 462H686Z"/>
+  <path class="stone-3" d="M1068 462L1221 330L1364 462H1068Z"/>
+</svg>

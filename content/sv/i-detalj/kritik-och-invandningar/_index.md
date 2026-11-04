@@ -1,42 +1,38 @@
 ---
 title: "I detalj: Kritik och invändningar"
-language: sv
 layout: page
+language: sv
+hero_asset: "media/generated/sv-i-detalj-kritik-och-invandningar-hero.svg"
+hero_caption: "Kritik som prövar snarare än förkastar."
+breadcrumbs:
+  - title: "Hem"
+    url: "../.."
+  - title: "I detalj"
+    url: ".."
+related:
+  - title: "Vidare läsning: Sammanfattning"
+    url: "../sammanfattning"
+    description: "Se en koncentrerad överblick över helheten."
+  - title: "Vidare läsning: Frågor"
+    url: "../../fragor-svar"
+    description: "Se korta svar på vanliga frågor."
+  - title: "Vidare läsning: Texter"
+    url: "../../texter"
+    description: "Läs mer om hur kritik bemöts i filosofins texter."
 ---
 
-<div class="shell">
-        <nav class="breadcrumbs" aria-label="Breadcrumbs"><a href="../..">Hem</a><span class="sep">/</span><a href="..">I detalj</a><span class="sep">/</span><span aria-current="page">Kritik och invändningar</span></nav>
-        <section class="section prose">
-          <h1>Kritik och invändningar</h1>
-          <p class="lead">Einismen kan uppfattas som hård, sträng eller överdrivet rationell. Det är rimliga invändningar och de behöver bemötas öppet.</p>
+{{< section class="prose" >}}
 
-          <figure class="image-break">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none" role="img" aria-labelledby="questions-hero-title questions-hero-desc">
-  <title id="questions-hero-title">Frågor över ett öppet landskap</title>
-  <desc id="questions-hero-desc">En avskalad illustration med flera cirklar och bågar över ett lågt landskap som antyder frågor och eftertanke.</desc>
-  <rect class="sky" width="1600" height="700"/>
-  <path class="ground-1" d="M0 484C171 452 323 441 479 455C638 469 786 526 954 531C1126 536 1267 486 1428 482C1498 480 1554 484 1600 490V700H0V484Z"/>
-  <path class="ground-2" d="M0 568C180 564 321 563 480 579C652 596 792 629 960 630C1121 632 1261 603 1428 600C1494 599 1549 601 1600 605V700H0V568Z"/>
-  <circle class="stone-1" cx="354" cy="270" r="82" stroke-width="18"/>
-  <circle class="stone-2" cx="800" cy="238" r="96" stroke-width="18"/>
-  <circle class="stone-3" cx="1237" cy="290" r="78" stroke-width="18"/>
-  <path class="line-1" d="M354 371V442" stroke-width="10" stroke-linecap="round"/>
-  <path class="line-1" d="M800 350V436" stroke-width="10" stroke-linecap="round"/>
-  <path class="line-1" d="M1237 362V432" stroke-width="10" stroke-linecap="round"/>
-</svg>
-            <figcaption>Kritik som prövar snarare än förkastar.</figcaption>
-          </figure>
+# Kritik och invändningar
 
-          <p>Vanlig kritik är att fokus på funktion kan låta kallt eller instrumentellt, och att filosofins krav på integritet och ansvar kan bli tunga för människor som redan lever under stark press. En annan invändning är att kaos som utgångspunkt kan uppfattas som mörkt eller destabiliserande.</p>
-          <p>Einismens svar ligger i att filosofin inte försöker göra människan maskinell, utan mer verklighetsnära. Klarhet är inte samma sak som kyla. Funktion är inte samma sak som likgiltighet. Filosofin vill snarare skydda människan från illusioner som på sikt försvagar henne.</p>
-          <p>Svagheten finns ändå där: Einismen riskerar att bli för sträng om den förlorar sin mänskliga ton. Därför behöver dess egna principer också återkommande prövas.</p>
-        </section>
+{{< lead >}}Einismen kan uppfattas som hård, sträng eller överdrivet rationell. Det är rimliga invändningar och de behöver bemötas öppet.{{< /lead >}}
 
-        <section class="section">
-          <ul class="subnav-list">
-            <li><strong><a href="../sammanfattning">Vidare läsning: Sammanfattning</a></strong>Se en koncentrerad överblick över helheten.</li>
-            <li><strong><a href="../../fragor-svar">Vidare läsning: Frågor</a></strong>Se korta svar på vanliga frågor.</li>
-            <li><strong><a href="../../texter">Vidare läsning: Texter</a></strong>Läs mer om hur kritik bemöts i filosofins texter.</li>
-          </ul>
-        </section>
-      </div>
+{{< hero-image >}}
+
+Vanlig kritik är att fokus på funktion kan låta kallt eller instrumentellt, och att filosofins krav på integritet och ansvar kan bli tunga för människor som redan lever under stark press. En annan invändning är att kaos som utgångspunkt kan uppfattas som mörkt eller destabiliserande.
+
+Einismens svar ligger i att filosofin inte försöker göra människan maskinell, utan mer verklighetsnära. Klarhet är inte samma sak som kyla. Funktion är inte samma sak som likgiltighet. Filosofin vill snarare skydda människan från illusioner som på sikt försvagar henne.
+
+Svagheten finns ändå där: Einismen riskerar att bli för sträng om den förlorar sin mänskliga ton. Därför behöver dess egna principer också återkommande prövas.
+
+{{< /section >}}

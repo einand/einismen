@@ -1,90 +1,88 @@
 ---
 title: "Frågor och svar om Einismen"
-language: sv
 layout: page
+language: sv
+hero_asset: "media/generated/sv-fragor-svar-hero.svg"
+hero_caption: "Frågor som hålls öppna tills de prövats ordentligt."
+related:
+  - title: "Vidare läsning: Vad är Einismen?"
+    url: "../vad-ar-einismen"
+    description: "En kort introduktion om du vill börja enklare."
+  - title: "Vidare läsning: I detalj"
+    url: "../i-detalj"
+    description: "En mer systematisk genomgång ämne för ämne."
+  - title: "Vidare läsning: Praktik"
+    url: "../praktik"
+    description: "Se hur filosofins svar används i vardag och arbete."
 ---
 
-<div class="shell">
-        <section class="section prose">
-          <h1>Frågor och svar</h1>
-          <p class="lead">Vanliga frågor om Einismen, kort besvarade.</p>
+{{< section class="prose" >}}
 
-          <figure class="image-break">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none" role="img" aria-labelledby="questions-hero-title questions-hero-desc">
-  <title id="questions-hero-title">Frågor över ett öppet landskap</title>
-  <desc id="questions-hero-desc">En avskalad illustration med flera cirklar och bågar över ett lågt landskap som antyder frågor och eftertanke.</desc>
-  <rect class="sky" width="1600" height="700"/>
-  <path class="ground-1" d="M0 484C171 452 323 441 479 455C638 469 786 526 954 531C1126 536 1267 486 1428 482C1498 480 1554 484 1600 490V700H0V484Z"/>
-  <path class="ground-2" d="M0 568C180 564 321 563 480 579C652 596 792 629 960 630C1121 632 1261 603 1428 600C1494 599 1549 601 1600 605V700H0V568Z"/>
-  <circle class="stone-1" cx="354" cy="270" r="82" stroke-width="18"/>
-  <circle class="stone-2" cx="800" cy="238" r="96" stroke-width="18"/>
-  <circle class="stone-3" cx="1237" cy="290" r="78" stroke-width="18"/>
-  <path class="line-1" d="M354 371V442" stroke-width="10" stroke-linecap="round"/>
-  <path class="line-1" d="M800 350V436" stroke-width="10" stroke-linecap="round"/>
-  <path class="line-1" d="M1237 362V432" stroke-width="10" stroke-linecap="round"/>
-</svg>
-            <figcaption>Frågor som hålls öppna tills de prövats ordentligt.</figcaption>
-          </figure>
-        </section>
+# Frågor och svar
 
-        <section class="section prose">
-          <h2>Grunder</h2>
-          <p>Det här blocket samlar de vanligaste första frågorna om vad Einismen är, hur den förhåller sig till sanning och varför kaoset är så centralt.</p>
-          <ul class="qa-list">
-          <li><strong>Är Einismen en religion?</strong>Nej. Den beskrivs främst som en filosofi och ett sätt att tänka.</li>
-          <li><strong>Vad är kärnan?</strong>Se klart. Välj själv. Ta ansvar. Förbättra vidare.</li>
-          <li><strong>Är den kall?</strong>Den försöker vara saklig och användbar. Det är inte samma sak som känslolös.</li>
-          <li><strong>Varför återkommer ordet funktion?</strong>För att något bör behållas när det faktiskt tjänar ett syfte.</li>
-          <li><strong>Hur ser den på förändring?</strong>Förändring är naturlig. Det viktiga är riktning och förståelse.</li>
-          <li><strong>Hur ser den på känslor?</strong>Känslor spelar roll, men de bör inte ensamma styra beslut.</li>
-          <li><strong>Vad säger Einismen om sanning?</strong>Att sanningen ska sökas genom klar observation, resonemang och prövning, inte genom bekväma illusioner.</li>
-          <li><strong>Vad betyder kaos i Einismen?</strong>Kaos betyder att världen är osäker, skiftande och inte skapad för att passa våra önskningar.</li>
-          <li><strong>Är Einismen pessimistisk?</strong>Nej. Den är realistisk i sin utgångspunkt men konstruktiv i sitt svar.</li>
-          </ul>
-        </section>
+{{< lead >}}Vanliga frågor om Einismen, kort besvarade.{{< /lead >}}
 
-        <section class="section prose">
-          <h2>Människan och livet</h2>
-          <p>Här ligger frågor om ansvar, styrka, dygder, dödlighet och vad Einismen faktiskt försöker forma i människan.</p>
-          <ul class="qa-list">
-          <li><strong>Varför är ansvar så centralt?</strong>För att frihet utan ansvar blir tom, och ansvar utan frihet blir tvång.</li>
-          <li><strong>Vad menas med inre styrka?</strong>Förmågan att tänka klart, stå fast, reflektera och fortsätta även när läget är svårt.</li>
-          <li><strong>Hur ser Einismen på dygder?</strong>Dygder är praktiska redskap, inte prydnader. De ska hjälpa människan att leva stabilt och verkningsfullt.</li>
-          <li><strong>Är Einismen individualistisk?</strong>Ja, men inte på ett vårdslöst sätt. Den betonar självvald riktning men också ansvar mot andra.</li>
-          <li><strong>Vad betyder ordens värde?</strong>Att ord ska bäras upp av handling, annars förlorar de sin tyngd.</li>
-          <li><strong>Hur ser Einismen på döden?</strong>Döden döljs inte. Livets begränsning gör valen skarpare och tiden mer betydelsefull.</li>
-          <li><strong>Vad säger Einismen om perfektion?</strong>Perfektion är mindre viktig än stadig förädling och riktad förbättring.</li>
-          <li><strong>Vad är målet med filosofin?</strong>Inte att skapa bekvämlighet, utan att skapa klarare liv, starkare karaktär och bättre system.</li>
-          </ul>
-        </section>
+{{< hero-image >}}
 
-        <section class="section prose">
-          <h2>Metod och kaytanto</h2>
-          <p>Det här blocket fokuserar på hur filosofin används: i arbete, utveckling, förbättring och i sättet att pröva idéer.</p>
-          <ul class="qa-list">
-          <li><strong>Hur ser Einismen på arbete?</strong>Arbete ska förädlas, göras tydligare och bli bättre över tid i stället för att stagnera.</li>
-          <li><strong>Hur ser Einismen på ledarskap?</strong>Ledarskap bör vara sakligt, självständigt, ansvarstagande och öppet för bättre underlag.</li>
-          <li><strong>Vad är dialektisk förbättring?</strong>Att låta idéer möta motstånd, förstå deras svagheter och sedan bygga en starkare syntes.</li>
-          <li><strong>Hur ser Einismen på utveckling?</strong>Utveckling är en plikt. Det som går att förbättra bör förbättras.</li>
-          <li><strong>Hur ser Einismen på stagnation?</strong>Stagnation ses som farlig, eftersom den gör att människan eller systemet slutar lära.</li>
-          <li><strong>Hur vet man om något är förenligt med Einismen?</strong>Om det tål prövning, bärs av integritet och leder till verklig förbättring ligger det nära filosofins kärna.</li>
-          </ul>
-        </section>
+{{< /section >}}
 
-        <section class="section prose">
-          <h2>Etik och invändningar</h2>
-          <p>Här samlas frågor om moral, konflikt och hur man avgör om något ligger nära eller långt ifrån Einismens kärna.</p>
-          <ul class="qa-list">
-          <li><strong>Hur ser Einismen på moral?</strong>Moral behandlas som något som måste tänkas igenom i verkliga situationer, inte bara ärvas som fraser.</li>
-          <li><strong>Hur ser Einismen på konflikter?</strong>Nödvändiga konflikter ska inte undvikas, men konflikt i sig är inget egenvärde.</li>
-          </ul>
-        </section>
+{{< section class="prose" >}}
 
-        <section class="section">
-          <ul class="subnav-list">
-            <li><strong><a href="../vad-ar-einismen">Vidare läsning: Vad är Einismen?</a></strong>En kort introduktion om du vill börja enklare.</li>
-            <li><strong><a href="../i-detalj">Vidare läsning: I detalj</a></strong>En mer systematisk genomgång ämne för ämne.</li>
-            <li><strong><a href="../praktik">Vidare läsning: Praktik</a></strong>Se hur filosofins svar används i vardag och arbete.</li>
-          </ul>
-        </section>
-      </div>
+## Grunder
+
+Det här blocket samlar de vanligaste första frågorna om vad Einismen är, hur den förhåller sig till sanning och varför kaoset är så centralt.
+
+- **Är Einismen en religion?**Nej. Den beskrivs främst som en filosofi och ett sätt att tänka.
+- **Vad är kärnan?**Se klart. Välj själv. Ta ansvar. Förbättra vidare.
+- **Är den kall?**Den försöker vara saklig och användbar. Det är inte samma sak som känslolös.
+- **Varför återkommer ordet funktion?**För att något bör behållas när det faktiskt tjänar ett syfte.
+- **Hur ser den på förändring?**Förändring är naturlig. Det viktiga är riktning och förståelse.
+- **Hur ser den på känslor?**Känslor spelar roll, men de bör inte ensamma styra beslut.
+- **Vad säger Einismen om sanning?**Att sanningen ska sökas genom klar observation, resonemang och prövning, inte genom bekväma illusioner.
+- **Vad betyder kaos i Einismen?**Kaos betyder att världen är osäker, skiftande och inte skapad för att passa våra önskningar.
+- **Är Einismen pessimistisk?**Nej. Den är realistisk i sin utgångspunkt men konstruktiv i sitt svar.
+
+{{< /section >}}
+
+{{< section class="prose" >}}
+
+## Människan och livet
+
+Här ligger frågor om ansvar, styrka, dygder, dödlighet och vad Einismen faktiskt försöker forma i människan.
+
+- **Varför är ansvar så centralt?**För att frihet utan ansvar blir tom, och ansvar utan frihet blir tvång.
+- **Vad menas med inre styrka?**Förmågan att tänka klart, stå fast, reflektera och fortsätta även när läget är svårt.
+- **Hur ser Einismen på dygder?**Dygder är praktiska redskap, inte prydnader. De ska hjälpa människan att leva stabilt och verkningsfullt.
+- **Är Einismen individualistisk?**Ja, men inte på ett vårdslöst sätt. Den betonar självvald riktning men också ansvar mot andra.
+- **Vad betyder ordens värde?**Att ord ska bäras upp av handling, annars förlorar de sin tyngd.
+- **Hur ser Einismen på döden?**Döden döljs inte. Livets begränsning gör valen skarpare och tiden mer betydelsefull.
+- **Vad säger Einismen om perfektion?**Perfektion är mindre viktig än stadig förädling och riktad förbättring.
+- **Vad är målet med filosofin?**Inte att skapa bekvämlighet, utan att skapa klarare liv, starkare karaktär och bättre system.
+
+{{< /section >}}
+
+{{< section class="prose" >}}
+
+## Metod och kaytanto
+
+Det här blocket fokuserar på hur filosofin används: i arbete, utveckling, förbättring och i sättet att pröva idéer.
+
+- **Hur ser Einismen på arbete?**Arbete ska förädlas, göras tydligare och bli bättre över tid i stället för att stagnera.
+- **Hur ser Einismen på ledarskap?**Ledarskap bör vara sakligt, självständigt, ansvarstagande och öppet för bättre underlag.
+- **Vad är dialektisk förbättring?**Att låta idéer möta motstånd, förstå deras svagheter och sedan bygga en starkare syntes.
+- **Hur ser Einismen på utveckling?**Utveckling är en plikt. Det som går att förbättra bör förbättras.
+- **Hur ser Einismen på stagnation?**Stagnation ses som farlig, eftersom den gör att människan eller systemet slutar lära.
+- **Hur vet man om något är förenligt med Einismen?**Om det tål prövning, bärs av integritet och leder till verklig förbättring ligger det nära filosofins kärna.
+
+{{< /section >}}
+
+{{< section class="prose" >}}
+
+## Etik och invändningar
+
+Här samlas frågor om moral, konflikt och hur man avgör om något ligger nära eller långt ifrån Einismens kärna.
+
+- **Hur ser Einismen på moral?**Moral behandlas som något som måste tänkas igenom i verkliga situationer, inte bara ärvas som fraser.
+- **Hur ser Einismen på konflikter?**Nödvändiga konflikter ska inte undvikas, men konflikt i sig är inget egenvärde.
+
+{{< /section >}}

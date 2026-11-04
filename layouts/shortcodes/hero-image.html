@@ -1,0 +1,6 @@
+{{ with .Page.Params.hero_asset }}
+<figure class="image-break">
+  {{ with resources.Get . }}{{ .Content | safeHTML }}{{ end }}
+  {{ with $.Page.Params.hero_caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>
+{{ end }}

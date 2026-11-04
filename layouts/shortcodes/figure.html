@@ -1,0 +1,4 @@
+<figure class="image-break">
+  {{ with resources.Get (.Get "asset") }}{{ .Content | safeHTML }}{{ end }}
+  {{ with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>

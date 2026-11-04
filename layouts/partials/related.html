@@ -1,0 +1,7 @@
+{{ with .Params.related }}
+<section class="section">
+  <ul class="subnav-list">
+    {{ range . }}<li><strong><a href="{{ .url }}">{{ .title }}</a></strong>{{ .description }}</li>{{ end }}
+  </ul>
+</section>
+{{ end }}

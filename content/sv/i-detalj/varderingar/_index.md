@@ -1,42 +1,38 @@
 ---
 title: "I detalj: Värderingar"
-language: sv
 layout: page
+language: sv
+hero_asset: "media/generated/sv-i-detalj-varderingar-hero.svg"
+hero_caption: "Det som bär tyngd och prioriteras."
+breadcrumbs:
+  - title: "Hem"
+    url: "../.."
+  - title: "I detalj"
+    url: ".."
+related:
+  - title: "Vidare läsning: Mål och ideal"
+    url: "../mal-och-ideal"
+    description: "Se vilka ideal som vägleder värderingarna."
+  - title: "Vidare läsning: Kärnidéer"
+    url: "../karnideer"
+    description: "Se hur värderingar följer av Einismens grundantaganden."
+  - title: "Vidare läsning: Texter"
+    url: "../../texter"
+    description: "Läs mer om värderingar i filosofins texter."
 ---
 
-<div class="shell">
-        <nav class="breadcrumbs" aria-label="Breadcrumbs"><a href="../..">Hem</a><span class="sep">/</span><a href="..">I detalj</a><span class="sep">/</span><span aria-current="page">Värderingar</span></nav>
-        <section class="section prose">
-          <h1>Värderingar</h1>
-          <p class="lead">Det som värdesätts högst i Einismen är klarhet, integritet, funktion, ansvar och viljan att förbättra det som går att förbättra.</p>
+{{< section class="prose" >}}
 
-          <figure class="image-break">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none" role="img" aria-labelledby="detail-values-title detail-values-desc">
-  <title id="detail-values-title">Värderingar och ideal</title>
-  <desc id="detail-values-desc">En stillsam illustration med balanserade stenformer som antyder värde, prioritering och jämvikt.</desc>
-  <rect class="sky" width="1600" height="700"/>
-  <path class="ground-1" d="M0 484C183 456 336 449 500 464C664 479 804 539 970 542C1137 545 1278 500 1440 496C1506 495 1558 498 1600 503V700H0V484Z"/>
-  <path class="ground-2" d="M0 567C178 565 336 567 503 584C675 600 812 628 973 629C1140 630 1283 608 1443 604C1508 603 1558 605 1600 609V700H0V567Z"/>
-  <rect class="stone-1" x="335" y="334" width="114" height="128" rx="18"/>
-  <rect class="stone-2" x="740" y="258" width="126" height="206" rx="18"/>
-  <rect class="stone-3" x="1160" y="304" width="118" height="160" rx="18"/>
-  <path class="line-1" d="M392 304V188" stroke-width="5" stroke-linecap="round"/>
-  <path class="line-1" d="M803 228V132" stroke-width="5" stroke-linecap="round"/>
-  <path class="line-1" d="M1219 274V166" stroke-width="5" stroke-linecap="round"/>
-</svg>
-            <figcaption>Det som bär tyngd och prioriteras.</figcaption>
-          </figure>
+# Värderingar
 
-          <p>Det som ses som viktigt är sådant som hjälper människan att leva tydligare och mer konsekvent: att förstå bättre, stå fast när det behövs, tala sannare och agera så att ord och handling pekar åt samma håll.</p>
-          <p>Det som ses som fel är framför allt sådant som bryter sönder riktningen: manipulation, ansvarsflykt, självbedrägeri, slentrian och tom prestige. Einismen dömer inte efter fasad utan efter verkan och konsekvens.</p>
-          <p>Det som eftersträvas är inte perfektion utan ett liv där individen blir mer sann mot sina egna uttalade värden och där både människan och de system hon deltar i förädlas över tid.</p>
-        </section>
+{{< lead >}}Det som värdesätts högst i Einismen är klarhet, integritet, funktion, ansvar och viljan att förbättra det som går att förbättra.{{< /lead >}}
 
-        <section class="section">
-          <ul class="subnav-list">
-            <li><strong><a href="../mal-och-ideal">Vidare läsning: Mål och ideal</a></strong>Se vilka ideal som vägleder värderingarna.</li>
-            <li><strong><a href="../karnideer">Vidare läsning: Kärnidéer</a></strong>Se hur värderingar följer av Einismens grundantaganden.</li>
-            <li><strong><a href="../../texter">Vidare läsning: Texter</a></strong>Läs mer om värderingar i filosofins texter.</li>
-          </ul>
-        </section>
-      </div>
+{{< hero-image >}}
+
+Det som ses som viktigt är sådant som hjälper människan att leva tydligare och mer konsekvent: att förstå bättre, stå fast när det behövs, tala sannare och agera så att ord och handling pekar åt samma håll.
+
+Det som ses som fel är framför allt sådant som bryter sönder riktningen: manipulation, ansvarsflykt, självbedrägeri, slentrian och tom prestige. Einismen dömer inte efter fasad utan efter verkan och konsekvens.
+
+Det som eftersträvas är inte perfektion utan ett liv där individen blir mer sann mot sina egna uttalade värden och där både människan och de system hon deltar i förädlas över tid.
+
+{{< /section >}}

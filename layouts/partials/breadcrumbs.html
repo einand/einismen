@@ -1,0 +1,6 @@
+{{ with .Params.breadcrumbs }}
+<nav class="breadcrumbs" aria-label="Breadcrumbs">
+  {{ range . }}<a href="{{ .url }}">{{ .title }}</a><span class="sep">/</span>{{ end }}
+  <span aria-current="page">{{ $.Title }}</span>
+</nav>
+{{ end }}

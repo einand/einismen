@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1600 700" fill="none" role="img" aria-labelledby="texts-foundation-title texts-foundation-desc">
+  <title id="texts-foundation-title">Foundation document and wholeness</title>
+  <desc id="texts-foundation-desc">An illustration with several layers of stone forms and horizon lines suggesting a coherent philosophical foundation.</desc>
+  <rect class="sky" width="1600" height="700" />
+  <path class="ground-1" d="M0 486C164 455 325 447 498 464C664 480 798 542 962 546C1134 550 1274 503 1435 500C1502 499 1556 503 1600 508V700H0V486Z" />
+  <path class="ground-2" d="M0 567C188 565 345 567 510 583C676 600 811 628 970 629C1137 629 1277 607 1438 603C1502 602 1555 604 1600 608V700H0V567Z" />
+  <path class="stone-1" d="M230 463L386 280L542 463H230Z" />
+  <path class="stone-2" d="M548 463L716 236L888 463H548Z" />
+  <path class="stone-3" d="M930 463L1092 300L1252 463H930Z" />
+  <path class="line-1" d="M0 154H1600" stroke-width="1.5" stroke-dasharray="3 14" />
+  <path class="line-2" d="M0 200H1600" stroke-width="1" stroke-dasharray="2 16" />
+</svg>

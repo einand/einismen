@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none" role="img" aria-labelledby="pillars-hero-title pillars-hero-desc">
+  <title id="pillars-hero-title">Five pillars in an open landscape</title>
+  <desc id="pillars-hero-desc">A calm illustration with five upright stone forms standing at even intervals across a low horizon.</desc>
+  <rect class="sky" width="1600" height="700"/>
+  <path class="ground-1" d="M0 464C177 438 328 426 498 447C676 469 809 549 974 557C1128 564 1271 489 1424 487C1498 486 1558 494 1600 501V700H0V464Z"/>
+  <path class="ground-2" d="M0 544C180 537 323 533 493 549C667 566 787 619 962 623C1140 627 1277 582 1438 578C1507 576 1561 581 1600 587V700H0V544Z"/>
+  <rect class="stone-1" x="220" y="290" width="74" height="214" rx="16"/>
+  <rect class="stone-2" x="505" y="250" width="84" height="256" rx="16"/>
+  <rect class="stone-3" x="790" y="218" width="90" height="292" rx="16"/>
+  <rect class="stone-2" x="1086" y="252" width="84" height="252" rx="16"/>
+  <rect class="stone-1" x="1370" y="305" width="74" height="198" rx="16"/>
+  <path class="line-1" d="M0 180H1600" stroke-width="1.5" stroke-dasharray="3 12"/>
+</svg>
