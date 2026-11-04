@@ -34,7 +34,7 @@ def convert_page(source: Path) -> None:
     current_dir = "/".join((language, *slug_parts))
     def relative_url(match: re.Match[str]) -> str:
         attribute, target = match.group(1), match.group(2)
-        return f'{attribute}="{posixpath.relpath(target.lstrip("/"), current_dir)}"'
+        return f'{attribute}="{posixpath.relpath(target.lstrip("/"), current_dir + "/")}"'
     body = re.sub(r'(href|src)="(/(?:sv|en|fi|media)/[^"]*)"', relative_url, body)
     destination = CONTENT / language / Path(*slug_parts) / "_index.md"
     destination.parent.mkdir(parents=True, exist_ok=True)

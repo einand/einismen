@@ -3,7 +3,6 @@ title = 'Einismen'
 defaultContentLanguage = 'sv'
 defaultContentLanguageInSubdir = true
 enableRobotsTXT = true
-relativeURLs = true
 disableKinds = ['taxonomy', 'term']
 
 [languages]
