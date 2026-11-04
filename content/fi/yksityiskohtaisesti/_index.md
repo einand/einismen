@@ -152,10 +152,10 @@ Rakenne on rakennettu siten, että voit siirtyä yleiskuvasta tarkkuuteen. Jos t
 
 {{< /section-head >}}
 
-- **[Filosofiasta](filosofiasta)**Alkuperä, tausta ja miksi Einismen on olemassa.
-- **[Pääideat](paidea)**Maailmankuva, perusolettamukset, näkemys ihmisestä ja näkemys tiedosta.
-- **[Arvot](arvot)**Mitä arvostetaan, mitä pidetään oikeana ja vääränä ja mitä tavoitellaan.
-- **[Tavoitteet ja ihanteet](tavoitteet-ihanteet)**Mitä Einismen haluaa saavuttaa ja millainen elämä nähdään hyvänä.
+- **[Filosofiasta](filosofiasta)** Alkuperä, tausta ja miksi Einismen on olemassa.
+- **[Pääideat](paidea)** Maailmankuva, perusolettamukset, näkemys ihmisestä ja näkemys tiedosta.
+- **[Arvot](arvot)** Mitä arvostetaan, mitä pidetään oikeana ja vääränä ja mitä tavoitellaan.
+- **[Tavoitteet ja ihanteet](tavoitteet-ihanteet)** Mitä Einismen haluaa saavuttaa ja millainen elämä nähdään hyvänä.
 
 {{< /section >}}
 
@@ -167,9 +167,9 @@ Rakenne on rakennettu siten, että voit siirtyä yleiskuvasta tarkkuuteen. Jos t
 
 {{< /section-head >}}
 
-- **[Etiikka ja periaatteet](etiikka-periaatteet)**Miten ihmisen tulisi toimia ja suhtautua toisiin.
-- **[Käytännön soveltaminen](kaytannon-soveltaminen)**Miten filosofia näkyy arjessa, työssä, ihmissuhteissa ja yhteiskunnassa.
-- **[Praktiikka](../kaytanto)**Kokoamasivu arjelle, työlle ja etiikalle konkreettisessa käytössä.
+- **[Etiikka ja periaatteet](etiikka-periaatteet)** Miten ihmisen tulisi toimia ja suhtautua toisiin.
+- **[Käytännön soveltaminen](kaytannon-soveltaminen)** Miten filosofia näkyy arjessa, työssä, ihmissuhteissa ja yhteiskunnassa.
+- **[Praktiikka](../kaytanto)** Kokoamasivu arjelle, työlle ja etiikalle konkreettisessa käytössä.
 
 {{< /section >}}
 
@@ -181,10 +181,10 @@ Rakenne on rakennettu siten, että voit siirtyä yleiskuvasta tarkkuuteen. Jos t
 
 {{< /section-head >}}
 
-- **[Päättely ja logiikka](paattely-logiikka)**Miten ideat perustellaan ja miten johtopäätöksiin päästään.
-- **[Esimerkit](esimerkit)**Konkreettisia skenaarioita ja miten Einismen tulkitsee ongelmia ja päätöksiä.
-- **[Kritiikki ja vastaväitteet](kritiikki-vastavatteet)**Yleinen kritiikki, mahdolliset heikkoudet ja filosofian vastaukset.
-- **[Yhteenveto](yhteenveto)**Tiivistetty yleiskatsaus kokonaisuuteen.
+- **[Päättely ja logiikka](paattely-logiikka)** Miten ideat perustellaan ja miten johtopäätöksiin päästään.
+- **[Esimerkit](esimerkit)** Konkreettisia skenaarioita ja miten Einismen tulkitsee ongelmia ja päätöksiä.
+- **[Kritiikki ja vastaväitteet](kritiikki-vastavatteet)** Yleinen kritiikki, mahdolliset heikkoudet ja filosofian vastaukset.
+- **[Yhteenveto](yhteenveto)** Tiivistetty yleiskatsaus kokonaisuuteen.
 
 {{< /section >}}
 

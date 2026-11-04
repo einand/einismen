@@ -36,12 +36,12 @@ hero_caption: "Stone, distance and open ground."
 
 {{< /section-head >}}
 
-- **[What is Einismen?](what-is-einismen)**A short explanation of the basic idea.
-- **[Pillars](pillars)**The main themes that return throughout the philosophy.
-- **[Texts](texts)**Primary texts and longer formulations.
-- **[In detail](in-detail)**A systematic walk-through of ideas, ethics, logic and objections.
-- **[Practice](practice)**Everyday life, work and ethics gathered under application.
-- **[Questions and answers](qa)**Short answers to common questions.
+- **[What is Einismen?](what-is-einismen)** A short explanation of the basic idea.
+- **[Pillars](pillars)** The main themes that return throughout the philosophy.
+- **[Texts](texts)** Primary texts and longer formulations.
+- **[In detail](in-detail)** A systematic walk-through of ideas, ethics, logic and objections.
+- **[Practice](practice)** Everyday life, work and ethics gathered under application.
+- **[Questions and answers](qa)** Short answers to common questions.
 
 {{< /section >}}
 
