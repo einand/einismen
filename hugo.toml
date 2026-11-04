@@ -1,0 +1,29 @@
+baseURL = 'https://einand.github.io/einismen/'
+title = 'Einismen'
+defaultContentLanguage = 'sv'
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+relativeURLs = true
+disableKinds = ['taxonomy', 'term']
+
+[languages]
+  [languages.sv]
+    languageName = 'Svenska'
+    languageCode = 'sv'
+    weight = 1
+    contentDir = 'content/sv'
+  [languages.en]
+    languageName = 'English'
+    languageCode = 'en'
+    weight = 2
+    contentDir = 'content/en'
+  [languages.fi]
+    languageName = 'Suomi'
+    languageCode = 'fi'
+    weight = 3
+    contentDir = 'content/fi'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

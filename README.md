@@ -1,5 +1,22 @@
 # Einismen Web
 
+## Hugo och GitHub Pages
+
+Webbplatsen byggs från Hugo-projektet i repots rot. De tidigare statiska HTML-sidorna
+är konverterade till Markdown under `content/sv/`, `content/en/` och `content/fi/`.
+Det befintliga temat återanvänds från `static/styles.css` och `static/media/`.
+
+Bygg lokalt med Hugo Extended:
+
+```bash
+python3 scripts/convert-html-to-hugo.py
+hugo --gc --minify
+```
+
+GitHub Actions bygger sedan `public/` och publicerar den med GitHub Pages när `main`
+uppdateras. Aktivera GitHub Pages med `GitHub Actions` som source under repositoryts
+Pages-inställningar.
+
 Det här repot innehåller den statiska webbplatsen för Einismen och konfiguration för att bygga, publicera och deploya den till Kubernetes med Helm.
 
 Webbplatsen ska fungera både på desktop och mobiltelefon.

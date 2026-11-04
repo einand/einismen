@@ -1,0 +1,52 @@
+---
+title: "Einismen"
+language: sv
+layout: page
+---
+
+<div class="shell">
+        <section class="hero">
+          <div class="hero-copy">
+            <h1>Einismen</h1>
+            <p class="lead">En filosofi om att tänka klart, leva med ansvar och förbättra det som går att förbättra.</p>
+            <div class="actions">
+              <a class="button" href="vad-ar-einismen">Läs introduktionen</a>
+              <a class="button-secondary" href="pelare">Se pelarna</a>
+            </div>
+          </div>
+        </section>
+
+        <figure class="image-break">
+          <img src="../media/stone-plain.svg" alt="">
+          <figcaption>Sten, yta och avstånd.</figcaption>
+        </figure>
+
+        <section class="section">
+          <div class="section-head">
+            <h2>Sex vägar in</h2>
+          </div>
+          <ul class="link-list">
+            <li><strong><a href="vad-ar-einismen">Vad är Einismen?</a></strong>En enkel förklaring av grundidén.</li>
+            <li><strong><a href="pelare">Pelare</a></strong>De viktigaste teman som återkommer i tekstitna.</li>
+            <li><strong><a href="texter">Texter</a></strong>Primärtekstit och längre filosofiska formuleringar.</li>
+            <li><strong><a href="i-detalj">I detalj</a></strong>En systematisk genomgång av idéer, etik, logik och invändningar.</li>
+            <li><strong><a href="praktik">Praktik</a></strong>Vardag, arbete och etik samlade under tillämpning.</li>
+            <li><strong><a href="fragor-svar">Frågor</a></strong>Korta svar på vanliga frågor.</li>
+          </ul>
+        </section>
+
+        <section class="section prose">
+          <h2>Vad som skiljer Einismen</h2>
+          <p>Einismen försöker förena flera nivåer som ofta hålls isär: livssyn, karaktär, etik, arbete och metod. Den vill inte bara beskriva världen, utan också ge människan ett sätt att leva mer konsekvent i den.</p>
+          <p>Det som skiljer Einismen är att den varken nöjer sig med tröst eller med teknik. Den vill att människan ska se verkligheten klarare, bära större ansvar för sina val och bygga starkare sätt att leva mitt i osäkerheten.</p>
+          <p>Därför är sidan uppdelad i både kortare introduktioner och djupare fördjupningar. Du kan börja enkelt, men du kan också gå vidare in i de mer systematiska delarna när du vill förstå helheten bättre.</p>
+        </section>
+
+        <section class="section split">
+          <div class="span-4"><h3><a href="pelare/kaos">Acceptera kaoset</a></h3><p>Världen är osäker. Börja där.</p></div>
+          <div class="span-4"><h3><a href="pelare/inre-styrka">Bygg inre styrka</a></h3><p>Stadga dig när omvärlden skiftar.</p></div>
+          <div class="span-4"><h3><a href="pelare/frihet">Lev fritt med ansvar</a></h3><p>Du väljer. Du bär.</p></div>
+          <div class="span-6"><h3><a href="pelare/ordens-varde">Låt ord väga</a></h3><p>Integritet gör skillnad.</p></div>
+          <div class="span-6"><h3><a href="pelare/forandring">Förbättra vidare</a></h3><p>Perfektion är inte målet.</p></div>
+        </section>
+      </div>

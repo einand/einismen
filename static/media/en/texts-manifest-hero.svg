@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none" role="img" aria-labelledby="texts-manifest-title texts-manifest-desc">
+  <title id="texts-manifest-title">Manifesto and direction</title>
+  <desc id="texts-manifest-desc">An illustration with tall blocks, sharp lines and an open background suggesting declaration, principles and direction.</desc>
+  <rect class="sky" width="1600" height="700"/>
+  <path class="ground-1" d="M0 480C177 457 334 450 506 465C672 479 811 541 979 545C1140 549 1276 501 1432 498C1503 496 1557 500 1600 505V700H0V480Z"/>
+  <path class="ground-2" d="M0 566C188 564 340 567 509 583C682 600 813 629 976 630C1145 631 1282 606 1440 603C1507 602 1558 604 1600 608V700H0V566Z"/>
+  <rect class="stone-1" x="265" y="232" width="104" height="232" rx="18"/>
+  <rect class="stone-2" x="554" y="190" width="110" height="276" rx="18"/>
+  <rect class="stone-3" x="845" y="158" width="116" height="308" rx="18"/>
+  <rect class="stone-2" x="1142" y="214" width="108" height="248" rx="18"/>
+  <path class="line-1" d="M0 176H1600" stroke-width="2" stroke-dasharray="3 12"/>
+</svg>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://einismen.k3s.k0.nu/sitemap.xml
+Sitemap: https://einismen.k3s.k0.nu/sitemap-sv.xml
+Sitemap: https://einismen.k3s.k0.nu/sitemap-en.xml

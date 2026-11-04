@@ -1,0 +1,31 @@
+---
+title: "I detalj: Sammanfattning"
+language: sv
+layout: page
+---
+
+<div class="shell">
+        <nav class="breadcrumbs" aria-label="Breadcrumbs"><a href="../..">Hem</a><span class="sep">/</span><a href="..">I detalj</a><span class="sep">/</span><span aria-current="page">Sammanfattning</span></nav>
+        <section class="section prose">
+          <h1>Sammanfattning</h1>
+          <p class="lead">Einismen är en filosofi om att börja i verkligheten, bära ansvar för sin frihet och fortsätta förbättra både sig själv och de system man deltar i.</p>
+
+          <figure class="image-break">
+            <img src="../../../media/detail-hero.svg" alt="">
+            <figcaption>Helheten i koncentrerad form.</figcaption>
+          </figure>
+
+          <p>Kort sagt bygger filosofin på fem bärande drag: acceptans av kaoset, utveckling av inre styrka, frihet med ansvar, ordens värde och ständig förändring. Den förenar en livssyn med en metod.</p>
+          <p>Den säger att världen inte kommer att bli enkel bara för att människan önskar det. Därför måste människan börja i verkligheten, men hon måste inte stanna i passivitet. Hon kan skapa riktning, bygga karaktär och förädla de system hon lever i.</p>
+          <p>Einismen försöker också hålla ihop sådant som ofta splittras: analys och värdighet, frihet och ansvar, ord och handling, realism och förbättring. Det är därför den blir både en filosofisk hållning och en praktisk metod.</p>
+          <p>Det viktigaste kanske är detta: världen kommer inte att bli enkel, men människan kan bli klarare. Därför blir Einismen ett försök att leva mer vaket, mer hederligt och mer prövande i en värld som inte kommer att förenkla sig själv.</p>
+        </section>
+
+        <section class="section">
+          <ul class="subnav-list">
+            <li><strong><a href="../../texter/grunddokument">Vidare läsning: Grunddokument</a></strong>Se helheten i längre form.</li>
+            <li><strong><a href="../../texter/manifest">Vidare läsning: Manifest</a></strong>Se Einismen uttryckt mer deklarativt.</li>
+            <li><strong><a href="../../pelare">Vidare läsning: Pelare</a></strong>Se hur sammanfattningen vilar på filosofins fem pelare.</li>
+          </ul>
+        </section>
+      </div>
