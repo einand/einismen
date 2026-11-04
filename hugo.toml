@@ -1,4 +1,4 @@
-baseURL = 'https://einismen.k0.nu/'
+baseURL = 'https://einand.github.io/einismen/'
 title = 'Einismen'
 defaultContentLanguage = 'sv'
 defaultContentLanguageInSubdir = true
