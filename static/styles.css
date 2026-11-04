@@ -1223,3 +1223,49 @@ p {
 .hero *::before {
   display: none !important;
 }
+
+.deep-dive-index {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 var(--space-4);
+  margin: 0 0 var(--space-3);
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.deep-dive-index li {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.8fr) minmax(0, 1.2fr);
+  gap: var(--space-1);
+  align-items: baseline;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.deep-dive-index a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.deep-dive-index a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.deep-dive-index span {
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .deep-dive-index {
+    grid-template-columns: 1fr;
+  }
+
+  .deep-dive-index li {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
