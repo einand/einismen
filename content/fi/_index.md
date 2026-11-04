@@ -97,6 +97,6 @@ Rehellisyys tekee eron.
 
 Täydellisyys ei ole tavoite.
 
-{{< lead >}}{{< /box >}}{{< /lead >}}
+{{< /box >}}
 
 {{< /section >}}

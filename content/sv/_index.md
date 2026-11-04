@@ -97,6 +97,6 @@ Integritet gör skillnad.
 
 Perfektion är inte målet.
 
-{{< lead >}}{{< /box >}}{{< /lead >}}
+{{< /box >}}
 
 {{< /section >}}

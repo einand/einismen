@@ -97,6 +97,6 @@ Integrity matters.
 
 Perfection is not the goal.
 
-{{< lead >}}{{< /box >}}{{< /lead >}}
+{{< /box >}}
 
 {{< /section >}}
