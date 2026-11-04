@@ -1,5 +1,5 @@
 ---
-title: "In detail"
+title: "In depth"
 layout: page
 language: en
 hero_asset: "media/generated/en-in-detail-hero.svg"
@@ -18,7 +18,7 @@ related:
 
 {{< section >}}
 
-# In detail
+# In depth
 
 {{< lead >}}Here Einismen is gathered as a reference map. \`In detail\` breaks the philosophy down topic by topic instead of presenting it as longer primary texts.{{< /lead >}}
 

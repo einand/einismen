@@ -1,5 +1,5 @@
 ---
-title: "I detalj"
+title: "Fördjupning"
 layout: page
 language: sv
 hero_asset: "media/generated/sv-i-detalj-hero.svg"
@@ -18,7 +18,7 @@ related:
 
 {{< section >}}
 
-# I detalj
+# Fördjupning
 
 {{< lead >}}Här samlas Einismen som uppslagsverk. \`I detalj\` bryter ned filosofin ämne för ämne, i stället för att presentera den som längre primärtexter.{{< /lead >}}
 

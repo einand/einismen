@@ -1,5 +1,5 @@
 ---
-title: "Yksityiskohtaisesti"
+title: "Syventävät aiheet"
 layout: page
 language: fi
 hero_asset: "media/generated/fi-yksityiskohtaisesti-hero.svg"
@@ -18,7 +18,7 @@ related:
 
 {{< section >}}
 
-# Yksityiskohtaisesti
+# Syventävät aiheet
 
 {{< lead >}}Täällä Einismen on koottu hakuteokseksi. \`Yksityiskohtaisesti\` jakaa filosofian aiheittain sen sijaan, että se esittäisi sen pidemmillä alkuperäisteksteillä.{{< /lead >}}
 

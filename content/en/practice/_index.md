@@ -1,5 +1,5 @@
 ---
-title: "Practice in Einismen"
+title: "Application in Einismen"
 layout: page
 language: en
 hero_asset: "media/generated/en-practice-hero.svg"
@@ -18,7 +18,7 @@ related:
 
 {{< section >}}
 
-# Practice
+# Application
 
 {{< lead >}}This section gathers the parts of Einismen that show how the philosophy is used in real situations: everyday life, work and ethical judgment.{{< /lead >}}
 
@@ -56,7 +56,7 @@ Boundaries, clarity, moral judgment, conflict and how to meet destructive behavi
 
 {{< section class="prose" >}}
 
-## Why gather this under Practice
+## Why gather this under Application
 
 These pages belong close together. Everyday life, work and ethics are different fields, but Einismen tries to use the same basic principles in all three: clarity, responsibility, function, [the weight of words](../pillars/weight-of-words) and directed improvement.
 

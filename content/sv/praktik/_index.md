@@ -1,5 +1,5 @@
 ---
-title: "Praktik i Einismen"
+title: "Tillämpning i Einismen"
 layout: page
 language: sv
 hero_asset: "media/generated/sv-praktik-hero.svg"
@@ -18,7 +18,7 @@ related:
 
 {{< section >}}
 
-# Praktik
+# Tillämpning
 
 {{< lead >}}Här samlas de delar av Einismen som visar hur filosofin används i verkliga situationer: i vardag, i arbete och i etiska avvägningar.{{< /lead >}}
 
@@ -56,37 +56,11 @@ Gränser, saklighet, moral, konflikter och hur man möter det destruktiva.
 
 {{< figure asset="media/generated/sv-praktik-figure-1.svg" caption="Filosofin prövas där livet faktiskt händer." >}}
 
-{{< section class="split" >}}
 
-{{< box class="span-4" >}}
-
-### [Vardagen](../vardagen)
-
-Vanor, stress, relationer, ansvar och hur man väljer nästa klara steg.
-
-{{< /box >}}
-
-{{< box class="span-4" >}}
-
-### [Arbete](../arbete-ledarskap)
-
-Funktion, iteration, ledarskap, samarbete och bättre system i kaytantoen.
-
-{{< /box >}}
-
-{{< box class="span-4" >}}
-
-### [Etik](../etik-konflikter)
-
-Gränser, saklighet, moral, konflikter och hur man möter det destruktiva.
-
-{{< /box >}}
-
-{{< /section >}}
 
 {{< section class="prose" >}}
 
-## Varför samla detta under Praktik
+## Varför samla detta under Tillämpning
 
 De här sidorna hör nära ihop. Vardag, arbete och etik är olika fält, men Einismen försöker använda samma grundprinciper i alla tre: klarhet, ansvar, funktion, [ordens värde](../pelare/ordens-varde) och riktad förbättring.
 
