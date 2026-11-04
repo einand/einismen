@@ -1211,3 +1211,7 @@ p {
     margin: 2cm;
   }
 }
+
+.section.hero::before {
+  display: none;
+}
