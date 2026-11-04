@@ -710,7 +710,7 @@ p {
   gap: var(--space-2);
 }
 
-.link-list > ul {
+.link-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: calc(var(--space-3) + 0.15rem) 2rem;

@@ -1,3 +1,3 @@
-<div class="link-list">
-  {{ .Inner | markdownify }}
-</div>
+{{- $content := .Inner | markdownify -}}
+{{- $content = replaceRE `^<ul>` `<ul class="link-list">` $content -}}
+{{- $content | safeHTML -}}
