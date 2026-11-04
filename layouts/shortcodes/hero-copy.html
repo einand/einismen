@@ -1,5 +1,5 @@
 <div class="hero-copy">
-  {{ .Inner }}
+  {{ .Inner | markdownify }}
   {{ with .Page.Params.actions }}
   <div class="actions">{{ range . }}<a class="{{ .class }}" href="{{ .url }}">{{ .title }}</a>{{ end }}</div>
   {{ end }}
