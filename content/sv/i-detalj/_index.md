@@ -112,6 +112,22 @@ Hur idéerna motiveras och hur slutsatser dras.
 
 {{< box class="span-4" >}}
 
+### [Kunskap och sanning](kunskap-och-sanning)
+
+Hur skiljer vi observation från tolkning och söker bättre skäl?
+
+{{< /box >}}
+
+{{< box class="span-4" >}}
+
+### [Kunskap och sanning](kunskap-och-sanning)
+
+Hur skiljer vi observation från tolkning och söker bättre skäl?
+
+{{< /box >}}
+
+{{< box class="span-4" >}}
+
 ### [Exempel](exempel)
 
 Konkreta scenarier och hur Einismen tolkar problem och beslut.
