@@ -36,12 +36,14 @@ hero_caption: "Kivi, pinta ja etäisyys."
 
 {{< /section-head >}}
 
+{{< link-list >}}
 - **[Mikä Einismen on?](mita-einismen-on)** Yksinkertainen selitys perusideasta.
 - **[Pilarit](pelare)** Tärkeimmät teemat, jotka toistuvat teksteissä.
 - **[Tekstit](tekstit)** Ensisijaiset tekstit ja pidemmät filosofiset muotoilut.
 - **[Yksityiskohtaisesti](yksityiskohtaisesti)** Systemaattinen läpikäynti ideoista, etiikasta, logiikasta ja vastaväitteistä.
 - **[Käytäntö](kaytanto)** Arki, työ ja etiikka koottuna soveltamiseen.
 - **[Kysymyksiä](kysymyksia-vastauksia)** Lyhyet vastaukset yleisiin kysymyksiin.
+{{< /link-list >}}
 
 {{< /section >}}
 
