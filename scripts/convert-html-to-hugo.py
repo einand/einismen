@@ -28,7 +28,12 @@ def convert_page(source: Path) -> None:
     if not main_match:
         raise RuntimeError(f"No main element in {source}")
     body = main_match.group(1).strip()
-    body = re.sub(r'<!--#\s*include\s+virtual="(/media/[^"]+)"\s*-->', r'<img src="\1" alt="">', body)
+    def inline_svg(match: re.Match[str]) -> str:
+        asset = SOURCE / match.group(1).lstrip("/")
+        if not asset.exists():
+            raise RuntimeError(f"Missing included asset: {asset}")
+        return asset.read_text(encoding="utf-8").strip()
+    body = re.sub(r'<!--#\s*include\s+virtual="(/media/[^"]+)"\s*-->', inline_svg, body)
     body = re.sub(r"<!--#.*?-->", "", body, flags=re.S).replace("\r\n", "\n")
     body = textwrap.dedent(body).strip()
     current_dir = "/".join((language, *slug_parts))

@@ -11,7 +11,17 @@ layout: page
           <p class="lead">Einismen är inte bara ett sätt att analysera system. Den är också en hållning till hur en människa bör bära sig själv genom livet.</p>
 
           <figure class="image-break">
-            <img src="../../../media/texts-life-hero.svg" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none" role="img" aria-labelledby="texts-life-title texts-life-desc">
+  <title id="texts-life-title">Livshållning och tid</title>
+  <desc id="texts-life-desc">En stilla illustration med stig, stenformer och en cirkel över horisonten som antyder tid, liv och begränsning.</desc>
+  <rect class="sky" width="1600" height="700"/>
+  <path class="ground-1" d="M0 482C171 458 322 449 487 462C656 475 786 533 949 537C1120 541 1261 489 1424 486C1494 485 1549 488 1600 493V700H0V482Z"/>
+  <path class="ground-2" d="M0 563C196 560 340 561 500 577C662 593 801 627 961 628C1129 628 1266 606 1430 602C1498 601 1554 603 1600 607V700H0V563Z"/>
+  <circle class="stone-1" cx="1200" cy="206" r="72" stroke-width="12"/>
+  <path class="line-1" d="M784 564C720 506 664 454 650 382C636 309 666 255 732 216" stroke-width="7" stroke-linecap="round"/>
+  <path class="stone-2" d="M410 463L570 308L724 463H410Z"/>
+  <path class="stone-3" d="M828 463L944 340L1062 463H828Z"/>
+</svg>
             <figcaption>Liv, tid och riktning under en låg horisont.</figcaption>
           </figure>
 

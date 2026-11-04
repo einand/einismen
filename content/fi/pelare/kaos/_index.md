@@ -11,7 +11,16 @@ layout: page
           <p class="lead">Kaaos tarkoittaa epävarmuutta ja valmiiden vastausten puutetta. Einismen alkaa tämän hyväksymisellä.</p>
 
           <figure class="image-break">
-            <img src="../../../media/detail-origin-hero.svg" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none" role="img" aria-labelledby="detail-origin-title detail-origin-desc">
+  <title id="detail-origin-title">Ursprung och bakgrund</title>
+  <desc id="detail-origin-desc">En illustration med flera lager, stigande former och låg horisont som antyder ursprung och framväxt.</desc>
+  <rect class="sky" width="1600" height="700"/>
+  <path class="ground-1" d="M0 486C175 458 332 451 500 468C663 484 804 543 973 547C1145 551 1281 505 1440 501C1505 500 1558 503 1600 508V700H0V486Z"/>
+  <path class="ground-2" d="M0 567C184 565 341 566 505 583C675 600 813 629 975 630C1143 631 1284 608 1444 605C1508 604 1558 606 1600 610V700H0V567Z"/>
+  <path class="stone-1" d="M290 462L474 288L647 462H290Z"/>
+  <path class="stone-2" d="M690 462L825 218L962 462H690Z"/>
+  <path class="stone-3" d="M1031 462L1182 320L1341 462H1031Z"/>
+</svg>
             <figcaption>Kaaos on lähtökohta, ei vihollinen.</figcaption>
           </figure>
 

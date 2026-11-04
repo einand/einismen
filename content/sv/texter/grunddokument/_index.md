@@ -11,7 +11,18 @@ layout: page
           <p class="lead">Detta är ett sammanhållet grunddokument för Einismen, skrivet utifrån den samlade dokumentationen. Här hålls filosofins pelare, metod, frihet, ansvar och syn på livet ihop i en längre form.</p>
 
           <figure class="image-break">
-            <img src="../../../media/texts-foundation-hero.svg" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none" role="img" aria-labelledby="texts-foundation-title texts-foundation-desc">
+  <title id="texts-foundation-title">Grunddokument och helhet</title>
+  <desc id="texts-foundation-desc">En illustration med flera lager av stenformer och horisontlinjer som antyder en sammanhållen filosofisk grund.</desc>
+  <rect class="sky" width="1600" height="700"/>
+  <path class="ground-1" d="M0 486C164 455 325 447 498 464C664 480 798 542 962 546C1134 550 1274 503 1435 500C1502 499 1556 503 1600 508V700H0V486Z"/>
+  <path class="ground-2" d="M0 567C188 565 345 567 510 583C676 600 811 628 970 629C1137 629 1277 607 1438 603C1502 602 1555 604 1600 608V700H0V567Z"/>
+  <path class="stone-1" d="M230 463L386 280L542 463H230Z"/>
+  <path class="stone-2" d="M548 463L716 236L888 463H548Z"/>
+  <path class="stone-3" d="M930 463L1092 300L1252 463H930Z"/>
+  <path class="line-1" d="M0 154H1600" stroke-width="1.5" stroke-dasharray="3 14"/>
+  <path class="line-2" d="M0 200H1600" stroke-width="1" stroke-dasharray="2 16"/>
+</svg>
             <figcaption>Flera lager som bär en gemensam grund.</figcaption>
           </figure>
 
@@ -25,7 +36,18 @@ layout: page
           <p>Den som tar Einismen på allvar förväntas inte bara tänka annorlunda, utan också handla annorlunda. Det innebär att värderingar måste visa sig i det levda livet. Den som talar om klarhet måste söka den. Den som talar om integritet måste bära den. Den som talar om förbättring måste också vara villig att ändra sig.</p>
 
           <figure class="image-break">
-            <img src="../../../media/stone-plain.svg" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none" role="img" aria-labelledby="stone-plain-title stone-plain-desc">
+  <title id="stone-plain-title">Stenformation i ett öppet landskap</title>
+  <desc id="stone-plain-desc">En stillsam illustration med låg horisont, tre stenformer och tunna linjer över en öppen yta.</desc>
+  <rect class="sky" width="1600" height="700"/>
+  <path class="ground-1" d="M0 505C157 470 241 446 380 459C542 475 621 557 793 562C977 567 1091 458 1265 454C1410 451 1494 498 1600 532V700H0V505Z"/>
+  <path class="ground-2" d="M0 544C150 521 282 504 420 523C579 544 684 621 851 620C997 619 1114 547 1262 539C1402 532 1490 556 1600 591V700H0V544Z"/>
+  <path class="stone-1" d="M268 425L356 392L427 445L338 485L268 425Z"/>
+  <path class="stone-2" d="M690 387L808 349L904 421L785 463L690 387Z"/>
+  <path class="stone-3" d="M1126 401L1236 360L1338 434L1220 475L1126 401Z"/>
+  <path class="line-1" d="M0 147H1600" stroke-width="2" stroke-dasharray="2 10"/>
+  <path class="line-2" d="M0 188H1600" stroke-width="1" stroke-dasharray="2 14"/>
+</svg>
             <figcaption>Stadga i en värld som inte lovar stadga.</figcaption>
           </figure>
 
@@ -42,7 +64,19 @@ layout: page
           <p>Detta ger också Einismen en särskild syn på misslyckanden. Misstag är inte främst moraliska bevis på svaghet, utan tillfällen för lärande. Det avgörande är inte om individen faller, utan hur hon granskar fallet, vad hon lär sig av det och vilken riktning hon väljer efteråt.</p>
 
           <figure class="image-break">
-            <img src="../../../media/texts-method-hero.svg" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none" role="img" aria-labelledby="texts-method-title texts-method-desc">
+  <title id="texts-method-title">Metod och prövning</title>
+  <desc id="texts-method-desc">En illustration med block, linjer och stegvisa förbindelser som antyder metod, prövning och förbättring.</desc>
+  <rect class="sky" width="1600" height="700"/>
+  <path class="ground-1" d="M0 472C180 446 334 443 495 458C656 473 789 531 955 536C1128 542 1268 493 1429 489C1497 487 1552 491 1600 497V700H0V472Z"/>
+  <path class="ground-2" d="M0 560C188 559 336 562 500 579C669 597 797 625 959 626C1127 627 1265 604 1427 601C1493 600 1549 603 1600 608V700H0V560Z"/>
+  <rect class="stone-1" x="214" y="246" width="210" height="86" rx="18"/>
+  <rect class="stone-2" x="546" y="210" width="230" height="102" rx="18"/>
+  <rect class="stone-3" x="920" y="174" width="250" height="124" rx="18"/>
+  <path class="line-1" d="M424 289H546" stroke-width="5" stroke-linecap="round"/>
+  <path class="line-1" d="M776 262H920" stroke-width="5" stroke-linecap="round"/>
+  <path class="line-2" d="M1066 352V422" stroke-width="8" stroke-linecap="round"/>
+</svg>
             <figcaption>Prövning, analys och nästa bättre steg.</figcaption>
           </figure>
 

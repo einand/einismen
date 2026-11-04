@@ -11,7 +11,18 @@ layout: page
         </section>
 
         <figure class="image-break">
-          <img src="../../media/texts-hero.svg" alt="">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none" role="img" aria-labelledby="texts-hero-title texts-hero-desc">
+  <title id="texts-hero-title">Texter och lager av betydelse</title>
+  <desc id="texts-hero-desc">En illustration med horisontella textliknande linjer, öppna block och ett lugnt landskap som antyder längre läsning.</desc>
+  <rect class="sky" width="1600" height="700"/>
+  <path class="ground-1" d="M0 478C184 452 337 446 495 460C658 474 808 541 973 545C1141 549 1271 500 1431 497C1494 496 1549 499 1600 505V700H0V478Z"/>
+  <path class="ground-2" d="M0 566C170 566 321 568 483 584C651 601 798 632 961 632C1117 632 1262 608 1421 605C1495 604 1553 606 1600 610V700H0V566Z"/>
+  <rect class="stone-1" x="220" y="178" width="1160" height="250" rx="26"/>
+  <path class="line-2" d="M302 246H1166" stroke-width="8" stroke-linecap="round"/>
+  <path class="line-2" d="M302 292H1282" stroke-width="8" stroke-linecap="round"/>
+  <path class="line-2" d="M302 338H1196" stroke-width="8" stroke-linecap="round"/>
+  <path class="line-1" d="M302 384H1038" stroke-width="8" stroke-linecap="round"/>
+</svg>
           <figcaption>Lager av text, tanke och fördjupning.</figcaption>
         </figure>
 

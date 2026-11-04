@@ -11,7 +11,19 @@ layout: page
           <p class="lead">Fokusera på det du kan påverka. Släpp det du inte kan styra. Välj nästa klara steg.</p>
 
           <figure class="image-break">
-            <img src="../../media/stone-field.svg" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none" role="img" aria-labelledby="stone-field-title stone-field-desc">
+  <title id="stone-field-title">Stenigt fält i ett öppet landskap</title>
+  <desc id="stone-field-desc">En illustration av ett fält med flera avrundade stenformer, låg horisont och en lugn öppen bakgrund.</desc>
+  <rect class="sky" width="1600" height="700"/>
+  <path class="ground-1" d="M0 462C165 431 286 421 420 444C572 471 677 551 815 561C990 575 1120 478 1270 474C1419 471 1515 526 1600 557V700H0V462Z"/>
+  <path class="ground-2" d="M0 544C171 535 309 528 452 548C608 570 724 627 866 630C1022 633 1143 578 1298 575C1425 573 1517 601 1600 628V700H0V544Z"/>
+  <ellipse class="stone-2" cx="235" cy="510" rx="48" ry="25"/>
+  <ellipse class="stone-3" cx="448" cy="536" rx="35" ry="20"/>
+  <ellipse class="stone-1" cx="744" cy="500" rx="54" ry="28"/>
+  <ellipse class="stone-3" cx="1008" cy="543" rx="43" ry="23"/>
+  <ellipse class="stone-2" cx="1322" cy="515" rx="61" ry="31"/>
+  <path class="line-2" d="M0 168H1600" stroke-width="1" stroke-dasharray="3 14"/>
+</svg>
             <figcaption>Yta, tålamod, små steg.</figcaption>
           </figure>
         </section>
