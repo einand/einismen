@@ -69,7 +69,7 @@ Einismen lähtee siitä, ettei mikään järjestelmä ole valmis ja ettei mikä�
 
 Einismen yrittää antaa yksilölle tavan elää teeskentelemättä, että maailma olisi yksinkertaisempi kuin se on. Se haluaa korvata itsepetoksen selkeyden näöllä, passiivisuuden suunnanotolla ja tyhjän retoriikan eletyllä seurauksellisuudella. Siksi siitä tulee sekä elämänkatsomus että päätöksentekomenetelmä.
 
-Se haluaa myös antaa kielen sille, mikä muuten helposti hajoaa. Monet ihmiset yrittävät elää kurinalaisesti mutta puuttuu selkeä maailmankatsomus. Toiset ajattelevat terävästi mutta puuttuu arkinen seurauksellisuus. Einismen yrittää pitää yhdessä analyysin, luonteen ja toiminnan. Tämä on yksi syy siihen, miksi se palaa samoihin kysymyksiin useista suunnista.
+Se haluaa myös antaa kielen sille, mikä muuten helposti hajoaa. Monet ihmiset yrittävät elää kurinalaisesti, mutta heiltä puuttuu selkeä maailmankatsomus. Toiset ajattelevat terävästi, mutta heiltä puuttuu arkinen johdonmukaisuus. Einismen yrittää pitää yhdessä analyysin, luonteen ja toiminnan. Tämä on yksi syy siihen, miksi se palaa samoihin kysymyksiin useista suunnista.
 
 > Einismen ei etsi mukavuutta. Se etsii suuntaa, joka kestää, kun olosuhteet muuttuvat.
 

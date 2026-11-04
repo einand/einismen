@@ -18,7 +18,7 @@ related:
     description: "Se varför frihet kräver inre bärkraft."
   - title: "Vidare läsning: Praktik"
     url: "../../praktik"
-    description: "Se hur handled frihet används i praktik."
+    description: "Se hur frihet används i praktiken."
 ---
 
 {{< section class="prose" >}}

@@ -20,7 +20,7 @@ related:
 
 # Käytäntö
 
-{{< lead >}}Tässä kokoillaan ne osat Einismenistä, jotka osoittavat, miten filosofiaa käytetään todellisissa tilanteissa: arjessa, työssä ja eettisissä puntaroinneissa.{{< /lead >}}
+{{< lead >}}Tässä kootaan ne osat Einismenistä, jotka osoittavat, miten filosofiaa käytetään todellisissa tilanteissa: arjessa, työssä ja eettisissä puntaroinneissa.{{< /lead >}}
 
 {{< hero-image >}}
 

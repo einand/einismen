@@ -49,7 +49,7 @@ hero_caption: "Kivi, pinta ja etäisyys."
 
 {{< section class="prose" >}}
 
-## Mitä Einismen eroaa muista
+## Miten Einismen eroaa muista
 
 Einismen yrittää yhdistää useita tasoja, jotka usein pidetään erillään: elämänkatsomus, luonne, etiikka, työ ja metodi. Se ei halua vain kuvata maailmaa, vaan myös antaa ihmiselle tavan elää johdonmukaisemmin siinä.
 

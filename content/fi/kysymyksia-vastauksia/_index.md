@@ -63,7 +63,7 @@ Tässä ovat kysymykset vastuusta, voimasta, hyveistä, kuolevaisuudesta ja siit
 
 ## Menetelmä ja käytäntö
 
-Tämä osio keskittyy siihen, miten filosofiaa käytetään: työssä, kehityksessä, parantamisessa ja tapa testata ideoita.
+Tämä osio keskittyy siihen, miten filosofiaa käytetään: työssä, kehityksessä, parantamisessa ja siihen, miten ideoita testataan.
 
 - **Miten Einismen suhtautuu työhön?** Työtä tulee jalostaa, selkeyttää ja parantaa ajan myötä sen sijaan että se pysähtyy.
 - **Miten Einismen suhtautuu johtajuuteen?** Johtajuuden tulisi olla asiallinen, itsenäinen, vastuunsa kantava ja avoin paremmalle pohjalle.
@@ -78,9 +78,9 @@ Tämä osio keskittyy siihen, miten filosofiaa käytetään: työssä, kehitykse
 
 ## Etiikka ja vastautukset
 
-Tässä kokoillaan kysymyksiä moraalista, konfliktista ja siitä, miten voidaan päättää, onko jokin lähellä vai kaukana Einismenin ydintä.
+Tässä kootaan kysymyksiä moraalista, konfliktista ja siitä, miten voidaan päättää, onko jokin lähellä vai kaukana Einismenin ydintä.
 
 - **Miten Einismen suhtautuu moraaliin?** Moraalia käsitellään asiana, joka täytyy ajatella läpi todellisissa tilanteissa, ei vain perittynä fraaseina.
-- **Miten Einismen suhtautuu konflikteihin?** Välttämättömiä konflikteja ei tule välttää, mutta konflikti itsessään ei ole arvo itsessään.
+- **Miten Einismen suhtautuu konflikteihin?** Välttämättömiä konflikteja ei tule välttää, mutta konflikti itsessään ei ole itseisarvo.
 
 {{< /section >}}

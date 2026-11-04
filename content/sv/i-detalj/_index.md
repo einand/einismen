@@ -7,7 +7,7 @@ hero_caption: "En karta över delarna som tillsammans bildar helheten."
 related:
   - title: "Vidare läsning: Texter"
     url: "../texter"
-    description: "Läs sammanhängande primärtekstit om Einismens grunder."
+    description: "Läs sammanhängande primärtexter om Einismens grunder."
   - title: "Vidare läsning: Pelare"
     url: "../pelare"
     description: "De fem bärande principerna som håller ihop filosofin."
@@ -20,7 +20,7 @@ related:
 
 # I detalj
 
-{{< lead >}}Här samlas Einismen som uppslagsverk. \`I detalj\` bryter ned filosofin ämne för ämne, i stället för att presentera den som längre primärtekstit.{{< /lead >}}
+{{< lead >}}Här samlas Einismen som uppslagsverk. \`I detalj\` bryter ned filosofin ämne för ämne, i stället för att presentera den som längre primärtexter.{{< /lead >}}
 
 {{< hero-image >}}
 
@@ -32,7 +32,7 @@ related:
 
 \`I detalj\` är uppdelad i undersidor som följer samma struktur som de viktigaste delarna i filosofin. Här kan du gå från en översiktlig bild till mer fokuserade genomgångar av [ursprung](om-filosofin), [värderingar](varderingar), [etik](etik-och-principer), [tillämpning](praktisk-tillampning), [logik](resonemang-och-logik), [exempel](exempel) och [kritik](kritik-och-invandningar).
 
-Om du i stället vill läsa mer sammanhängande och mer deklarativa tekstit ska du gå till [Texter](../texter). \`I detalj\` är till för att orientera, jämföra och förstå varje område för sig.
+Om du i stället vill läsa mer sammanhängande och mer deklarativa texter ska du gå till [Texter](../texter). \`I detalj\` är till för att orientera, jämföra och förstå varje område för sig.
 
 {{< /section >}}
 

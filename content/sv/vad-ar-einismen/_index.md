@@ -10,7 +10,7 @@ breadcrumbs:
 related:
   - title: "Vidare läsning: Pelare"
     url: "../pelare"
-    description: "De viktigaste teman som återkommer i tekstitna."
+    description: "De viktigaste teman som återkommer i texterna."
   - title: "Vidare läsning: Grunder"
     url: "../texter/grunder"
     description: "En längre introduktion till Einismen som livshållning."

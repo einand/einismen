@@ -29,7 +29,7 @@ related:
 
 {{< hero-image >}}
 
-Maailmankuva lähtee siitä, ettei universumi sisällä valmista inhimillistä merkitystä. Perusolettamus on siis turvallinen järjestys, vaan kaaos, muutos ja kitka. Tämän vuoksi ihmisen täytyy luoda suuntaa sen sijaan, että perisi sen kritiikittömästi.
+Maailmankuva lähtee siitä, ettei universumi sisällä valmista inhimillistä merkitystä. Perusolettamus ei siis ole turvallinen järjestys, vaan kaaos, muutos ja kitka. Tämän vuoksi ihmisen täytyy luoda suuntaa sen sijaan, että perisi sen kritiikittömästi.
 
 Näkemys ihmisestä ei ole sentimentaalinen eikä kyyninen. Ihmistä pidetään virheellisyyteen, rajoituksiin ja haavoittuvuuteen taipuvaisena, mutta myös kykenevänä valitsemaan, analysoimaan, uudelleen harkitsemaan ja rakentamaan. Tämä kaksijakoisuus on keskeistä.
 

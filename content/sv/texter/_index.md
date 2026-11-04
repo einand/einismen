@@ -20,7 +20,7 @@ related:
 
 # Texter om Einismen
 
-{{< lead >}}Här finns primärtekstit och längre filosofiska formuleringar. \`Texter\` är sidan för sammanhängande läsning, inte för uppslagsstruktur.{{< /lead >}}
+{{< lead >}}Här finns primärtexter och längre filosofiska formuleringar. \`Texter\` är sidan för sammanhängande läsning, inte för uppslagsstruktur.{{< /lead >}}
 
 {{< hero-image >}}
 
@@ -78,8 +78,8 @@ Texter om Einismen behöver ofta vara längre än en vanlig introduktionssida, e
 
 Det gör att den inte riktigt ryms i enkla etiketter. Einismen är inte bara en teori om mening, och inte bara en metod för effektivitet. Den försöker hålla ihop människans inre hållning med hennes yttre handlingar. Därför behöver vissa delar beskrivas mer utförligt, särskilt i [Grunderna i Einismen](grunder) och [Funktion, metod och förbättring](metod).
 
-I tekstitna här samlas de längre linjerna: hur Einismen ser på verklighetens osäkerhet, varför [frihet och ansvar](../pelare/frihet) måste höra ihop, varför [ordens värde](../pelare/ordens-varde) återkommer, och varför förbättring inte ses som valfri utan som en del av ett värdigt liv.
+I texterna här samlas de längre linjerna: hur Einismen ser på verklighetens osäkerhet, varför [frihet och ansvar](../pelare/frihet) måste höra ihop, varför [ordens värde](../pelare/ordens-varde) återkommer, och varför förbättring inte ses som valfri utan som en del av ett värdigt liv.
 
-Om du i stället vill ha en mer systematisk genomgång uppdelad efter ämnesområden ska du gå vidare till [I detalj](../i-detalj). Där är innehållet uppbyggt mer som ett uppslagsverk än som en samling primärtekstit.
+Om du i stället vill ha en mer systematisk genomgång uppdelad efter ämnesområden ska du gå vidare till [I detalj](../i-detalj). Där är innehållet uppbyggt mer som ett uppslagsverk än som en samling primärtexter.
 
 {{< /section >}}

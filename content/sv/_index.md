@@ -38,8 +38,8 @@ hero_caption: "Sten, yta och avstånd."
 
 {{< link-list >}}
 - **[Vad är Einismen?](vad-ar-einismen)** En enkel förklaring av grundidén.
-- **[Pelare](pelare)** De viktigaste teman som återkommer i tekstitna.
-- **[Texter](texter)** Primärtekstit och längre filosofiska formuleringar.
+- **[Pelare](pelare)** De viktigaste teman som återkommer i texterna.
+- **[Texter](texter)** Primärtexter och längre filosofiska formuleringar.
 - **[I detalj](i-detalj)** En systematisk genomgång av idéer, etik, logik och invändningar.
 - **[Praktik](praktik)** Vardag, arbete och etik samlade under tillämpning.
 - **[Frågor](fragor-svar)** Korta svar på vanliga frågor.

@@ -31,7 +31,7 @@ related:
 
 Jos tapa ei enää toimi, sitä ei saa puolustaa vain siksi, että se on vanha. Se on tarkistettava: palveleeko se edelleen tarkoitustaan, vai elääkö se vain tavan ja prystän varassa?
 
-Jos lupaus ei voida pitää, se on sanottava avoimesti ja seuraukset kannettava. Einismen suosii tunnustettua puutetta piilotetun petoksen edelle, koska suunta ja luottamus muuten hajoavat.
+Jos lupausta ei voida pitää, se on sanottava avoimesti ja seuraukset kannettava. Einismen suosii tunnustettua puutetta piilotetun petoksen edelle, koska suunta ja luottamus muuten hajoavat.
 
 Jos järjestelmä muuttuu tehottomaksi, se on testattava parempia vaihtoehtoja vasten. Se ei tarkoita, että kaikki vanha on heitettävä pois, vaan että kaiken on pystyttävä perustelemaan itsensä. Se, mikä toimii, saa jäädä, mutta sen on jäätävä oikeista syistä.
 
