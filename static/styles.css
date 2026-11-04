@@ -95,7 +95,6 @@ img {
   z-index: 20;
   background: color-mix(in srgb, var(--bg) 92%, white 8%);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--line-strong);
   transition: background-color 180ms ease, border-color 180ms ease;
 }
 
